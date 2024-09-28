@@ -1,4 +1,4 @@
-C:\Windows\system32\wsl.exe --distribution Debian --exec "/mnt/d/JetBrains/CLion 2023.3.4/bin/ttyfix" /bin/bash -c "export CLION_IDE=TRUE && export CMAKE_COLOR_DIAGNOSTICS=ON && export JETBRAINS_IDE=TRUE && cd /mnt/d/JetBrains/sea_battle/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc '-DCMAKE_CXX_COMPILER=/usr/bin/g++' -G 'CodeBlocks - Unix Makefiles' -S /mnt/d/JetBrains/sea_battle -B /mnt/d/JetBrains/sea_battle/cmake-build-debug; exitcode=$?; sleep 0.001; (exit $exitcode)"
+C:\Windows\system32\wsl.exe --distribution Debian --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle -B /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug; exitcode=$?; sleep 0.001; (exit $exitcode)"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/d/JetBrains/sea_battle/cmake-build-debug
+-- Build files have been written to: /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug

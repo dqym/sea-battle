@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/JetBrains/sea_battle
+CMAKE_SOURCE_DIR = /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/JetBrains/sea_battle/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/JetBrains/sea_battle/cmake-build-debug/CMakeFiles /mnt/d/JetBrains/sea_battle/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/CMakeFiles /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/JetBrains/sea_battle/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -201,6 +201,30 @@ ShipFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/ShipFactory.cpp.s
 .PHONY : ShipFactory.cpp.s
 
+ShipManager.o: ShipManager.cpp.o
+.PHONY : ShipManager.o
+
+# target to build an object file
+ShipManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/ShipManager.cpp.o
+.PHONY : ShipManager.cpp.o
+
+ShipManager.i: ShipManager.cpp.i
+.PHONY : ShipManager.i
+
+# target to preprocess a source file
+ShipManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/ShipManager.cpp.i
+.PHONY : ShipManager.cpp.i
+
+ShipManager.s: ShipManager.cpp.s
+.PHONY : ShipManager.s
+
+# target to generate assembly for a file
+ShipManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/ShipManager.cpp.s
+.PHONY : ShipManager.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -243,6 +267,9 @@ help:
 	@echo "... ShipFactory.o"
 	@echo "... ShipFactory.i"
 	@echo "... ShipFactory.s"
+	@echo "... ShipManager.o"
+	@echo "... ShipManager.i"
+	@echo "... ShipManager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

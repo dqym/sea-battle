@@ -2,15 +2,20 @@
 
 Ship::Ship(int l): length(l) {}
 
-void Ship::set_coords(std::vector<std::pair<char, int>> coords) {
-    for (auto& pair: coords) {
-        segments[pair] = 2;
-    }
+void Ship::set_coordinate(std::pair<char, int> position) {
+    segments[position] = segment_state::Whole;
 }
 
 bool Ship::is_hit(std::pair<char, int>& coords) {
     if (segments.contains(coords)) {
-        segments[coords]--;
+        switch (segments[coords]) {
+            case segment_state::Whole:
+                segments[coords] = segment_state::Damaged;
+                break;
+            case segment_state::Damaged:
+                segments[coords] = segment_state::Destroyed;
+                break;
+        }
         return true;
     }
     return false;

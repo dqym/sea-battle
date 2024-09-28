@@ -11,7 +11,7 @@ Board::Board(int size) {
 }
 
 void Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords) {
-        for (auto& coord_pair: coords) {
+    for (auto& coord_pair: coords) {
         int letter_conv = letters_to_values[coord_pair.first];
         field[coord_pair.second-1][letter_conv-1] = 'S';
     }

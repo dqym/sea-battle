@@ -1,7 +1,8 @@
 CMakeFiles/sea_battle.dir/ShipFactory.cpp.o: \
- /mnt/d/JetBrains/sea_battle/ShipFactory.cpp /usr/include/stdc-predef.h \
- /mnt/d/JetBrains/sea_battle/ShipFactory.h /usr/include/c++/12/vector \
- /usr/include/c++/12/bits/stl_algobase.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/ShipFactory.cpp \
+ /usr/include/stdc-predef.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/ShipFactory.h \
+ /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -49,7 +50,8 @@ CMakeFiles/sea_battle.dir/ShipFactory.cpp.o: \
  /usr/include/c++/12/bits/stl_function.h \
  /usr/include/c++/12/backward/binders.h \
  /usr/include/c++/12/bits/range_access.h \
- /usr/include/c++/12/bits/vector.tcc /mnt/d/JetBrains/sea_battle/Ship.h \
+ /usr/include/c++/12/bits/vector.tcc \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/Ship.h \
  /usr/include/c++/12/map /usr/include/c++/12/bits/stl_tree.h \
  /usr/include/c++/12/ext/aligned_buffer.h \
  /usr/include/c++/12/bits/node_handle.h \

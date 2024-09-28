@@ -1,7 +1,8 @@
 CMakeFiles/sea_battle.dir/Ship.cpp.o: \
- /mnt/d/JetBrains/sea_battle/Ship.cpp /usr/include/stdc-predef.h \
- /mnt/d/JetBrains/sea_battle/Ship.h /usr/include/c++/12/vector \
- /usr/include/c++/12/bits/stl_algobase.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/Ship.cpp \
+ /usr/include/stdc-predef.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/Ship.h \
+ /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
