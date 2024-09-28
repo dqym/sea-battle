@@ -1,11 +1,13 @@
 #ifndef SEA_BATTLE_BOARD_H
 #define SEA_BATTLE_BOARD_H
 
-#include <vector>
 #include <iostream>
 #include <iomanip>
+#include <vector>
 #include <map>
-#include "Ship.h"
+#include <set>
+#include <algorithm>
+#include "ShipManager.h"
 
 class Board {
 private:
@@ -17,12 +19,12 @@ private:
         {'Y', 25}, {'Z', 26}
     };
     std::vector<std::vector<char>> field;
-    std::vector<Ship> ships;
+    ShipManager& ship_manager;
+    bool validate_positions(const Ship& ship, std::vector<std::pair<char, int>>& coords);
 public:
-    Board(int size);
-    void place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords);
+    Board(int size, ShipManager& ship_manager);
+    bool place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords);
     bool shoot(std::pair<char, int>& coords);
-    bool validate_positions(std::vector<std::pair<char, int>>& coords);
     void display() const;
 };
 

@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle
+# Install script for directory: /mnt/d/JetBrains/sea-battle/sea_battle
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

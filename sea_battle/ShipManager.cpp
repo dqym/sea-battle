@@ -2,11 +2,11 @@
 
 ShipManager::ShipManager(int count, std::vector<int> sizes) {
     for (int i = 0; i < count; ++i) {
-        ships.emplace_back(sizes[i]);
+        ships.emplace_back(sizes[i], false);
     }
 }
 
-std::vector<Ship>& ShipManager::get_ships() {
+const std::vector<Ship>& ShipManager::get_ships() {
     return ships;
 }
 
@@ -16,13 +16,20 @@ void ShipManager::set_coordinates(Ship &ship, std::vector<std::pair<char, int>> 
     }
 }
 
-bool ShipManager::is_hit(std::pair<char, int> coordinate) {
-    bool flag = false;
+std::pair<bool, bool> ShipManager::is_hit(std::pair<char, int> coordinate) {
+    bool hit_flag = false;
+    bool destroy_flag = false;
     for (auto& ship : ships) {
-        flag = ship.is_hit(coordinate);
-        if (flag) {break;}
+        hit_flag = ship.is_hit(coordinate);
+        if (hit_flag) {
+            destroy_flag = ship.is_sunk();
+        }
     }
-    return flag;
+    return std::pair<bool, bool>{hit_flag, destroy_flag};
+}
+
+void ShipManager::delete_ship(Ship& ship) {
+    std::erase(ships, ship);
 }
 
 

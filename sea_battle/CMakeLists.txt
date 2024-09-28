@@ -8,7 +8,5 @@ add_executable(sea_battle main.cpp
         Board.h
         Ship.cpp
         Ship.h
-        ShipFactory.cpp
-        ShipFactory.h
         ShipManager.cpp
         ShipManager.h)

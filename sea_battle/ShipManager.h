@@ -8,12 +8,12 @@
 class ShipManager {
 private:
     std::vector<Ship> ships;
-    void ship_is_sunk();
+    void delete_ship(Ship& ship);
 public:
     ShipManager(int count, std::vector<int> sizes);
-    std::vector<Ship>& get_ships();
+    const std::vector<Ship>& get_ships();
     void set_coordinates(Ship& ship, std::vector<std::pair<char, int>> coordinates);
-    bool is_hit(std::pair<char, int> coordinate);
+    std::pair<bool, bool> is_hit(std::pair<char, int> coordinate);
 };
 
 
