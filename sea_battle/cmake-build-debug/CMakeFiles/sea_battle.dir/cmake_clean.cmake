@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sea_battle.dir/Ship.cpp.o.d"
   "CMakeFiles/sea_battle.dir/ShipFactory.cpp.o"
   "CMakeFiles/sea_battle.dir/ShipFactory.cpp.o.d"
+  "CMakeFiles/sea_battle.dir/ShipManager.cpp.o"
+  "CMakeFiles/sea_battle.dir/ShipManager.cpp.o.d"
   "CMakeFiles/sea_battle.dir/main.cpp.o"
   "CMakeFiles/sea_battle.dir/main.cpp.o.d"
   "sea_battle"

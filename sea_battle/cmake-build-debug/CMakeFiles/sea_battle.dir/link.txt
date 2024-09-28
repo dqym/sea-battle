@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/sea_battle.dir/main.cpp.o CMakeFiles/sea_battle.dir/Board.cpp.o CMakeFiles/sea_battle.dir/Ship.cpp.o CMakeFiles/sea_battle.dir/ShipFactory.cpp.o -o sea_battle 
+/usr/bin/c++ -g CMakeFiles/sea_battle.dir/main.cpp.o CMakeFiles/sea_battle.dir/Board.cpp.o CMakeFiles/sea_battle.dir/Ship.cpp.o CMakeFiles/sea_battle.dir/ShipFactory.cpp.o CMakeFiles/sea_battle.dir/ShipManager.cpp.o -o sea_battle 
