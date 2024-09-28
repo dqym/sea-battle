@@ -11,9 +11,9 @@ private:
     void delete_ship(Ship& ship);
 public:
     ShipManager(int count, std::vector<int> sizes);
-    const std::vector<Ship>& get_ships();
-    void set_coordinates(Ship& ship, std::vector<std::pair<char, int>> coordinates);
-    std::pair<bool, bool> is_hit(std::pair<char, int> coordinate);
+    std::vector<Ship>& get_ships();
+    void set_coordinates(Ship& ship, std::vector<std::pair<char, int>>& coordinates);
+    std::pair<bool, bool> is_hit(std::pair<char, int>& coordinate);
 };
 
 

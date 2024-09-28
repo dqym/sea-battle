@@ -13,7 +13,7 @@ private:
     std::map<std::pair<char, int>, segment_state> segments;
 public:
     Ship(int l, bool orientation);
-    void set_coordinate(std::pair<char, int> position);
+    void set_coordinate(std::pair<char, int>& position);
     bool is_hit(std::pair<char, int>& coordinate);
     bool is_sunk();
     bool operator==(const Ship& other) const;

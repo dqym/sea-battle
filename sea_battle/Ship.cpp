@@ -2,7 +2,7 @@
 
 Ship::Ship(int l, bool orientation): length(l), vertical(orientation) {}
 
-void Ship::set_coordinate(std::pair<char, int> position) {
+void Ship::set_coordinate(std::pair<char, int>& position) {
     segments[position] = segment_state::Whole;
 }
 

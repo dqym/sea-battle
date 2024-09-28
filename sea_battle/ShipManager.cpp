@@ -6,17 +6,17 @@ ShipManager::ShipManager(int count, std::vector<int> sizes) {
     }
 }
 
-const std::vector<Ship>& ShipManager::get_ships() {
+std::vector<Ship>& ShipManager::get_ships() {
     return ships;
 }
 
-void ShipManager::set_coordinates(Ship &ship, std::vector<std::pair<char, int>> coordinates) {
+void ShipManager::set_coordinates(Ship &ship, std::vector<std::pair<char, int>>& coordinates) {
     for (auto& position : coordinates) {
         ship.set_coordinate(position);
     }
 }
 
-std::pair<bool, bool> ShipManager::is_hit(std::pair<char, int> coordinate) {
+std::pair<bool, bool> ShipManager::is_hit(std::pair<char, int>& coordinate) {
     bool hit_flag = false;
     bool destroy_flag = false;
     for (auto& ship : ships) {

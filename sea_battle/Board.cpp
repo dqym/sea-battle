@@ -22,11 +22,14 @@ bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords) {
 
 bool Board::shoot(std::pair<char, int>& coords) {
     std::pair<bool, bool> result = ship_manager.is_hit(coords);
+    int letter_conv = letters_to_values[coords.first];
     if (result.first and !result.second) {
         std::cout << coords.first << coords.second << ": Target hit.\n";
+        field[coords.second-1][letter_conv-1] = '!';
         return true;
     } else if (result.first && result.second) {
         std::cout << coords.first << coords.second << ": Target destroyed.\n";
+        field[coords.second-1][letter_conv-1] = 'X';
         return true;
     } else {
         std::cout << coords.first << coords.second << ": Miss.\n";
@@ -64,15 +67,15 @@ bool Board::validate_positions(const Ship& ship, std::vector<std::pair<char, int
     std::set<int> unique_digits(digits.begin(), digits.end());
     std::set<char> unique_letters(letters.begin(), letters.end());
     if (ship.is_vertical()) {
-        int min = *std::min_element(letters.begin(), letters.end());
-        int max = *std::max_element(letters.begin(), letters.end());
+        int min = *std::min_element(digits.begin(), digits.end());
+        int max = *std::max_element(digits.begin(), digits.end());
 
         if (unique_letters.size() != 1) {return false;}
         if (max - min != digits.size() - 1) {return false;}
         if (unique_digits.size() != digits.size()) {return false;}
     } else {
-        int min = *std::min_element(digits.begin(), digits.end());
-        int max = *std::max_element(digits.begin(), digits.end());
+        int min = *std::min_element(letters.begin(), letters.end());
+        int max = *std::max_element(letters.begin(), letters.end());
 
         if (unique_digits.size() != 1) {return false;}
         if (max - min != letters.size() - 1) {return false;}
