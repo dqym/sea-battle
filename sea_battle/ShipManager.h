@@ -13,6 +13,7 @@ public:
     ShipManager(int count, std::vector<int> sizes);
     std::vector<Ship>& get_ships();
     void set_coordinates(Ship& ship, std::vector<std::pair<char, int>>& coordinates);
+    void set_ship_orientation(Ship& ship, char orientation);
     std::pair<bool, bool> is_hit(std::pair<char, int>& coordinate);
 };
 

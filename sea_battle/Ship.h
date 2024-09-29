@@ -14,10 +14,13 @@ private:
 public:
     Ship(int l, bool orientation);
     void set_coordinate(std::pair<char, int>& position);
+    void set_orientation(bool orientation);
+    int get_length() const;
     bool is_hit(std::pair<char, int>& coordinate);
+    bool is_segment_destroyed(std::pair<char, int>& coordinate);
     bool is_sunk();
-    bool operator==(const Ship& other) const;
     bool is_vertical() const;
+    bool operator==(const Ship& other) const;
 };
 
 

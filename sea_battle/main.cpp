@@ -1,21 +1,57 @@
-
 #include "Board.h"
+#include <sstream>
 
 int main() {
-    std::vector<std::pair<char, int>> coords {{'A', 1}, {'B', 1}, {'C', 1}};
-    std::vector<int> sizes {3};
+    int count;
+    std::vector<int> sizes;
+    std::cout << "Enter ships count: ";
+    std::cin >> count;
+    std::cout << "Enter the size of each ship separated by a space: ";
+    for (int i = 0; i < count; ++i) {
+        int size;
+        std::cin >> size;
+        sizes.push_back(size);
+    }
 
     ShipManager manager(int(sizes.size()), sizes);
     Board board(10, manager);
     std::vector<Ship>& ships = manager.get_ships();
 
     for (auto& ship : ships) {
-        board.place_ship(ship, coords);
+        std::vector<std::pair<char, int>> coords;
+        std::cout << "Enter orientation and coordinates for a ship of length " << ship.get_length()
+                  << ": ";
+
+        std::string input;
+        std::getline(std::cin >> std::ws, input);
+        std::stringstream ss(input);
+        char orientation;
+        ss >> orientation;
+
+        for (int i = 0; i < ship.get_length(); ++i) {
+            std::pair<char, int> position;
+            std::string coord;
+            ss >> coord;
+
+            position.first = _toupper(coord[0]);
+            position.second = std::stoi(coord.substr(1));
+
+            coords.push_back(position);
+        }
+        board.place_ship(ship, coords, _toupper(orientation));
     }
-    std::pair<char, int> a {'A', 1};
-    std::cout << board.shoot(a) << std::endl;
-    board.display();
-    std::cout << board.shoot(a) << std::endl;
+
+    std::pair<char, int> a {'A', 9};
+    std::pair<char, int> b {'B', 1};
+    std::pair<char, int> c {'C', 1};
+    std::pair<char, int> z {'A', 8};
+    std::pair<char, int> v {'A', 7};
+    board.shoot(a);
+    board.shoot(a);
+    board.shoot(z);
+    board.shoot(z);
+    board.shoot(v);
+    board.shoot(v);
     board.display();
 
     return 0;

@@ -16,13 +16,22 @@ void ShipManager::set_coordinates(Ship &ship, std::vector<std::pair<char, int>>&
     }
 }
 
+void ShipManager::set_ship_orientation(Ship &ship, char orientation) {
+    ship.set_orientation(orientation == 'V');
+}
+
 std::pair<bool, bool> ShipManager::is_hit(std::pair<char, int>& coordinate) {
     bool hit_flag = false;
     bool destroy_flag = false;
     for (auto& ship : ships) {
         hit_flag = ship.is_hit(coordinate);
         if (hit_flag) {
-            destroy_flag = ship.is_sunk();
+            destroy_flag = ship.is_segment_destroyed(coordinate);
+            if (destroy_flag && ship.is_sunk()) {
+                hit_flag = false;
+                delete_ship(ship);
+            }
+            break;
         }
     }
     return std::pair<bool, bool>{hit_flag, destroy_flag};

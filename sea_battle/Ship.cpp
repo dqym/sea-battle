@@ -6,6 +6,8 @@ void Ship::set_coordinate(std::pair<char, int>& position) {
     segments[position] = segment_state::Whole;
 }
 
+void Ship::set_orientation(bool orientation) {vertical = orientation;}
+
 bool Ship::is_hit(std::pair<char, int>& coords) {
     if (segments.contains(coords)) {
         switch (segments[coords]) {
@@ -29,8 +31,14 @@ bool Ship::is_sunk() {
     return sum_health == 0;
 }
 
+bool Ship::is_segment_destroyed(std::pair<char, int>& coordinate) {
+    return segments[coordinate] == segment_state::Destroyed;
+}
+
 bool Ship::operator==(const Ship &other) const {
     return segments == other.segments;
 }
 
 bool Ship::is_vertical() const {return vertical;}
+
+int Ship::get_length() const {return length;}

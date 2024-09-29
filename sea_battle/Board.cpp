@@ -10,7 +10,8 @@ Board::Board(int size, ShipManager& ship_manager): ship_manager(ship_manager) {
     }
 }
 
-bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords) {
+bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, char orientation) {
+    ship_manager.set_ship_orientation(ship, orientation);
     if (!validate_positions(ship, coords)) {return false;}
     for (auto& coord_pair: coords) {
         int letter_conv = letters_to_values[coord_pair.first];
@@ -24,14 +25,19 @@ bool Board::shoot(std::pair<char, int>& coords) {
     std::pair<bool, bool> result = ship_manager.is_hit(coords);
     int letter_conv = letters_to_values[coords.first];
     if (result.first and !result.second) {
-        std::cout << coords.first << coords.second << ": Target hit.\n";
         field[coords.second-1][letter_conv-1] = '!';
+        std::cout << coords.first << coords.second << ": Target hit.\n";
         return true;
     } else if (result.first && result.second) {
-        std::cout << coords.first << coords.second << ": Target destroyed.\n";
         field[coords.second-1][letter_conv-1] = 'X';
+        std::cout << coords.first << coords.second << ": Segment destroyed.\n";
+        return true;
+    } else if (!result.first && result.second) {
+        field[coords.second-1][letter_conv-1] = 'X';
+        std::cout << coords.first << coords.second << ": Ship destroyed.\n";
         return true;
     } else {
+        field[coords.second-1][letter_conv-1] = '*';
         std::cout << coords.first << coords.second << ": Miss.\n";
         return false;
     }
@@ -92,7 +98,7 @@ void Board::display() const {
 
     std::cout << "    ";
     for (int j = 0; j < size; ++j) {
-        std::cout << "+---";
+        std::cout << "+ — ";
     }
     std::cout << "+\n";
 
@@ -100,13 +106,28 @@ void Board::display() const {
         std::cout << std::setw(2) << i + 1 << ". ";
 
         for (int j = 0; j < size; ++j) {
-            std::cout << "| " << field[i][j] << ' ';
+            std::cout << "| ";
+            switch (field[i][j]) {
+                case 'S':
+                    std::cout << "\033[1;32m";
+                    break;
+                case '~':
+                    std::cout << "\033[1;34m";
+                    break;
+                case '!':
+                    std::cout << "\033[1;33m";
+                    break;
+                case 'X':
+                    std::cout << "\033[1;31m";
+                    break;
+            }
+            std::cout << field[i][j] << "\033[0m ";
         }
         std::cout << "|\n";
 
         std::cout << "    ";
         for (int j = 0; j < size; ++j) {
-            std::cout << "+---";
+            std::cout << "+ — ";
         }
         std::cout << "+\n";
     }

@@ -23,7 +23,7 @@ private:
     bool validate_positions(const Ship& ship, std::vector<std::pair<char, int>>& coords);
 public:
     Board(int size, ShipManager& ship_manager);
-    bool place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords);
+    bool place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, char orientation);
     bool shoot(std::pair<char, int>& coords);
     void display() const;
 };
