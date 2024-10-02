@@ -2,22 +2,12 @@
 
 ShipManager::ShipManager(int count, std::vector<int> sizes) {
     for (int i = 0; i < count; ++i) {
-        ships.emplace_back(sizes[i], false);
+        ships.emplace_back(sizes[i]);
     }
 }
 
 std::vector<Ship>& ShipManager::get_ships() {
     return ships;
-}
-
-void ShipManager::set_coordinates(Ship &ship, std::vector<std::pair<char, int>>& coordinates) {
-    for (auto& position : coordinates) {
-        ship.set_coordinate(position);
-    }
-}
-
-void ShipManager::set_ship_orientation(Ship &ship, char orientation) {
-    ship.set_orientation(orientation == 'V');
 }
 
 std::pair<bool, bool> ShipManager::is_hit(std::pair<char, int>& coordinate) {

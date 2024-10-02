@@ -10,14 +10,34 @@ Board::Board(int size, ShipManager& ship_manager): ship_manager(ship_manager) {
     }
 }
 
+Board::Board(const Board &other): field(other.field), ship_manager(other.ship_manager) {}
+
+Board::Board(Board &&other) noexcept: field(std::move(other.field)), ship_manager(other.ship_manager) {}
+
+Board& Board::operator=(const Board& other) {
+    if (this != &other) {
+        field = other.field;
+        ship_manager = other.ship_manager;
+    }
+    return *this;
+}
+
+Board& Board::operator=(Board&& other) noexcept {
+    if (this != &other) {
+        field = std::move(other.field);
+        ship_manager = other.ship_manager;
+    }
+    return *this;
+}
+
 bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, char orientation) {
-    ship_manager.set_ship_orientation(ship, orientation);
+    ship.set_orientation(orientation);
     if (!validate_positions(ship, coords)) {return false;}
     for (auto& coord_pair: coords) {
         int letter_conv = letters_to_values[coord_pair.first];
         field[coord_pair.second-1][letter_conv-1] = 'S';
     }
-    ship_manager.set_coordinates(ship, coords);
+    ship.set_coordinates(coords);
     return true;
 }
 
@@ -72,7 +92,7 @@ bool Board::validate_positions(const Ship& ship, std::vector<std::pair<char, int
     }
     std::set<int> unique_digits(digits.begin(), digits.end());
     std::set<char> unique_letters(letters.begin(), letters.end());
-    if (ship.is_vertical()) {
+    if (ship.get_orientation() == Ship::ship_orientation::Vertical) {
         int min = *std::min_element(digits.begin(), digits.end());
         int max = *std::max_element(digits.begin(), digits.end());
 
