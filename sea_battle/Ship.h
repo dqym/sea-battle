@@ -4,24 +4,22 @@
 #include <vector>
 #include <map>
 #include <string>
+#include <algorithm>
+#include "Segment.h"
 
 class Ship {
 public:
     enum class ship_orientation {Horizontal, Vertical};
-    enum class segment_state {Destroyed, Damaged, Whole};
     Ship(int length);
-    void set_coordinates(std::vector<std::pair<char, int>>& position);
     void set_orientation(char orientation);
-    Ship::ship_orientation get_orientation() const;
+    Ship::ship_orientation get_orientation();
+    std::vector<Segment>& get_segments();
     int get_length() const;
-    bool is_hit(std::pair<char, int>& coordinate);
-    bool is_segment_destroyed(std::pair<char, int>& coordinate);
-    bool is_sunk();
-    bool operator==(const Ship& other) const;
+    bool is_sunk() const;
 private:
     int length;
     Ship::ship_orientation orientation;
-    std::map<std::pair<char, int>, Ship::segment_state> segments;
+    std::vector<Segment> segments;
 };
 
 

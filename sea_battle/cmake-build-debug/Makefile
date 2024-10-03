@@ -153,6 +153,30 @@ Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
+Segment.o: Segment.cpp.o
+.PHONY : Segment.o
+
+# target to build an object file
+Segment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/Segment.cpp.o
+.PHONY : Segment.cpp.o
+
+Segment.i: Segment.cpp.i
+.PHONY : Segment.i
+
+# target to preprocess a source file
+Segment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/Segment.cpp.i
+.PHONY : Segment.cpp.i
+
+Segment.s: Segment.cpp.s
+.PHONY : Segment.s
+
+# target to generate assembly for a file
+Segment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/Segment.cpp.s
+.PHONY : Segment.cpp.s
+
 Ship.o: Ship.cpp.o
 .PHONY : Ship.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... Board.o"
 	@echo "... Board.i"
 	@echo "... Board.s"
+	@echo "... Segment.o"
+	@echo "... Segment.i"
+	@echo "... Segment.s"
 	@echo "... Ship.o"
 	@echo "... Ship.i"
 	@echo "... Ship.s"

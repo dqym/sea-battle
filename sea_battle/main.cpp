@@ -47,11 +47,17 @@ int main() {
     std::pair<char, int> z {'A', 8};
     std::pair<char, int> v {'A', 7};
     board.shoot(a);
+    manager.update();
     board.shoot(a);
+    manager.update();
     board.shoot(z);
+    manager.update();
     board.shoot(z);
+    manager.update();
     board.shoot(v);
+    manager.update();
     board.shoot(v);
+    manager.update();
     board.display();
 
     return 0;

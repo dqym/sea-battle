@@ -1,23 +1,22 @@
 #include "Board.h"
 
 
-Board::Board(int size, ShipManager& ship_manager): ship_manager(ship_manager) {
+Board::Board(int size, ShipManager& ship_manager) {
     for (int i = 0; i < size; ++i) {
         field.emplace_back();
         for (int j = 0; j < size; ++j) {
-            field[i].push_back('~');
+            field[i].emplace_back();
         }
     }
 }
 
-Board::Board(const Board &other): field(other.field), ship_manager(other.ship_manager) {}
+Board::Board(const Board &other): field(other.field) {}
 
-Board::Board(Board &&other) noexcept: field(std::move(other.field)), ship_manager(other.ship_manager) {}
+Board::Board(Board &&other) noexcept: field(std::move(other.field)) {}
 
 Board& Board::operator=(const Board& other) {
     if (this != &other) {
         field = other.field;
-        ship_manager = other.ship_manager;
     }
     return *this;
 }
@@ -25,45 +24,47 @@ Board& Board::operator=(const Board& other) {
 Board& Board::operator=(Board&& other) noexcept {
     if (this != &other) {
         field = std::move(other.field);
-        ship_manager = other.ship_manager;
     }
     return *this;
 }
 
+Board::Cell::Cell(): display('~'), segment(nullptr), is_hit(false) {}
+
 bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, char orientation) {
     ship.set_orientation(orientation);
     if (!validate_positions(ship, coords)) {return false;}
-    for (auto& coord_pair: coords) {
-        int letter_conv = letters_to_values[coord_pair.first];
-        field[coord_pair.second-1][letter_conv-1] = 'S';
+    for (int i = 0; i < coords.size(); ++i) {
+        int row = coords[i].second - 1;
+        int col = letters_to_values[coords[i].first] - 1;
+        field[row][col].display = 'S';
+        field[row][col].segment = &ship.get_segments()[i];
     }
-    ship.set_coordinates(coords);
     return true;
 }
 
 bool Board::shoot(std::pair<char, int>& coords) {
-    std::pair<bool, bool> result = ship_manager.is_hit(coords);
-    int letter_conv = letters_to_values[coords.first];
-    if (result.first and !result.second) {
-        field[coords.second-1][letter_conv-1] = '!';
-        std::cout << coords.first << coords.second << ": Target hit.\n";
-        return true;
-    } else if (result.first && result.second) {
-        field[coords.second-1][letter_conv-1] = 'X';
-        std::cout << coords.first << coords.second << ": Segment destroyed.\n";
-        return true;
-    } else if (!result.first && result.second) {
-        field[coords.second-1][letter_conv-1] = 'X';
-        std::cout << coords.first << coords.second << ": Ship destroyed.\n";
+    int row = coords.second - 1;
+    int col = letters_to_values[coords.first] - 1;
+    Cell& cell = field[row][col];
+
+    if (cell.segment) {
+        cell.segment->hit();
+        if (cell.segment->is_destroyed()) {
+            cell.display = 'X';
+            std::cout << coords.first << coords.second << ": Segment destroyed.\n";
+        } else {
+            cell.display = '!';
+            std::cout << coords.first << coords.second << ": Target hit.\n";
+        }
         return true;
     } else {
-        field[coords.second-1][letter_conv-1] = '*';
+        cell.display = '*';
         std::cout << coords.first << coords.second << ": Miss.\n";
         return false;
     }
 }
 
-bool Board::validate_positions(const Ship& ship, std::vector<std::pair<char, int>>& coords) {
+bool Board::validate_positions(Ship& ship, std::vector<std::pair<char, int>>& coords) {
     std::vector<std::pair<int, int>> directions = {
             {-1, -1}, {-1, 0}, {-1, 1},
             { 0, -1}, { 0, 0}, { 0, 1},
@@ -77,7 +78,7 @@ bool Board::validate_positions(const Ship& ship, std::vector<std::pair<char, int
             int temp_column = column + dir.second;
             int temp_row = row + dir.first;
             if (temp_row >= 0 && temp_column >= 0 && temp_row < field.size() && temp_column < field.size()) {
-                if (field[temp_row][temp_column] == 'S') {
+                if (field[temp_row][temp_column].display == 'S') {
                     return false;
                 }
             }
@@ -127,7 +128,7 @@ void Board::display() const {
 
         for (int j = 0; j < size; ++j) {
             std::cout << "| ";
-            switch (field[i][j]) {
+            switch (field[i][j].display) {
                 case 'S':
                     std::cout << "\033[1;32m";
                     break;
@@ -141,7 +142,7 @@ void Board::display() const {
                     std::cout << "\033[1;31m";
                     break;
             }
-            std::cout << field[i][j] << "\033[0m ";
+            std::cout << field[i][j].display << "\033[0m ";
         }
         std::cout << "|\n";
 
