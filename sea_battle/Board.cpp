@@ -28,7 +28,7 @@ Board& Board::operator=(Board&& other) noexcept {
     return *this;
 }
 
-Board::Cell::Cell(): display('~'), segment(nullptr), is_hit(false) {}
+Board::Cell::Cell(): display('~'), segment(nullptr) {}
 
 bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, char orientation) {
     ship.set_orientation(orientation);

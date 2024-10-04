@@ -23,7 +23,6 @@ public:
         Cell();
         Segment* segment;
         char display;
-        bool is_hit;
     };
 private:
     std::map<char, int> letters_to_values {

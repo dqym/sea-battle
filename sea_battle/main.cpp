@@ -33,12 +33,12 @@ int main() {
             std::string coord;
             ss >> coord;
 
-            position.first = _toupper(coord[0]);
+            position.first = toupper(coord[0]);
             position.second = std::stoi(coord.substr(1));
 
             coords.push_back(position);
         }
-        board.place_ship(ship, coords, _toupper(orientation));
+        board.place_ship(ship, coords, toupper(orientation));
     }
 
     std::pair<char, int> a {'A', 9};
@@ -48,15 +48,15 @@ int main() {
     std::pair<char, int> v {'A', 7};
     board.shoot(a);
     manager.update();
-    board.shoot(a);
+//    board.shoot(a);
     manager.update();
-    board.shoot(z);
-    manager.update();
-    board.shoot(z);
-    manager.update();
-    board.shoot(v);
-    manager.update();
-    board.shoot(v);
+//    board.shoot(z);
+//    manager.update();
+//    board.shoot(z);
+//    manager.update();
+//    board.shoot(v);
+//    manager.update();
+//    board.shoot(v);
     manager.update();
     board.display();
 
