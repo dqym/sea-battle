@@ -1,0 +1,38 @@
+digraph UML_Class_diagram {
+    graph [
+    label="UML Class diagram for Battleship Game"
+    labelloc="t"
+    fontname="Helvetica,Arial,sans-serif"
+    rankdir=UD
+    ]
+    node [
+    fontname="Helvetica,Arial,sans-serif"
+    shape=record
+    style=filled
+    fillcolor=gray95
+    ]
+    edge [fontname="Helvetica,Arial,sans-serif"]
+
+    Board [label="{Board | - letters_to_values: map&lt;char, int&gt; | - field: vector&lt;vector&lt;Cell&gt;&gt; | + Board(int size) | + place_ship(Ship& ship, vector&lt;pair&lt;char, int&gt;&gt;& coords, char orientation): bool | + shoot(pair&lt;char, int&gt;& coords): bool | + display(): void | + validate_positions(Ship& ship, vector&lt;pair&lt;char, int&gt;& coords): bool}"]
+
+    Cell [label="{Cell | - segment: Segment* | - display: char | + Cell()}"]
+
+    ShipManager [label="{ShipManager | - ships: vector&lt;Ship&gt; | - destroyed_ships: vector&lt;Ship&gt; | + ShipManager(int count, vector&lt;int&gt; sizes) | + get_ships(): vector&lt;Ship&gt;& | + update(): void}"]
+
+    Ship [label="{Ship | - length: int | - orientation: ship_orientation | - segments: vector&lt;Segment&gt; | + Ship(int length) | + set_orientation(char orientation): void | + get_orientation(): ship_orientation | + get_segments(): vector&lt;Segment&gt;& | + get_length(): int | + is_sunk(): bool}"]
+
+    Segment [label="{Segment | - state: segment_state | + Segment() | + hit(): void | + is_destroyed(): bool}"]
+
+    edge [arrowhead=vee style=dashed]
+    Board -> ShipManager [label="dependency"]
+    Board -> Ship [label="dependency"]
+    Board -> Segment [label="dependency"]
+
+    edge [dir=back arrowtail=empty style=""]
+    ShipManager -> Ship [label="aggregation"]
+
+    edge [dir=back arrowtail=diamond]
+    Ship -> Segment [label="composition"]
+
+    Cell -> Segment [label="composition"]
+}
