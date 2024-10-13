@@ -1,7 +1,7 @@
 #include "Board.h"
 
 
-Board::Board(int size, ShipManager& ship_manager) {
+Board::Board(int size) {
     for (int i = 0; i < size; ++i) {
         field.emplace_back();
         for (int j = 0; j < size; ++j) {
@@ -45,7 +45,13 @@ bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, ch
 bool Board::shoot(std::pair<char, int>& coords) {
     int row = coords.second - 1;
     int col = letters_to_values[coords.first] - 1;
-    Cell& cell = field[row][col];
+    Cell* cell_ptr = nullptr;
+    try {
+        cell_ptr = &(field.at(row).at(col));
+    } catch (std::out_of_range &e) {
+        return false;
+    }
+    Cell& cell = *cell_ptr;
 
     if (cell.segment) {
         cell.segment->hit();
@@ -56,12 +62,11 @@ bool Board::shoot(std::pair<char, int>& coords) {
             cell.display = '!';
             std::cout << coords.first << coords.second << ": Target hit.\n";
         }
-        return true;
     } else {
         cell.display = '*';
         std::cout << coords.first << coords.second << ": Miss.\n";
-        return false;
     }
+    return true;
 }
 
 bool Board::validate_positions(Ship& ship, std::vector<std::pair<char, int>>& coords) {

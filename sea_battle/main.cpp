@@ -14,7 +14,7 @@ int main() {
     }
 
     ShipManager manager(int(sizes.size()), sizes);
-    Board board(10, manager);
+    Board board(10);
     std::vector<Ship>& ships = manager.get_ships();
 
     for (auto& ship : ships) {
@@ -41,14 +41,14 @@ int main() {
         board.place_ship(ship, coords, toupper(orientation));
     }
 
-    std::pair<char, int> a {'A', 9};
+    std::pair<char, int> a {'A', 1};
     std::pair<char, int> b {'B', 1};
     std::pair<char, int> c {'C', 1};
     std::pair<char, int> z {'A', 8};
     std::pair<char, int> v {'A', 7};
     board.shoot(a);
     manager.update();
-//    board.shoot(a);
+    board.shoot(a);
     manager.update();
 //    board.shoot(z);
 //    manager.update();

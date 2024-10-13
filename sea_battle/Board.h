@@ -11,7 +11,7 @@
 
 class Board {
 public:
-    Board(int size, ShipManager& ship_manager);
+    Board(int size);
     Board(const Board& other);
     Board(Board&& other) noexcept ;
     Board& operator=(const Board& other);
