@@ -76,8 +76,17 @@ bool Board::validate_positions(Ship& ship, std::vector<std::pair<char, int>>& co
             { 1, -1}, { 1, 0}, { 1, 1}
     };
     for (auto& coord_pair: coords) {
-        int column = letters_to_values[coord_pair.first] - 1;
-        int row = coord_pair.second - 1;
+        if ((int)coord_pair.first > 90 or (int)coord_pair.first < 45 or coord_pair.second > 26
+                or coord_pair.second < 1) {
+            return false;
+        }
+
+        int column = letters_to_values[coord_pair.first] - 1; // [A:Z]
+        int row = coord_pair.second - 1; // [0:26]
+
+        if (row > field.size() - 1 or column > field.size() - 1){
+            return false;
+        }
 
         for (auto &dir: directions) {
             int temp_column = column + dir.second;

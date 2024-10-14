@@ -20,15 +20,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e893ddd-ab74-4f5d-b53c-2c477a23b2f3" name="Changes" comment="add shoot-validation">
-      <change afterPath="$PROJECT_DIR$/sea_battle/uml.dot" afterDir="false" />
+    <list default="true" id="5e893ddd-ab74-4f5d-b53c-2c477a23b2f3" name="Changes" comment="add uml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/Board.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/Board.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/sea_battle" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/sea_battle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +107,7 @@
       <workItem from="1727904736660" duration="6598000" />
       <workItem from="1727958920839" duration="19670000" />
       <workItem from="1728005155318" duration="325000" />
-      <workItem from="1728857860218" duration="4617000" />
+      <workItem from="1728857860218" duration="6137000" />
     </task>
     <task id="LOCAL-00001" summary="added_validation">
       <option name="closed" value="true" />
@@ -156,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728836252582</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add uml">
+      <option name="closed" value="true" />
+      <created>1728863400916</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728863400916</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +174,7 @@
     <MESSAGE value="added_main" />
     <MESSAGE value="refactor" />
     <MESSAGE value="add shoot-validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add shoot-validation" />
+    <MESSAGE value="add uml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add uml" />
   </component>
 </project>

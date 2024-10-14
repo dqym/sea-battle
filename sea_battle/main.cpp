@@ -38,7 +38,9 @@ int main() {
 
             coords.push_back(position);
         }
-        board.place_ship(ship, coords, toupper(orientation));
+        if (!board.place_ship(ship, coords, toupper(orientation))) {
+            std::cout << "Cannot place here.\n";
+        };
     }
 
     std::pair<char, int> a {'A', 1};
