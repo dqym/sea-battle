@@ -11,6 +11,11 @@
 
 class Board {
 public:
+    struct Cell {
+        Cell();
+        Segment* segment;
+        char display;
+    };
     Board(int size);
     Board(const Board& other);
     Board(Board&& other) noexcept ;
@@ -18,12 +23,8 @@ public:
     Board& operator=(Board&& other) noexcept ;
     bool place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, char orientation);
     bool shoot(std::pair<char, int>& coords);
-    void display() const;
-    struct Cell {
-        Cell();
-        Segment* segment;
-        char display;
-    };
+    int get_field_size();
+    const Cell& get_cell(int x, int y);
 private:
     std::map<char, int> letters_to_values {
             {'A', 1}, {'B', 2}, {'C', 3}, {'D', 4}, {'E', 5}, {'F', 6},

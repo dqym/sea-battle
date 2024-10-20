@@ -1,4 +1,4 @@
-#include "Ship.h"
+#include "../includes/Ship.h"
 
 Ship::Ship(int length) : length(length), segments(length), orientation(Ship::ship_orientation::Horizontal) {}
 

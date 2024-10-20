@@ -1,4 +1,4 @@
-#include "Segment.h"
+#include "../includes/Segment.h"
 
 Segment::Segment(): state(Segment::segment_state::Whole) {}
 

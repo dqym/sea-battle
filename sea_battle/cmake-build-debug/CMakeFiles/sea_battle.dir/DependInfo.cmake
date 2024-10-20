@@ -8,11 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/d/JetBrains/sea-battle/sea_battle/Board.cpp" "CMakeFiles/sea_battle.dir/Board.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/Board.cpp.o.d"
-  "/mnt/d/JetBrains/sea-battle/sea_battle/Segment.cpp" "CMakeFiles/sea_battle.dir/Segment.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/Segment.cpp.o.d"
-  "/mnt/d/JetBrains/sea-battle/sea_battle/Ship.cpp" "CMakeFiles/sea_battle.dir/Ship.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/Ship.cpp.o.d"
-  "/mnt/d/JetBrains/sea-battle/sea_battle/ShipManager.cpp" "CMakeFiles/sea_battle.dir/ShipManager.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/ShipManager.cpp.o.d"
-  "/mnt/d/JetBrains/sea-battle/sea_battle/main.cpp" "CMakeFiles/sea_battle.dir/main.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/main.cpp.o.d"
+  "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Board.cpp" "CMakeFiles/sea_battle.dir/sources/Board.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Board.cpp.o.d"
+  "/mnt/d/JetBrains/sea-battle/sea_battle/sources/DisplayerCLI.cpp" "CMakeFiles/sea_battle.dir/sources/DisplayerCLI.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/DisplayerCLI.cpp.o.d"
+  "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Enemy.cpp" "CMakeFiles/sea_battle.dir/sources/Enemy.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Enemy.cpp.o.d"
+  "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Segment.cpp" "CMakeFiles/sea_battle.dir/sources/Segment.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Segment.cpp.o.d"
+  "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Ship.cpp" "CMakeFiles/sea_battle.dir/sources/Ship.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Ship.cpp.o.d"
+  "/mnt/d/JetBrains/sea-battle/sea_battle/sources/ShipManager.cpp" "CMakeFiles/sea_battle.dir/sources/ShipManager.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/ShipManager.cpp.o.d"
+  "/mnt/d/JetBrains/sea-battle/sea_battle/sources/main.cpp" "CMakeFiles/sea_battle.dir/sources/main.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/main.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -1,4 +1,5 @@
-#include "Board.h"
+#include "../includes/Board.h"
+#include "../includes/DisplayerCLI.h"
 #include <sstream>
 
 int main() {
@@ -13,6 +14,7 @@ int main() {
         sizes.push_back(size);
     }
 
+    DisplayerCLI cli_displayer;
     ShipManager manager(int(sizes.size()), sizes);
     Board board(10);
     std::vector<Ship>& ships = manager.get_ships();
@@ -52,15 +54,15 @@ int main() {
     manager.update();
     board.shoot(a);
     manager.update();
-//    board.shoot(z);
-//    manager.update();
-//    board.shoot(z);
-//    manager.update();
-//    board.shoot(v);
-//    manager.update();
-//    board.shoot(v);
+    board.shoot(z);
     manager.update();
-    board.display();
+    board.shoot(z);
+    manager.update();
+    board.shoot(v);
+    manager.update();
+    board.shoot(v);
+    manager.update();
+    cli_displayer.display(board);
 
     return 0;
 }

@@ -82,31 +82,43 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/Board.cpp">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Board.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/Board.h">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/DisplayerCLI.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/Segment.cpp">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Enemy.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/Segment.h">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Segment.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/Ship.cpp">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Ship.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/Ship.h">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/ShipManager.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/ShipManager.cpp">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Board.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/ShipManager.h">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/DisplayerCLI.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/main.cpp">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Enemy.cpp">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Segment.cpp">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Ship.cpp">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/ShipManager.cpp">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/main.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/CMakeLists.txt">

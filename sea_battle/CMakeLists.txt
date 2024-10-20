@@ -3,12 +3,16 @@ project(sea_battle)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(sea_battle main.cpp
-        Board.cpp
-        Board.h
-        Ship.cpp
-        Ship.h
-        ShipManager.cpp
-        ShipManager.h
-        Segment.cpp
-        Segment.h)
+add_executable(sea_battle sources/main.cpp
+        sources/Board.cpp
+        includes/Board.h
+        sources/Ship.cpp
+        includes/Ship.h
+        sources/ShipManager.cpp
+        includes/ShipManager.h
+        sources/Segment.cpp
+        includes/Segment.h
+        sources/DisplayerCLI.cpp
+        includes/DisplayerCLI.h
+        sources/Enemy.cpp
+        includes/Enemy.h)
