@@ -91,6 +91,9 @@
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Enemy.h">
 			<Option target="sea_battle"/>
 		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/GameConfig.h">
+			<Option target="sea_battle"/>
+		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/GameSession.h">
 			<Option target="sea_battle"/>
 		</Unit>
@@ -116,6 +119,9 @@
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Enemy.cpp">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameConfig.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameSession.cpp">

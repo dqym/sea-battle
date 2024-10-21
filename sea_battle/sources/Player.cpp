@@ -38,7 +38,6 @@ bool Player::place_ships(Board& board, ShipManager& manager) {
 bool Player::make_shot(Board& enemy_board, ShipManager& enemy_manager) {
     char letter;
     int digit;
-    std::cout << "Enter the coordinates of the shot: ";
     std::cin >> letter >> digit;
     letter = toupper(letter);
 

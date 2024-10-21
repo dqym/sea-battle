@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Board.cpp" "CMakeFiles/sea_battle.dir/sources/Board.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Board.cpp.o.d"
   "/mnt/d/JetBrains/sea-battle/sea_battle/sources/DisplayerCLI.cpp" "CMakeFiles/sea_battle.dir/sources/DisplayerCLI.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/DisplayerCLI.cpp.o.d"
   "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Enemy.cpp" "CMakeFiles/sea_battle.dir/sources/Enemy.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Enemy.cpp.o.d"
+  "/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameConfig.cpp" "CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o.d"
   "/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameSession.cpp" "CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o.d"
   "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Player.cpp" "CMakeFiles/sea_battle.dir/sources/Player.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Player.cpp.o.d"
   "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Segment.cpp" "CMakeFiles/sea_battle.dir/sources/Segment.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Segment.cpp.o.d"

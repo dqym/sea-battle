@@ -1,21 +1,16 @@
 #include "../includes/GameSession.h"
 
+GameSession::GameSession(int field_size, int ships_count, const std::vector<int>& sizes)
+        : player_manager(ships_count, sizes),
+          enemy_manager(ships_count, sizes),
+          player_board(field_size),
+          enemy_board(field_size) {}
+
 void GameSession::start() {
-    read_data();
-
-    DisplayerCLI cli;
-    Player player;
-    Enemy enemy;
-    ShipManager player_manager(ships_count, sizes);
-    ShipManager enemy_manager(ships_count, sizes);
-    Board player_board(field_size);
-    Board enemy_board(field_size);
-
     player.place_ships(player_board, player_manager);
     if (!enemy.place_ships(enemy_board, enemy_manager)) {
         std::cout << "The enemy was unable to position the ships!\nTry entering other data.\n";
-        start(); //сомнительно но окей
-        return;
+        return;  //сомнительно но окей
     }
 
     std::cout << "\n";
@@ -37,29 +32,6 @@ void GameSession::start() {
     } else {
         std::cout << "\033[1;32m You win! \033[0m\n";
         return;
-    }
-}
-
-void GameSession::read_data() {
-    std::cout << "Enter field size: ";
-    bool field_size_is_correct = false;
-    while(!field_size_is_correct){
-        std::cin >> field_size;
-        if (field_size > 26 or field_size < 1) {
-            std::cout << "Field sizes should be in the range [1, 26]!\nTry again: ";
-        } else {
-            field_size_is_correct = true;
-        }
-    }
-
-    std::cout << "Enter ships count: ";
-    std::cin >> ships_count;
-
-    std::cout << "Enter the size of each ship separated by a space: ";
-    for (int i = 0; i < ships_count; ++i) {
-        int size;
-        std::cin >> size;
-        sizes.push_back(size);
     }
 }
 

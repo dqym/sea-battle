@@ -1,6 +1,6 @@
 #include "../includes/ShipManager.h"
 
-ShipManager::ShipManager(int count, std::vector<int> sizes): destroyed_ships(0) {
+ShipManager::ShipManager(int& count, const std::vector<int>& sizes): destroyed_ships(0) {
     for (int i = 0; i < count; ++i) {
         ships.emplace_back(sizes[i]);
     }

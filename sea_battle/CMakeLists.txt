@@ -20,4 +20,6 @@ add_executable(sea_battle sources/main.cpp
         sources/Player.cpp
         includes/Player.h
         sources/GameSession.cpp
-        includes/GameSession.h)
+        includes/GameSession.h
+        sources/GameConfig.cpp
+        includes/GameConfig.h)

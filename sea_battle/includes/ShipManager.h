@@ -8,7 +8,7 @@
 
 class ShipManager {
 public:
-    ShipManager(int count, std::vector<int> sizes);
+    ShipManager(int& count, const std::vector<int>& sizes);
     std::vector<Ship>& get_ships();
     void update();
     bool is_all_ships_destroyed();

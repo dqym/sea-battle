@@ -8,12 +8,16 @@
 
 class GameSession {
 public:
+    GameSession(int field_size, int ships_count, const std::vector<int>& sizes);
     void start();
-    void read_data();
 private:
-    int field_size;
-    int ships_count;
-    std::vector<int> sizes;
+    DisplayerCLI cli;
+    Player player;
+    Enemy enemy;
+    ShipManager player_manager;
+    ShipManager enemy_manager;
+    Board player_board;
+    Board enemy_board;
     bool execute_shot(TemplatePlayer& shooter, Board& board, ShipManager& manager);
 };
 
