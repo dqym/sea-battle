@@ -1,56 +1,79 @@
 #include "../includes/DisplayerCLI.h"
 
-void DisplayerCLI::display(Board& board, bool is_enemy) const {
-    int size = board.get_field_size();
-    char letters[] {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
-                    'L','M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
-                    'V', 'W', 'X','Y', 'Z'};
+void DisplayerCLI::display(Board& player_board, Board& enemy_board) {
+    int size = player_board.get_field_size();
 
+    int rw_counter = 1;
+    for (int i = 0; i < 2 * size + 1; ++i) {
+        if (i % 2 == 0) {
+            print_separating_row(size);
+            std::cout << "      ";
+            print_separating_row(size);
+            std::cout << "\n";
+        } else {
+            print_data_row(player_board, rw_counter, false);
+            std::cout << "      ";
+            print_data_row(enemy_board, rw_counter, true);
+            std::cout << "\n";
+            rw_counter++;
+        }
+    }
+
+    print_letters_row(size);
+    std::cout << "      ";
+    print_letters_row(size);
+    std::cout << "\n\n";
+
+}
+
+void DisplayerCLI::print_separating_row(int size) {
     std::cout << "    ";
     for (int j = 0; j < size; ++j) {
         std::cout << "+ — ";
     }
-    std::cout << "+\n";
+    std::cout << "+";
+}
 
-    for (int i = 0; i < size; ++i) {
-        std::cout << std::setw(2) << i + 1 << ". ";
+void DisplayerCLI::print_data_row(Board& board, int rw_counter, bool is_enemy) {
+    std::cout << std::setw(2) << rw_counter << ". ";
 
-        for (int j = 0; j < size; ++j) {
-            std::cout << "| ";
-            char cell_display;
-            if (is_enemy) {
-                cell_display = board.get_cell(i, j).public_display;
-            } else {
-                cell_display = board.get_cell(i, j).actual_display;
-            }
-            switch (cell_display) {
-                case 'S':
-                    std::cout << "\033[1;32m";
-                    break;
-                case '~':
-                    std::cout << "\033[1;34m";
-                    break;
-                case '!':
-                    std::cout << "\033[1;33m";
-                    break;
-                case 'X':
-                    std::cout << "\033[1;31m";
-                    break;
-            }
-            std::cout << cell_display << "\033[0m ";
+    for (int j = 0; j < board.get_field_size(); ++j) {
+        std::cout << "| ";
+        char cell_display;
+        if (is_enemy) {
+            cell_display = board.get_cell(rw_counter-1, j).public_display;
+        } else {
+            cell_display = board.get_cell(rw_counter-1, j).actual_display;
         }
-        std::cout << "|\n";
-
-        std::cout << "    ";
-        for (int j = 0; j < size; ++j) {
-            std::cout << "+ — ";
+        switch (cell_display) {
+            case 'S':
+                std::cout << "\033[1;32m";
+                break;
+            case '~':
+                std::cout << "\033[1;34m";
+                break;
+            case '!':
+                std::cout << "\033[1;33m";
+                break;
+            case 'X':
+                std::cout << "\033[1;31m";
+                break;
+            case '*':
+                std::cout << "\033[1;35m";
+                break;
         }
-        std::cout << "+\n";
+        std::cout << cell_display << "\033[0m ";
     }
+    std::cout << "|";
+}
 
+void DisplayerCLI::print_letters_row(int size) {
+    char letters[] {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+                    'L','M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+                    'V', 'W', 'X','Y', 'Z'};
     std::cout << "    ";
     for (int j = 0; j < size; ++j) {
         std::cout << "  " << letters[j] << " ";
     }
-    std::cout << '\n';
+    std::cout << " ";
 }

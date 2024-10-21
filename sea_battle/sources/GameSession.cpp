@@ -18,6 +18,7 @@ void GameSession::start() {
         return;
     }
 
+    std::cout << "\n";
     bool player_turn = true;
     while (!player_manager.is_all_ships_destroyed() and !enemy_manager.is_all_ships_destroyed()) {
         if (player_turn) {
@@ -27,8 +28,7 @@ void GameSession::start() {
             std::cout << "Enemy turn -> ";
             execute_shot(enemy, player_board, player_manager);
         }
-        cli.display(player_board);
-        cli.display(enemy_board);
+        cli.display(player_board, enemy_board);
         player_turn = !player_turn;
     }
     if (player_manager.is_all_ships_destroyed()) {
