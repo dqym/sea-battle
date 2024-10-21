@@ -5,7 +5,7 @@
 
 class DisplayerCLI {
 public:
-    void display(Board& board) const;
+    void display(Board& board, bool is_enemy=false) const;
 };
 
 

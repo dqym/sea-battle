@@ -28,7 +28,7 @@ Board& Board::operator=(Board&& other) noexcept {
     return *this;
 }
 
-Board::Cell::Cell(): display('~'), segment(nullptr) {}
+Board::Cell::Cell(): public_display('~'), actual_display('~'), segment(nullptr) {}
 
 bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, char orientation) {
     ship.set_orientation(orientation);
@@ -36,7 +36,7 @@ bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, ch
     for (int i = 0; i < coords.size(); ++i) {
         int row = coords[i].second - 1;
         int col = letters_to_values[coords[i].first] - 1;
-        field[row][col].display = 'S';
+        field[row][col].actual_display = 'S';
         field[row][col].segment = &ship.get_segments()[i];
     }
     return true;
@@ -53,17 +53,22 @@ bool Board::shoot(std::pair<char, int>& coords) {
     }
     Cell& cell = *cell_ptr;
 
+    //actual_display -- для отрисовки союзного поля
+    //public_display -- для отрисовки вражеского поля
     if (cell.segment) {
         cell.segment->hit();
         if (cell.segment->is_destroyed()) {
-            cell.display = 'X';
+            cell.actual_display = 'X';
+            cell.public_display = cell.actual_display;
             std::cout << coords.first << coords.second << ": Segment destroyed.\n";
         } else {
-            cell.display = '!';
+            cell.actual_display = '!';
+            cell.public_display = cell.actual_display;
             std::cout << coords.first << coords.second << ": Target hit.\n";
         }
     } else {
-        cell.display = '*';
+        cell.actual_display = '*';
+        cell.public_display = cell.actual_display;
         std::cout << coords.first << coords.second << ": Miss.\n";
     }
     return true;
@@ -76,7 +81,7 @@ bool Board::validate_positions(Ship& ship, std::vector<std::pair<char, int>>& co
             { 1, -1}, { 1, 0}, { 1, 1}
     };
     for (auto& coord_pair: coords) {
-        if ((int)coord_pair.first > 90 or (int)coord_pair.first < 45 or coord_pair.second > 26
+        if ((int)coord_pair.first > 90 or (int)coord_pair.first < 65 or coord_pair.second > 26
                 or coord_pair.second < 1) {
             return false;
         }
@@ -92,7 +97,7 @@ bool Board::validate_positions(Ship& ship, std::vector<std::pair<char, int>>& co
             int temp_column = column + dir.second;
             int temp_row = row + dir.first;
             if (temp_row >= 0 && temp_column >= 0 && temp_row < field.size() && temp_column < field.size()) {
-                if (field[temp_row][temp_column].display == 'S') {
+                if (field[temp_row][temp_column].actual_display == 'S') {
                     return false;
                 }
             }

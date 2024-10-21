@@ -14,7 +14,8 @@ public:
     struct Cell {
         Cell();
         Segment* segment;
-        char display;
+        char actual_display;
+        char public_display;
     };
     Board(int size);
     Board(const Board& other);

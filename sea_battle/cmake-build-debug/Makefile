@@ -201,6 +201,54 @@ sources/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Enemy.cpp.s
 .PHONY : sources/Enemy.cpp.s
 
+sources/GameSession.o: sources/GameSession.cpp.o
+.PHONY : sources/GameSession.o
+
+# target to build an object file
+sources/GameSession.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o
+.PHONY : sources/GameSession.cpp.o
+
+sources/GameSession.i: sources/GameSession.cpp.i
+.PHONY : sources/GameSession.i
+
+# target to preprocess a source file
+sources/GameSession.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameSession.cpp.i
+.PHONY : sources/GameSession.cpp.i
+
+sources/GameSession.s: sources/GameSession.cpp.s
+.PHONY : sources/GameSession.s
+
+# target to generate assembly for a file
+sources/GameSession.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameSession.cpp.s
+.PHONY : sources/GameSession.cpp.s
+
+sources/Player.o: sources/Player.cpp.o
+.PHONY : sources/Player.o
+
+# target to build an object file
+sources/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Player.cpp.o
+.PHONY : sources/Player.cpp.o
+
+sources/Player.i: sources/Player.cpp.i
+.PHONY : sources/Player.i
+
+# target to preprocess a source file
+sources/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Player.cpp.i
+.PHONY : sources/Player.cpp.i
+
+sources/Player.s: sources/Player.cpp.s
+.PHONY : sources/Player.s
+
+# target to generate assembly for a file
+sources/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Player.cpp.s
+.PHONY : sources/Player.cpp.s
+
 sources/Segment.o: sources/Segment.cpp.o
 .PHONY : sources/Segment.o
 
@@ -315,6 +363,12 @@ help:
 	@echo "... sources/Enemy.o"
 	@echo "... sources/Enemy.i"
 	@echo "... sources/Enemy.s"
+	@echo "... sources/GameSession.o"
+	@echo "... sources/GameSession.i"
+	@echo "... sources/GameSession.s"
+	@echo "... sources/Player.o"
+	@echo "... sources/Player.i"
+	@echo "... sources/Player.s"
 	@echo "... sources/Segment.o"
 	@echo "... sources/Segment.i"
 	@echo "... sources/Segment.s"
