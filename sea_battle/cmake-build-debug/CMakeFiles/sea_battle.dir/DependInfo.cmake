@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities.cpp" "CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o.d"
   "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Board.cpp" "CMakeFiles/sea_battle.dir/sources/Board.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Board.cpp.o.d"
   "/mnt/d/JetBrains/sea-battle/sea_battle/sources/DisplayerCLI.cpp" "CMakeFiles/sea_battle.dir/sources/DisplayerCLI.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/DisplayerCLI.cpp.o.d"
   "/mnt/d/JetBrains/sea-battle/sea_battle/sources/Enemy.cpp" "CMakeFiles/sea_battle.dir/sources/Enemy.cpp.o" "gcc" "CMakeFiles/sea_battle.dir/sources/Enemy.cpp.o.d"

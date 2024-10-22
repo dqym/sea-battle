@@ -49,6 +49,7 @@ bool Board::shoot(std::pair<char, int>& coords) {
     try {
         cell_ptr = &(field.at(row).at(col));
     } catch (std::out_of_range &e) {
+        std::cout << coords.first << coords.second << ": Miss(out of bounds).\n";
         return false;
     }
     Cell& cell = *cell_ptr;
@@ -70,6 +71,7 @@ bool Board::shoot(std::pair<char, int>& coords) {
         cell.actual_display = '*';
         cell.public_display = cell.actual_display;
         std::cout << coords.first << coords.second << ": Miss.\n";
+        return false;
     }
     return true;
 }

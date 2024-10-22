@@ -129,6 +129,30 @@ sea_battle/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/build
 .PHONY : sea_battle/fast
 
+sources/Abilities.o: sources/Abilities.cpp.o
+.PHONY : sources/Abilities.o
+
+# target to build an object file
+sources/Abilities.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o
+.PHONY : sources/Abilities.cpp.o
+
+sources/Abilities.i: sources/Abilities.cpp.i
+.PHONY : sources/Abilities.i
+
+# target to preprocess a source file
+sources/Abilities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities.cpp.i
+.PHONY : sources/Abilities.cpp.i
+
+sources/Abilities.s: sources/Abilities.cpp.s
+.PHONY : sources/Abilities.s
+
+# target to generate assembly for a file
+sources/Abilities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities.cpp.s
+.PHONY : sources/Abilities.cpp.s
+
 sources/Board.o: sources/Board.cpp.o
 .PHONY : sources/Board.o
 
@@ -378,6 +402,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... sea_battle"
+	@echo "... sources/Abilities.o"
+	@echo "... sources/Abilities.i"
+	@echo "... sources/Abilities.s"
 	@echo "... sources/Board.o"
 	@echo "... sources/Board.i"
 	@echo "... sources/Board.s"

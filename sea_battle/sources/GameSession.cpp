@@ -7,6 +7,7 @@ GameSession::GameSession(int field_size, int ships_count, const std::vector<int>
           enemy_board(field_size) {}
 
 void GameSession::start() {
+    cli.display(player_board, enemy_board);
     player.place_ships(player_board, player_manager);
     if (!enemy.place_ships(enemy_board, enemy_manager)) {
         std::cout << "The enemy was unable to position the ships!\nTry entering other data.\n";
@@ -35,6 +36,6 @@ void GameSession::start() {
     }
 }
 
-bool GameSession::execute_shot(TemplatePlayer& shooter, Board& board, ShipManager& manager) {
+bool GameSession::execute_shot(AbstractPlayer& shooter, Board& board, ShipManager& manager) {
     return shooter.make_shot(board, manager);
 }

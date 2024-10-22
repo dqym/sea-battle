@@ -1,7 +1,7 @@
 #ifndef SEA_BATTLE_GAMESESSION_H
 #define SEA_BATTLE_GAMESESSION_H
 
-#include "TemplatePlayer.h"
+#include "AbstractPlayer.h"
 #include "Player.h"
 #include "Enemy.h"
 #include "DisplayerCLI.h"
@@ -18,7 +18,7 @@ private:
     ShipManager enemy_manager;
     Board player_board;
     Board enemy_board;
-    bool execute_shot(TemplatePlayer& shooter, Board& board, ShipManager& manager);
+    bool execute_shot(AbstractPlayer& shooter, Board& board, ShipManager& manager);
 };
 
 

@@ -1,10 +1,10 @@
 #ifndef SEA_BATTLE_ENEMY_H
 #define SEA_BATTLE_ENEMY_H
 
-#include "TemplatePlayer.h"
+#include "AbstractPlayer.h"
 #include <random>
 
-class Enemy: public TemplatePlayer{
+class Enemy: public AbstractPlayer{
 public:
     bool place_ships(Board& board, ShipManager& manager) override;
     bool make_shot(Board& player_board, ShipManager& player_manager) override;

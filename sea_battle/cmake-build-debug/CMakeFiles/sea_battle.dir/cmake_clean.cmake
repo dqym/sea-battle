@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o"
+  "CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/Board.cpp.o"
   "CMakeFiles/sea_battle.dir/sources/Board.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/DisplayerCLI.cpp.o"

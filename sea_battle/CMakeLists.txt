@@ -16,10 +16,12 @@ add_executable(sea_battle sources/main.cpp
         includes/DisplayerCLI.h
         sources/Enemy.cpp
         includes/Enemy.h
-        includes/TemplatePlayer.h
+        includes/AbstractPlayer.h
         sources/Player.cpp
         includes/Player.h
         sources/GameSession.cpp
         includes/GameSession.h
         sources/GameConfig.cpp
-        includes/GameConfig.h)
+        includes/GameConfig.h
+        includes/Abilities.h
+        sources/Abilities.cpp)

@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Abilities.h">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/AbstractPlayer.h">
+			<Option target="sea_battle"/>
+		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Board.h">
 			<Option target="sea_battle"/>
 		</Unit>
@@ -109,7 +115,7 @@
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/ShipManager.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/TemplatePlayer.h">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Board.cpp">
