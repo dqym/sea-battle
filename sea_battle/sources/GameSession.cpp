@@ -11,12 +11,12 @@ void GameSession::start() {
         return;  //сомнительно но окей
     }
 
-    ScannerAbility skill(enemy); // TODO DELETE
+    AbilitiesManager abilities(enemy); // TODO DELETE
 
     std::cout << "\n";
     bool player_turn = true;
     while (!player.is_lose() and !enemy.is_lose()) {
-        skill.use();
+        abilities.use_ability();
         if (player_turn) {
             cli.message("Your turn -> ");
             execute_shot(player, enemy);

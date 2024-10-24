@@ -153,6 +153,30 @@ sources/Abilities.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities.cpp.s
 .PHONY : sources/Abilities.cpp.s
 
+sources/AbilitiesManager.o: sources/AbilitiesManager.cpp.o
+.PHONY : sources/AbilitiesManager.o
+
+# target to build an object file
+sources/AbilitiesManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o
+.PHONY : sources/AbilitiesManager.cpp.o
+
+sources/AbilitiesManager.i: sources/AbilitiesManager.cpp.i
+.PHONY : sources/AbilitiesManager.i
+
+# target to preprocess a source file
+sources/AbilitiesManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.i
+.PHONY : sources/AbilitiesManager.cpp.i
+
+sources/AbilitiesManager.s: sources/AbilitiesManager.cpp.s
+.PHONY : sources/AbilitiesManager.s
+
+# target to generate assembly for a file
+sources/AbilitiesManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.s
+.PHONY : sources/AbilitiesManager.cpp.s
+
 sources/AbstractPlayer.o: sources/AbstractPlayer.cpp.o
 .PHONY : sources/AbstractPlayer.o
 
@@ -429,6 +453,9 @@ help:
 	@echo "... sources/Abilities.o"
 	@echo "... sources/Abilities.i"
 	@echo "... sources/Abilities.s"
+	@echo "... sources/AbilitiesManager.o"
+	@echo "... sources/AbilitiesManager.i"
+	@echo "... sources/AbilitiesManager.s"
 	@echo "... sources/AbstractPlayer.o"
 	@echo "... sources/AbstractPlayer.i"
 	@echo "... sources/AbstractPlayer.s"

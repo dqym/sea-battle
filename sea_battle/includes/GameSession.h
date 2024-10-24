@@ -5,7 +5,7 @@
 #include "Player.h"
 #include "Enemy.h"
 #include "DispatcherCLI.h"
-#include "Abilities.h"
+#include "AbilitiesManager.h"
 
 class GameSession {
 public:

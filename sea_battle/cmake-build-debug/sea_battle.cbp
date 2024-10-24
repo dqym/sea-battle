@@ -85,6 +85,9 @@
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Abilities.h">
 			<Option target="sea_battle"/>
 		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/AbilitiesManager.h">
+			<Option target="sea_battle"/>
+		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/AbstractPlayer.h">
 			<Option target="sea_battle"/>
 		</Unit>
@@ -116,6 +119,9 @@
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities.cpp">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/AbilitiesManager.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/AbstractPlayer.cpp">
