@@ -1,11 +1,18 @@
-#ifndef SEA_BATTLE_DISPLAYERCLI_H
-#define SEA_BATTLE_DISPLAYERCLI_H
+#ifndef SEA_BATTLE_DISPATCHERCLI_H
+#define SEA_BATTLE_DISPATCHERCLI_H
 
 #include "Board.h"
 
-class DisplayerCLI {
+class DispatcherCLI {
 public:
     void display(Board& player_board, Board& enemy_board);
+    std::pair<char, int> read_coordinate();
+
+    template<class... Args>
+    void message(Args... text){
+        (std::cout << ... << text);
+    }
+
 private:
     void print_separating_row(int size);
     void print_data_row(Board& board, int rw_counter, bool is_enemy);

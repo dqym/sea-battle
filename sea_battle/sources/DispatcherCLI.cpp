@@ -1,6 +1,6 @@
-#include "../includes/DisplayerCLI.h"
+#include "../includes/DispatcherCLI.h"
 
-void DisplayerCLI::display(Board& player_board, Board& enemy_board) {
+void DispatcherCLI::display(Board& player_board, Board& enemy_board) {
     int size = player_board.get_field_size();
 
     int rw_counter = 1;
@@ -26,7 +26,17 @@ void DisplayerCLI::display(Board& player_board, Board& enemy_board) {
 
 }
 
-void DisplayerCLI::print_separating_row(int size) {
+std::pair<char, int> DispatcherCLI::read_coordinate() {
+    char letter;
+    int digit;
+    std::cin >> letter >> digit;
+    letter = toupper(letter);
+
+    std::pair coordinate(letter, digit);
+    return coordinate;
+}
+
+void DispatcherCLI::print_separating_row(int size) {
     std::cout << "    ";
     for (int j = 0; j < size; ++j) {
         std::cout << "+ — ";
@@ -34,7 +44,7 @@ void DisplayerCLI::print_separating_row(int size) {
     std::cout << "+";
 }
 
-void DisplayerCLI::print_data_row(Board& board, int rw_counter, bool is_enemy) {
+void DispatcherCLI::print_data_row(Board& board, int rw_counter, bool is_enemy) {
     std::cout << std::setw(2) << rw_counter << ". ";
 
     for (int j = 0; j < board.get_field_size(); ++j) {
@@ -67,7 +77,7 @@ void DisplayerCLI::print_data_row(Board& board, int rw_counter, bool is_enemy) {
     std::cout << "|";
 }
 
-void DisplayerCLI::print_letters_row(int size) {
+void DispatcherCLI::print_letters_row(int size) {
     char letters[] {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
                     'L','M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
                     'V', 'W', 'X','Y', 'Z'};

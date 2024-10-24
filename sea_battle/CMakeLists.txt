@@ -12,8 +12,8 @@ add_executable(sea_battle sources/main.cpp
         includes/ShipManager.h
         sources/Segment.cpp
         includes/Segment.h
-        sources/DisplayerCLI.cpp
-        includes/DisplayerCLI.h
+        sources/DispatcherCLI.cpp
+        includes/DispatcherCLI.h
         sources/Enemy.cpp
         includes/Enemy.h
         includes/AbstractPlayer.h
@@ -24,4 +24,5 @@ add_executable(sea_battle sources/main.cpp
         sources/GameConfig.cpp
         includes/GameConfig.h
         includes/Abilities.h
-        sources/Abilities.cpp)
+        sources/Abilities.cpp
+        sources/AbstractPlayer.cpp)

@@ -6,9 +6,11 @@
 
 class Enemy: public AbstractPlayer{
 public:
-    bool place_ships(Board& board, ShipManager& manager) override;
+    Enemy(int field_size, int ships_count, const std::vector<int>& sizes);
+    bool place_ships() override;
     bool make_shot(Board& player_board, ShipManager& player_manager) override;
 private:
+    DispatcherCLI cli;
     std::uniform_int_distribution<> orient_range;
     std::uniform_int_distribution<> letter_range;
     std::uniform_int_distribution<> digit_range;

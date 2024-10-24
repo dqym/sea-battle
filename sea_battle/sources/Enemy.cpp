@@ -1,6 +1,9 @@
 #include "../includes/Enemy.h"
 
-bool Enemy::place_ships(Board& board, ShipManager& manager) {
+Enemy::Enemy(int field_size, int ships_count, const std::vector<int>& sizes)
+    : AbstractPlayer(field_size, ships_count, sizes) {}
+
+bool Enemy::place_ships() {
     char orientations[] {'H', 'V'};
     std::random_device rd;   // non-deterministic generator
     std::mt19937 gen(rd());  // to seed mersenne twister.

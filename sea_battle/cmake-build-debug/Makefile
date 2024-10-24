@@ -153,6 +153,30 @@ sources/Abilities.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities.cpp.s
 .PHONY : sources/Abilities.cpp.s
 
+sources/AbstractPlayer.o: sources/AbstractPlayer.cpp.o
+.PHONY : sources/AbstractPlayer.o
+
+# target to build an object file
+sources/AbstractPlayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o
+.PHONY : sources/AbstractPlayer.cpp.o
+
+sources/AbstractPlayer.i: sources/AbstractPlayer.cpp.i
+.PHONY : sources/AbstractPlayer.i
+
+# target to preprocess a source file
+sources/AbstractPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.i
+.PHONY : sources/AbstractPlayer.cpp.i
+
+sources/AbstractPlayer.s: sources/AbstractPlayer.cpp.s
+.PHONY : sources/AbstractPlayer.s
+
+# target to generate assembly for a file
+sources/AbstractPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.s
+.PHONY : sources/AbstractPlayer.cpp.s
+
 sources/Board.o: sources/Board.cpp.o
 .PHONY : sources/Board.o
 
@@ -177,29 +201,29 @@ sources/Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Board.cpp.s
 .PHONY : sources/Board.cpp.s
 
-sources/DisplayerCLI.o: sources/DisplayerCLI.cpp.o
-.PHONY : sources/DisplayerCLI.o
+sources/DispatcherCLI.o: sources/DispatcherCLI.cpp.o
+.PHONY : sources/DispatcherCLI.o
 
 # target to build an object file
-sources/DisplayerCLI.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/DisplayerCLI.cpp.o
-.PHONY : sources/DisplayerCLI.cpp.o
+sources/DispatcherCLI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.o
+.PHONY : sources/DispatcherCLI.cpp.o
 
-sources/DisplayerCLI.i: sources/DisplayerCLI.cpp.i
-.PHONY : sources/DisplayerCLI.i
+sources/DispatcherCLI.i: sources/DispatcherCLI.cpp.i
+.PHONY : sources/DispatcherCLI.i
 
 # target to preprocess a source file
-sources/DisplayerCLI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/DisplayerCLI.cpp.i
-.PHONY : sources/DisplayerCLI.cpp.i
+sources/DispatcherCLI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.i
+.PHONY : sources/DispatcherCLI.cpp.i
 
-sources/DisplayerCLI.s: sources/DisplayerCLI.cpp.s
-.PHONY : sources/DisplayerCLI.s
+sources/DispatcherCLI.s: sources/DispatcherCLI.cpp.s
+.PHONY : sources/DispatcherCLI.s
 
 # target to generate assembly for a file
-sources/DisplayerCLI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/DisplayerCLI.cpp.s
-.PHONY : sources/DisplayerCLI.cpp.s
+sources/DispatcherCLI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.s
+.PHONY : sources/DispatcherCLI.cpp.s
 
 sources/Enemy.o: sources/Enemy.cpp.o
 .PHONY : sources/Enemy.o
@@ -405,12 +429,15 @@ help:
 	@echo "... sources/Abilities.o"
 	@echo "... sources/Abilities.i"
 	@echo "... sources/Abilities.s"
+	@echo "... sources/AbstractPlayer.o"
+	@echo "... sources/AbstractPlayer.i"
+	@echo "... sources/AbstractPlayer.s"
 	@echo "... sources/Board.o"
 	@echo "... sources/Board.i"
 	@echo "... sources/Board.s"
-	@echo "... sources/DisplayerCLI.o"
-	@echo "... sources/DisplayerCLI.i"
-	@echo "... sources/DisplayerCLI.s"
+	@echo "... sources/DispatcherCLI.o"
+	@echo "... sources/DispatcherCLI.i"
+	@echo "... sources/DispatcherCLI.s"
 	@echo "... sources/Enemy.o"
 	@echo "... sources/Enemy.i"
 	@echo "... sources/Enemy.s"

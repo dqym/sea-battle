@@ -4,21 +4,18 @@
 #include "AbstractPlayer.h"
 #include "Player.h"
 #include "Enemy.h"
-#include "DisplayerCLI.h"
+#include "DispatcherCLI.h"
+#include "Abilities.h"
 
 class GameSession {
 public:
     GameSession(int field_size, int ships_count, const std::vector<int>& sizes);
     void start();
 private:
-    DisplayerCLI cli;
+    DispatcherCLI cli;
     Player player;
     Enemy enemy;
-    ShipManager player_manager;
-    ShipManager enemy_manager;
-    Board player_board;
-    Board enemy_board;
-    bool execute_shot(AbstractPlayer& shooter, Board& board, ShipManager& manager);
+    bool execute_shot(AbstractPlayer& shooter, AbstractPlayer& target);
 };
 
 

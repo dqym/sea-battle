@@ -23,7 +23,8 @@ public:
     Board& operator=(const Board& other);
     Board& operator=(Board&& other) noexcept ;
     bool place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, char orientation);
-    bool shoot(std::pair<char, int>& coords);
+    bool have_ship(std::pair<char, int> coords);
+    bool shoot(std::pair<char, int>& coords, bool silent=false);
     int get_field_size();
     const Cell& get_cell(int x, int y);
 private:

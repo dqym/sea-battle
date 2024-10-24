@@ -42,14 +42,29 @@ bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, ch
     return true;
 }
 
-bool Board::shoot(std::pair<char, int>& coords) {
+bool Board::have_ship(std::pair<char, int> coords) {
+    try {
+        int column = letters_to_values[coords.first] - 1;
+        int row = coords.second - 1;
+        if (field[row][column].segment) {
+            return true;
+        }
+        return false;
+    } catch (std::exception &e) {
+        return false;
+    }
+}
+
+bool Board::shoot(std::pair<char, int>& coords, bool silent) {
     int row = coords.second - 1;
     int col = letters_to_values[coords.first] - 1;
     Cell* cell_ptr = nullptr;
     try {
         cell_ptr = &(field.at(row).at(col));
     } catch (std::out_of_range &e) {
-        std::cout << coords.first << coords.second << ": Miss(out of bounds).\n";
+        if (!silent) {
+            std::cout << coords.first << coords.second << ": Miss(out of bounds).\n";
+        }
         return false;
     }
     Cell& cell = *cell_ptr;
@@ -58,19 +73,23 @@ bool Board::shoot(std::pair<char, int>& coords) {
     //public_display -- для отрисовки вражеского поля
     if (cell.segment) {
         cell.segment->hit();
-        if (cell.segment->is_destroyed()) {
-            cell.actual_display = 'X';
-            cell.public_display = cell.actual_display;
-            std::cout << coords.first << coords.second << ": Segment destroyed.\n";
-        } else {
-            cell.actual_display = '!';
-            cell.public_display = cell.actual_display;
-            std::cout << coords.first << coords.second << ": Target hit.\n";
+        if (!silent) {
+            if (cell.segment->is_destroyed()) {
+                cell.actual_display = 'X';
+                cell.public_display = cell.actual_display;
+                std::cout << coords.first << coords.second << ": Segment destroyed.\n";
+            } else {
+                cell.actual_display = '!';
+                cell.public_display = cell.actual_display;
+                std::cout << coords.first << coords.second << ": Target hit.\n";
+            }
         }
     } else {
-        cell.actual_display = '*';
-        cell.public_display = cell.actual_display;
-        std::cout << coords.first << coords.second << ": Miss.\n";
+        if (!silent) {
+            cell.actual_display = '*';
+            cell.public_display = cell.actual_display;
+            std::cout << coords.first << coords.second << ": Miss.\n";
+        }
         return false;
     }
     return true;

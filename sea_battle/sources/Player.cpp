@@ -1,13 +1,16 @@
 #include "../includes/Player.h"
 
-bool Player::place_ships(Board& board, ShipManager& manager) {
+Player::Player(int field_size, int ships_count, const std::vector<int> &sizes)
+    : AbstractPlayer(field_size, ships_count, sizes) {}
+
+bool Player::place_ships() {
     std::vector<Ship>& ships = manager.get_ships();
 
     for (auto& ship : ships) {
         bool placed = false;
         while (!placed) {
             std::vector<std::pair<char, int>> coords;
-            std::cout << "Enter orientation and coordinates for a ship of length " << ship.get_length() << ": ";
+            cli.message("Enter orientation and coordinates for a ship of length ", ship.get_length(), ": ");
 
             std::string input;
             std::getline(std::cin >> std::ws, input);
@@ -36,12 +39,7 @@ bool Player::place_ships(Board& board, ShipManager& manager) {
 }
 
 bool Player::make_shot(Board& enemy_board, ShipManager& enemy_manager) {
-    char letter;
-    int digit;
-    std::cin >> letter >> digit;
-    letter = toupper(letter);
-
-    std::pair coordinate(letter, digit);
+    std::pair<char, int> coordinate = cli.read_coordinate();
     bool result = enemy_board.shoot(coordinate);
     enemy_manager.update();
     return result;
