@@ -7,7 +7,8 @@
 #include <map>
 #include <set>
 #include <algorithm>
-#include "ShipManager.h"
+#include "Ship.h"
+#include "Exceptions.h"
 
 class Board {
 public:
@@ -36,7 +37,7 @@ private:
             {'Y', 25}, {'Z', 26}
     };
     std::vector<std::vector<Cell>> field;
-    bool validate_positions(Ship& ship, std::vector<std::pair<char, int>>& coords);
+    void validate_positions(Ship& ship, std::vector<std::pair<char, int>>& coords);
 };
 
 #endif

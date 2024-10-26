@@ -11,13 +11,14 @@ class AbstractPlayer {
 public:
     AbstractPlayer(int field_size, int ships_count, const std::vector<int>& sizes);
     virtual bool place_ships() = 0;
-    virtual bool make_shot(Board& opponent_board) = 0;
+    virtual bool make_shot(AbstractPlayer& opponent) = 0;
+    virtual bool update();
     virtual Board& get_board();
     virtual ShipManager& get_ship_manager();
     virtual bool is_lose();
 protected:
     Board board;
-    ShipManager manager;
+    ShipManager ship_manager;
 };
 
 

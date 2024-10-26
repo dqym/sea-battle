@@ -1,6 +1,7 @@
 #ifndef SEA_BATTLE_DISPATCHERCLI_H
 #define SEA_BATTLE_DISPATCHERCLI_H
 
+#include "iostream"
 #include "Board.h"
 
 class DispatcherCLI {

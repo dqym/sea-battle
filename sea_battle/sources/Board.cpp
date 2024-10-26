@@ -32,7 +32,12 @@ Board::Cell::Cell(): public_display('~'), actual_display('~'), segment(nullptr) 
 
 bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, char orientation) {
     ship.set_orientation(orientation);
-    if (!validate_positions(ship, coords)) {return false;}
+    try {
+        validate_positions(ship, coords);
+    } catch (GameException& exception) {
+        std::cout << exception.what();
+        return false;
+    }
     for (int i = 0; i < coords.size(); ++i) {
         int row = coords[i].second - 1;
         int col = letters_to_values[coords[i].first] - 1;
@@ -63,7 +68,7 @@ bool Board::shoot(std::pair<char, int>& coords, bool silent) {
         cell_ptr = &(field.at(row).at(col));
     } catch (std::out_of_range &e) {
         if (!silent) {
-            std::cout << coords.first << coords.second << ": Miss(out of bounds).\n";
+            std::cout << OutOfBoundsAttackException().what();
         }
         return false;
     }
@@ -95,7 +100,7 @@ bool Board::shoot(std::pair<char, int>& coords, bool silent) {
     return true;
 }
 
-bool Board::validate_positions(Ship& ship, std::vector<std::pair<char, int>>& coords) {
+void Board::validate_positions(Ship& ship, std::vector<std::pair<char, int>>& coords) {
     std::vector<std::pair<int, int>> directions = {
             {-1, -1}, {-1, 0}, {-1, 1},
             { 0, -1}, { 0, 0}, { 0, 1},
@@ -104,14 +109,14 @@ bool Board::validate_positions(Ship& ship, std::vector<std::pair<char, int>>& co
     for (auto& coord_pair: coords) {
         if ((int)coord_pair.first > 90 or (int)coord_pair.first < 65 or coord_pair.second > 26
                 or coord_pair.second < 1) {
-            return false;
+            throw ShipPlacementException();
         }
 
         int column = letters_to_values[coord_pair.first] - 1; // [A:Z]
         int row = coord_pair.second - 1; // [0:26]
 
         if (row > field.size() - 1 or column > field.size() - 1){
-            return false;
+            throw ShipPlacementException();
         }
 
         for (auto &dir: directions) {
@@ -119,7 +124,7 @@ bool Board::validate_positions(Ship& ship, std::vector<std::pair<char, int>>& co
             int temp_row = row + dir.first;
             if (temp_row >= 0 && temp_column >= 0 && temp_row < field.size() && temp_column < field.size()) {
                 if (field[temp_row][temp_column].actual_display == 'S') {
-                    return false;
+                    throw ShipPlacementException();
                 }
             }
         }
@@ -137,18 +142,17 @@ bool Board::validate_positions(Ship& ship, std::vector<std::pair<char, int>>& co
         int min = *std::min_element(digits.begin(), digits.end());
         int max = *std::max_element(digits.begin(), digits.end());
 
-        if (unique_letters.size() != 1) {return false;}
-        if (max - min != digits.size() - 1) {return false;}
-        if (unique_digits.size() != digits.size()) {return false;}
+        if (unique_letters.size() != 1) {throw WrongShipCoordinatesException();}
+        if (max - min != digits.size() - 1) {throw WrongShipCoordinatesException();}
+        if (unique_digits.size() != digits.size()) {throw WrongShipCoordinatesException();}
     } else {
         int min = *std::min_element(letters.begin(), letters.end());
         int max = *std::max_element(letters.begin(), letters.end());
 
-        if (unique_digits.size() != 1) {return false;}
-        if (max - min != letters.size() - 1) {return false;}
-        if (unique_letters.size() != letters.size()) {return false;}
+        if (unique_digits.size() != 1) {throw WrongShipCoordinatesException();}
+        if (max - min != letters.size() - 1) {throw WrongShipCoordinatesException();}
+        if (unique_letters.size() != letters.size()) {throw WrongShipCoordinatesException();}
     }
-    return true;
 }
 
 int Board::get_field_size() {

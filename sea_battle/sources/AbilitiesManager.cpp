@@ -1,8 +1,6 @@
 #include "../includes/AbilitiesManager.h"
 
-AbilitiesManager::AbilitiesManager(AbstractPlayer& player1): player(player1) {
-    add_ability();
-}
+AbilitiesManager::AbilitiesManager(AbstractPlayer& enemy_ref): enemy(enemy_ref) {}
 
 void AbilitiesManager::add_ability() {
     std::random_device rd;
@@ -12,20 +10,26 @@ void AbilitiesManager::add_ability() {
 
     switch (result) {
         case 0:
-            abilities.emplace(std::make_unique<DoubleDamageAbility>(player.get_board()));
+            abilities.emplace(std::make_unique<DoubleDamageAbility>(enemy.get_board()));
             break;
         case 1:
-            abilities.emplace(std::make_unique<ScannerAbility>(player.get_board()));
+            abilities.emplace(std::make_unique<ScannerAbility>(enemy.get_board()));
             break;
         case 2:
-            abilities.emplace(std::make_unique<ShellingAbility>(player.get_board()));
+            abilities.emplace(std::make_unique<ShellingAbility>(enemy.get_board()));
             break;
     }
 }
 
 void AbilitiesManager::use_ability() {
-    if (!abilities.empty()) {
-        abilities.front()->use();
-        abilities.pop();
+    try {
+        if (!abilities.empty()) {
+            abilities.front()->use();
+            abilities.pop();
+        } else {
+            throw AbilityUnavailableException();
+        }
+    } catch (GameException& exception) {
+        cli.message(exception.what());
     }
 }

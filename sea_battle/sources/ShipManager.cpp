@@ -10,7 +10,7 @@ std::vector<Ship>& ShipManager::get_ships() {
     return ships;
 }
 
-void ShipManager::update() {
+bool ShipManager::check_ships() {
     auto it = ships.begin();
     int temp_destroyed_ships_counter = 0;
     while (it != ships.end()) {
@@ -19,10 +19,12 @@ void ShipManager::update() {
             if (temp_destroyed_ships_counter > destroyed_ships) {
                 destroyed_ships = temp_destroyed_ships_counter;
                 std::cout << "Ship destroyed.\n";
+                return true;
             }
         }
         ++it;
     }
+    return false;
 }
 
 bool ShipManager::is_all_ships_destroyed() {

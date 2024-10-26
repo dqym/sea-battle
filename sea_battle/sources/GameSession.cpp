@@ -1,7 +1,7 @@
 #include "../includes/GameSession.h"
 
 GameSession::GameSession(int field_size, int ships_count, const std::vector<int>& sizes)
-    : player(field_size, ships_count, sizes), enemy(field_size, ships_count, sizes) {}
+    : player(field_size, ships_count, sizes), enemy(field_size, ships_count, sizes), abilities_manager(enemy) {}
 
 void GameSession::start() {
     cli.display(player.get_board(), enemy.get_board());
@@ -11,18 +11,20 @@ void GameSession::start() {
         return;  //сомнительно но окей
     }
 
-    AbilitiesManager abilities(enemy); // TODO DELETE
-
     std::cout << "\n";
     bool player_turn = true;
     while (!player.is_lose() and !enemy.is_lose()) {
-        abilities.use_ability();
+        //abilities_manager.use_ability();
         if (player_turn) {
             cli.message("Your turn -> ");
             execute_shot(player, enemy);
+            if (enemy.update()) {
+                abilities_manager.add_ability();
+            }
         } else {
             std::cout << "Enemy turn -> ";
             execute_shot(enemy, player);
+            player.update();
         }
         cli.display(player.get_board(), enemy.get_board());
         player_turn = !player_turn;
@@ -37,5 +39,5 @@ void GameSession::start() {
 }
 
 bool GameSession::execute_shot(AbstractPlayer& shooter, AbstractPlayer& target) {
-    return shooter.make_shot(target.get_board());
+    return shooter.make_shot(target);
 }

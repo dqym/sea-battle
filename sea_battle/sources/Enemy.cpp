@@ -10,7 +10,7 @@ bool Enemy::place_ships() {
     orient_range = std::uniform_int_distribution<> (0,1);
     letter_range = std::uniform_int_distribution<> (65,64 + board.get_field_size());
     digit_range = std::uniform_int_distribution<> (1,board.get_field_size());
-    std::vector<Ship>& ships = manager.get_ships();
+    std::vector<Ship>& ships = ship_manager.get_ships();
 
     for (auto& ship : ships) {
         bool placed = false;
@@ -41,13 +41,13 @@ bool Enemy::place_ships() {
     return true;
 }
 
-bool Enemy::make_shot(Board& player_board) {
+bool Enemy::make_shot(AbstractPlayer& opponent) {
     std::random_device rd;
     std::mt19937 gen(rd());
     char letter = (char)letter_range(gen);
     int digit = digit_range(gen);
 
     std::pair coordinate(letter, digit);
-    return player_board.shoot(coordinate);
+    return opponent.get_board().shoot(coordinate);
 }
 

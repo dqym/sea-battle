@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/Enemy.cpp.o"
   "CMakeFiles/sea_battle.dir/sources/Enemy.cpp.o.d"
+  "CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o"
+  "CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o"
   "CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o"

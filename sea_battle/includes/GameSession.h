@@ -1,10 +1,8 @@
 #ifndef SEA_BATTLE_GAMESESSION_H
 #define SEA_BATTLE_GAMESESSION_H
 
-#include "AbstractPlayer.h"
 #include "Player.h"
 #include "Enemy.h"
-#include "DispatcherCLI.h"
 #include "AbilitiesManager.h"
 
 class GameSession {
@@ -15,6 +13,7 @@ private:
     DispatcherCLI cli;
     Player player;
     Enemy enemy;
+    AbilitiesManager abilities_manager;
     bool execute_shot(AbstractPlayer& shooter, AbstractPlayer& target);
 };
 

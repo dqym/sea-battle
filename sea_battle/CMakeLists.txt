@@ -27,4 +27,6 @@ add_executable(sea_battle sources/main.cpp
         sources/Abilities.cpp
         sources/AbstractPlayer.cpp
         sources/AbilitiesManager.cpp
-        includes/AbilitiesManager.h)
+        includes/AbilitiesManager.h
+        sources/Exceptions.cpp
+        includes/Exceptions.h)

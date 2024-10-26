@@ -4,7 +4,7 @@ Player::Player(int field_size, int ships_count, const std::vector<int> &sizes)
     : AbstractPlayer(field_size, ships_count, sizes) {}
 
 bool Player::place_ships() {
-    std::vector<Ship>& ships = manager.get_ships();
+    std::vector<Ship>& ships = ship_manager.get_ships();
 
     for (auto& ship : ships) {
         bool placed = false;
@@ -38,7 +38,7 @@ bool Player::place_ships() {
     return true;
 }
 
-bool Player::make_shot(Board& enemy_board) {
+bool Player::make_shot(AbstractPlayer& opponent) {
     std::pair<char, int> coordinate = cli.read_coordinate();
-    return enemy_board.shoot(coordinate);;
+    return opponent.get_board().shoot(coordinate);
 }

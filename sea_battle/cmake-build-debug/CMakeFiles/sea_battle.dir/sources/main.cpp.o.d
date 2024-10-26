@@ -2,6 +2,7 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/main.cpp \
  /usr/include/stdc-predef.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameSession.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Player.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/AbstractPlayer.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/ShipManager.h \
  /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_algobase.h \
@@ -192,7 +193,7 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /usr/include/c++/12/bits/sstream.tcc /usr/include/c++/12/set \
  /usr/include/c++/12/bits/stl_set.h \
  /usr/include/c++/12/bits/stl_multiset.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Player.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Exceptions.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Enemy.h \
  /usr/include/c++/12/random /usr/include/c++/12/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -225,11 +226,7 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/AbilitiesManager.h \
  /usr/include/c++/12/queue /usr/include/c++/12/deque \
  /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/bits/stl_queue.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities.h \
- /usr/include/c++/12/optional \
- /usr/include/c++/12/bits/enable_special_members.h \
- /usr/include/c++/12/memory \
+ /usr/include/c++/12/bits/stl_queue.h /usr/include/c++/12/memory \
  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
  /usr/include/c++/12/bits/align.h /usr/include/c++/12/bits/unique_ptr.h \
  /usr/include/c++/12/bits/shared_ptr.h \
@@ -264,5 +261,8 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /usr/include/c++/12/bits/ranges_uninitialized.h \
  /usr/include/c++/12/bits/uses_allocator_args.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities.h \
+ /usr/include/c++/12/optional \
+ /usr/include/c++/12/bits/enable_special_members.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameConfig.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Enemy.h

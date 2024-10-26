@@ -273,6 +273,30 @@ sources/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Enemy.cpp.s
 .PHONY : sources/Enemy.cpp.s
 
+sources/Exceptions.o: sources/Exceptions.cpp.o
+.PHONY : sources/Exceptions.o
+
+# target to build an object file
+sources/Exceptions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o
+.PHONY : sources/Exceptions.cpp.o
+
+sources/Exceptions.i: sources/Exceptions.cpp.i
+.PHONY : sources/Exceptions.i
+
+# target to preprocess a source file
+sources/Exceptions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.i
+.PHONY : sources/Exceptions.cpp.i
+
+sources/Exceptions.s: sources/Exceptions.cpp.s
+.PHONY : sources/Exceptions.s
+
+# target to generate assembly for a file
+sources/Exceptions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.s
+.PHONY : sources/Exceptions.cpp.s
+
 sources/GameConfig.o: sources/GameConfig.cpp.o
 .PHONY : sources/GameConfig.o
 
@@ -468,6 +492,9 @@ help:
 	@echo "... sources/Enemy.o"
 	@echo "... sources/Enemy.i"
 	@echo "... sources/Enemy.s"
+	@echo "... sources/Exceptions.o"
+	@echo "... sources/Exceptions.i"
+	@echo "... sources/Exceptions.s"
 	@echo "... sources/GameConfig.o"
 	@echo "... sources/GameConfig.i"
 	@echo "... sources/GameConfig.s"

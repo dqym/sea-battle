@@ -5,12 +5,11 @@
 #include <iostream>
 #include "Ship.h"
 
-
 class ShipManager {
 public:
     ShipManager(int& count, const std::vector<int>& sizes);
     std::vector<Ship>& get_ships();
-    void update();
+    bool check_ships();
     bool is_all_ships_destroyed();
 private:
     int destroyed_ships;

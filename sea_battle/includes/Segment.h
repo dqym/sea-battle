@@ -1,7 +1,6 @@
 #ifndef SEA_BATTLE_SEGMENT_H
 #define SEA_BATTLE_SEGMENT_H
 
-
 class Segment {
 public:
     enum class segment_state {Destroyed, Damaged, Whole};
