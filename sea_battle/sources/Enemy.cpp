@@ -41,16 +41,13 @@ bool Enemy::place_ships() {
     return true;
 }
 
-bool Enemy::make_shot(Board& player_board, ShipManager& player_manager) {
+bool Enemy::make_shot(Board& player_board) {
     std::random_device rd;
     std::mt19937 gen(rd());
-
     char letter = (char)letter_range(gen);
     int digit = digit_range(gen);
-    std::pair coordinate(letter, digit);
 
-    bool result = player_board.shoot(coordinate);
-    player_manager.update();
-    return result;
+    std::pair coordinate(letter, digit);
+    return player_board.shoot(coordinate);
 }
 

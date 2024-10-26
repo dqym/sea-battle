@@ -37,5 +37,5 @@ void GameSession::start() {
 }
 
 bool GameSession::execute_shot(AbstractPlayer& shooter, AbstractPlayer& target) {
-    return shooter.make_shot(target.get_board(), target.get_ship_manager());
+    return shooter.make_shot(target.get_board());
 }

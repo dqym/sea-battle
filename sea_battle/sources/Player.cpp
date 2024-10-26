@@ -38,9 +38,7 @@ bool Player::place_ships() {
     return true;
 }
 
-bool Player::make_shot(Board& enemy_board, ShipManager& enemy_manager) {
+bool Player::make_shot(Board& enemy_board) {
     std::pair<char, int> coordinate = cli.read_coordinate();
-    bool result = enemy_board.shoot(coordinate);
-    enemy_manager.update();
-    return result;
+    return enemy_board.shoot(coordinate);;
 }

@@ -12,13 +12,13 @@ void AbilitiesManager::add_ability() {
 
     switch (result) {
         case 0:
-            abilities.emplace(std::make_unique<DoubleDamageAbility>(player));
+            abilities.emplace(std::make_unique<DoubleDamageAbility>(player.get_board()));
             break;
         case 1:
-            abilities.emplace(std::make_unique<ScannerAbility>(player));
+            abilities.emplace(std::make_unique<ScannerAbility>(player.get_board()));
             break;
         case 2:
-            abilities.emplace(std::make_unique<ShellingAbility>(player));
+            abilities.emplace(std::make_unique<ShellingAbility>(player.get_board()));
             break;
     }
 }
