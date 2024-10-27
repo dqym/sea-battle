@@ -1,6 +1,6 @@
 digraph UML_Class_diagram {
     graph [
-    label="UML Class diagram for Battleship Game"
+    label="UML Class Diagram for Selected Sea Battle Game Classes"
     labelloc="t"
     fontname="Helvetica,Arial,sans-serif"
     rankdir=UD
@@ -13,26 +13,37 @@ digraph UML_Class_diagram {
     ]
     edge [fontname="Helvetica,Arial,sans-serif"]
 
-    Board [label="{Board | - letters_to_values: map&lt;char, int&gt; | - field: vector&lt;vector&lt;Cell&gt;&gt; | + Board(int size) | + place_ship(Ship& ship, vector&lt;pair&lt;char, int&gt;&gt;& coords, char orientation): bool | + shoot(pair&lt;char, int&gt;& coords): bool | + display(): void | + validate_positions(Ship& ship, vector&lt;pair&lt;char, int&gt;& coords): bool}"]
+    Ability [label="{Ability | + use(): void}"]
+    DoubleDamage [label="{DoubleDamage | + use(): void}"]
+    Scanner [label="{Scanner | + use(): void}"]
+    Bombardment [label="{Bombardment | + use(): void}"]
 
-    Cell [label="{Cell | - segment: Segment* | - display: char | + Cell()}"]
+    AbilitiesManager [label="{AbilitiesManager | - abilities: queue\<Ability\> | + add_ability(): void | + use_ability(): void}"]
 
-    ShipManager [label="{ShipManager | - ships: vector&lt;Ship&gt; | - destroyed_ships: vector&lt;Ship&gt; | + ShipManager(int count, vector&lt;int&gt; sizes) | + get_ships(): vector&lt;Ship&gt;& | + update(): void}"]
+    GameException [label="{GameException | + what(): const char*}"]
+    AbilityUnavailableException [label="{AbilityUnavailableException | + what(): const char*}"]
+    ShipPlacementException [label="{ShipPlacementException | + what(): const char*}"]
+    OutOfBoundsException [label="{OutOfBoundsException | + what(): const char*}"]
+    WrongShipCoordinatesException [label="{WrongShipCoordinatesException | + what(): const char*}"]
 
-    Ship [label="{Ship | - length: int | - orientation: ship_orientation | - segments: vector&lt;Segment&gt; | + Ship(int length) | + set_orientation(char orientation): void | + get_orientation(): ship_orientation | + get_segments(): vector&lt;Segment&gt;& | + get_length(): int | + is_sunk(): bool}"]
+    GameSession [label="{GameSession | - abilities_manager | + start(): void}"]
 
-    Segment [label="{Segment | - state: segment_state | + Segment() | + hit(): void | + is_destroyed(): bool}"]
+    {rank = sink; Board; }
 
-    edge [arrowhead=vee style=dashed]
-    Board -> ShipManager [label="dependency"]
-    Board -> Ship [label="dependency"]
-    Board -> Segment [label="dependency"]
+    Ability -> DoubleDamage [label="inheritance" arrowhead=onormal style=dashed]
+    Ability -> Scanner [label="inheritance" arrowhead=onormal style=dashed]
+    Ability -> Bombardment [label="inheritance" arrowhead=onormal style=dashed]
 
-    edge [dir=back arrowtail=empty style=""]
-    ShipManager -> Ship [label="aggregation"]
+    AbilitiesManager -> Ability [label="composition" arrowhead=diamond]
 
-    edge [dir=back arrowtail=diamond]
-    Ship -> Segment [label="composition"]
+    GameException -> AbilityUnavailableException [label="inheritance" arrowhead=onormal style=dashed]
+    GameException -> ShipPlacementException [label="inheritance" arrowhead=onormal style=dashed]
+    GameException -> OutOfBoundsException [label="inheritance" arrowhead=onormal style=dashed]
+    GameException -> WrongShipCoordinatesException [label="inheritance" arrowhead=onormal style=dashed]
 
-    Cell -> Segment [label="composition"]
+    GameSession -> AbilitiesManager [label="association" arrowhead=open]
+    AbilitiesManager -> AbilityUnavailableException [label="throws" dir=back arrowtail=normal]
+    Board -> ShipPlacementException [label="throws" dir=back arrowtail=normal]
+    Board -> OutOfBoundsException [label="throws" dir=back arrowtail=normal]
+    Board -> WrongShipCoordinatesException [label="throws" dir=back arrowtail=normal]
 }

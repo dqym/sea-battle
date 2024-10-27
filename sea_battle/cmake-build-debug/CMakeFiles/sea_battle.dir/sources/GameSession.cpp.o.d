@@ -261,6 +261,9 @@ CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o: \
  /usr/include/c++/12/bits/ranges_uninitialized.h \
  /usr/include/c++/12/bits/uses_allocator_args.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Ability.h \
  /usr/include/c++/12/optional \
- /usr/include/c++/12/bits/enable_special_members.h
+ /usr/include/c++/12/bits/enable_special_members.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/DoubleDamageAbility.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/ScannerAbility.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/ShellingAbility.h

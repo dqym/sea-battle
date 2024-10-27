@@ -231,7 +231,7 @@ CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o: \
  /usr/include/c++/12/bits/ranges_algobase.h \
  /usr/include/c++/12/bits/uses_allocator_args.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Ability.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Board.h \
  /usr/include/c++/12/iostream /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/iomanip \
@@ -259,8 +259,11 @@ CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o: \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Ship.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Segment.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Exceptions.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/AbstractPlayer.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/ShipManager.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/DispatcherCLI.h \
  /usr/include/c++/12/optional \
- /usr/include/c++/12/bits/enable_special_members.h
+ /usr/include/c++/12/bits/enable_special_members.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/DoubleDamageAbility.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/DispatcherCLI.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/ScannerAbility.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/ShellingAbility.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/AbstractPlayer.h
