@@ -13,7 +13,7 @@ void DispatcherCLI::display(Board& player_board, Board& enemy_board) {
         } else {
             print_data_row(player_board, rw_counter, false);
             std::cout << "      ";
-            print_data_row(enemy_board, rw_counter, false);
+            print_data_row(enemy_board, rw_counter, true);
             std::cout << "\n";
             rw_counter++;
         }

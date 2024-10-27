@@ -187,10 +187,11 @@ CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o: \
  /usr/include/c++/12/bits/ranges_util.h \
  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/ShipManager.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Ship.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Segment.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Exceptions.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/AbstractPlayer.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/ShipManager.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/DispatcherCLI.h \
  /usr/include/c++/12/optional \
  /usr/include/c++/12/bits/enable_special_members.h \

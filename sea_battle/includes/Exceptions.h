@@ -1,7 +1,6 @@
 #ifndef SEA_BATTLE_EXCEPTIONS_H
 #define SEA_BATTLE_EXCEPTIONS_H
 
-
 #include <stdexcept>
 #include <string>
 

@@ -23,10 +23,15 @@ add_executable(sea_battle sources/main.cpp
         includes/GameSession.h
         sources/GameConfig.cpp
         includes/GameConfig.h
-        includes/Abilities.h
-        sources/Abilities.cpp
+        includes/Ability.h
         sources/AbstractPlayer.cpp
         sources/AbilitiesManager.cpp
         includes/AbilitiesManager.h
         sources/Exceptions.cpp
-        includes/Exceptions.h)
+        includes/Exceptions.h
+        sources/DoubleDamageAbility.cpp
+        includes/DoubleDamageAbility.h
+        sources/ScannerAbility.cpp
+        includes/ScannerAbility.h
+        sources/ShellingAbility.cpp
+        includes/ShellingAbility.h)

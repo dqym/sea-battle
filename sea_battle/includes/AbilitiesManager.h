@@ -4,7 +4,10 @@
 #include <queue>
 #include <random>
 #include <memory>
-#include "Abilities.h"
+#include "Ability.h"
+#include "DoubleDamageAbility.h"
+#include "ScannerAbility.h"
+#include "ShellingAbility.h"
 #include "AbstractPlayer.h"
 #include "Exceptions.h"
 #include "DispatcherCLI.h"

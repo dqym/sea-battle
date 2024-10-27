@@ -209,24 +209,10 @@ CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/JetBrains/sea-battle/sea_battle/sources/GameConfig.cpp -o CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.s
 
-CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o: CMakeFiles/sea_battle.dir/flags.make
-CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o: /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities.cpp
-CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o -MF CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o.d -o CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o -c /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities.cpp
-
-CMakeFiles/sea_battle.dir/sources/Abilities.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sea_battle.dir/sources/Abilities.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities.cpp > CMakeFiles/sea_battle.dir/sources/Abilities.cpp.i
-
-CMakeFiles/sea_battle.dir/sources/Abilities.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/Abilities.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities.cpp -o CMakeFiles/sea_battle.dir/sources/Abilities.cpp.s
-
 CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o: /mnt/d/JetBrains/sea-battle/sea_battle/sources/AbstractPlayer.cpp
 CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o -MF CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o.d -o CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o -c /mnt/d/JetBrains/sea-battle/sea_battle/sources/AbstractPlayer.cpp
 
 CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.i: cmake_force
@@ -240,7 +226,7 @@ CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o: /mnt/d/JetBrains/sea-battle/sea_battle/sources/AbilitiesManager.cpp
 CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o -MF CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o.d -o CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o -c /mnt/d/JetBrains/sea-battle/sea_battle/sources/AbilitiesManager.cpp
 
 CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.i: cmake_force
@@ -254,7 +240,7 @@ CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o: /mnt/d/JetBrains/sea-battle/sea_battle/sources/Exceptions.cpp
 CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o -MF CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o.d -o CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o -c /mnt/d/JetBrains/sea-battle/sea_battle/sources/Exceptions.cpp
 
 CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.i: cmake_force
@@ -264,6 +250,48 @@ CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.i: cmake_force
 CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/JetBrains/sea-battle/sea_battle/sources/Exceptions.cpp -o CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.s
+
+CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.o: CMakeFiles/sea_battle.dir/flags.make
+CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.o: /mnt/d/JetBrains/sea-battle/sea_battle/sources/DoubleDamageAbility.cpp
+CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.o: CMakeFiles/sea_battle.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.o -MF CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.o.d -o CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.o -c /mnt/d/JetBrains/sea-battle/sea_battle/sources/DoubleDamageAbility.cpp
+
+CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/JetBrains/sea-battle/sea_battle/sources/DoubleDamageAbility.cpp > CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.i
+
+CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/JetBrains/sea-battle/sea_battle/sources/DoubleDamageAbility.cpp -o CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.s
+
+CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.o: CMakeFiles/sea_battle.dir/flags.make
+CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.o: /mnt/d/JetBrains/sea-battle/sea_battle/sources/ScannerAbility.cpp
+CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.o: CMakeFiles/sea_battle.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.o -MF CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.o.d -o CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.o -c /mnt/d/JetBrains/sea-battle/sea_battle/sources/ScannerAbility.cpp
+
+CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/JetBrains/sea-battle/sea_battle/sources/ScannerAbility.cpp > CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.i
+
+CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/JetBrains/sea-battle/sea_battle/sources/ScannerAbility.cpp -o CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.s
+
+CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.o: CMakeFiles/sea_battle.dir/flags.make
+CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.o: /mnt/d/JetBrains/sea-battle/sea_battle/sources/ShellingAbility.cpp
+CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.o: CMakeFiles/sea_battle.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.o -MF CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.o.d -o CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.o -c /mnt/d/JetBrains/sea-battle/sea_battle/sources/ShellingAbility.cpp
+
+CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/JetBrains/sea-battle/sea_battle/sources/ShellingAbility.cpp > CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.i
+
+CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/JetBrains/sea-battle/sea_battle/sources/ShellingAbility.cpp -o CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.s
 
 # Object files for target sea_battle
 sea_battle_OBJECTS = \
@@ -277,10 +305,12 @@ sea_battle_OBJECTS = \
 "CMakeFiles/sea_battle.dir/sources/Player.cpp.o" \
 "CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o" \
 "CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o" \
-"CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o" \
 "CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o" \
 "CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o" \
-"CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o"
+"CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o" \
+"CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.o" \
+"CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.o" \
+"CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.o"
 
 # External object files for target sea_battle
 sea_battle_EXTERNAL_OBJECTS =
@@ -295,13 +325,15 @@ sea_battle: CMakeFiles/sea_battle.dir/sources/Enemy.cpp.o
 sea_battle: CMakeFiles/sea_battle.dir/sources/Player.cpp.o
 sea_battle: CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o
 sea_battle: CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o
-sea_battle: CMakeFiles/sea_battle.dir/sources/Abilities.cpp.o
 sea_battle: CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o
 sea_battle: CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o
 sea_battle: CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o
+sea_battle: CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.o
+sea_battle: CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.o
+sea_battle: CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.o
 sea_battle: CMakeFiles/sea_battle.dir/build.make
 sea_battle: CMakeFiles/sea_battle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable sea_battle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable sea_battle"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sea_battle.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

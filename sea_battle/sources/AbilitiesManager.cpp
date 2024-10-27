@@ -1,6 +1,6 @@
 #include "../includes/AbilitiesManager.h"
 
-AbilitiesManager::AbilitiesManager(AbstractPlayer& enemy_ref): enemy(enemy_ref) {}
+AbilitiesManager::AbilitiesManager(AbstractPlayer& enemy_ref): enemy(enemy_ref) {add_ability();}
 
 void AbilitiesManager::add_ability() {
     std::random_device rd;
