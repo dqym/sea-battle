@@ -1,10 +1,10 @@
 #ifndef SEA_BATTLE_ABSTRACTPLAYER_H
 #define SEA_BATTLE_ABSTRACTPLAYER_H
 
-#include "ShipManager.h"
-#include "DispatcherCLI.h"
-#include "Board.h"
-#include "ShipManager.h"
+#include "../ShipObject/ShipManager.h"
+#include "../DispatcherCLI.h"
+#include "../Board.h"
+#include "../ShipObject/ShipManager.h"
 
 
 class AbstractPlayer {

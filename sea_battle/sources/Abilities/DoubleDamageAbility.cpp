@@ -1,4 +1,4 @@
-#include "../includes/DoubleDamageAbility.h"
+#include "../../includes/Abilities/DoubleDamageAbility.h"
 
 DoubleDamageAbility::DoubleDamageAbility(Board& opponent_board): board(opponent_board) {}
 
@@ -9,3 +9,5 @@ void DoubleDamageAbility::use() {
         board.shoot(coordinate);
     }
 }
+
+std::string DoubleDamageAbility::get_name() {return "Double damage";}

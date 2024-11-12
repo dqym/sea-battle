@@ -1,3 +1,3 @@
-/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir
-/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir
+/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/CMakeFiles/rebuild_cache.dir

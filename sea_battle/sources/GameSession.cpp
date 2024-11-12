@@ -14,8 +14,8 @@ void GameSession::start() {
     std::cout << "\n";
     bool player_turn = true;
     while (!player.is_lose() and !enemy.is_lose()) {
-        //abilities_manager.use_ability();
         if (player_turn) {
+//            abilities_manager.use_ability();
             cli.message("Your turn -> ");
             execute_shot(player, enemy);
             if (enemy.update()) {

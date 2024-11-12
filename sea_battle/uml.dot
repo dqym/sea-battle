@@ -13,7 +13,7 @@ digraph UML_Class_diagram {
     ]
     edge [fontname="Helvetica,Arial,sans-serif"]
 
-    Ability [label="{Ability | + use(): void}"]
+    Ability [label="{Ability | + use(): void | + get_name(): std::string}"]
     DoubleDamage [label="{DoubleDamage | + use(): void}"]
     Scanner [label="{Scanner | + use(): void}"]
     Bombardment [label="{Bombardment | + use(): void}"]

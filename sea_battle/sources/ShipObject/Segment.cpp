@@ -1,4 +1,4 @@
-#include "../includes/Segment.h"
+#include "../../includes/ShipObject/Segment.h"
 
 Segment::Segment(): state(Segment::segment_state::Whole) {}
 

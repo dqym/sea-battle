@@ -8,9 +8,9 @@
 #include "DoubleDamageAbility.h"
 #include "ScannerAbility.h"
 #include "ShellingAbility.h"
-#include "AbstractPlayer.h"
-#include "Exceptions.h"
-#include "DispatcherCLI.h"
+#include "../Players/AbstractPlayer.h"
+#include "../Exceptions.h"
+#include "../DispatcherCLI.h"
 
 class AbilitiesManager {
 public:

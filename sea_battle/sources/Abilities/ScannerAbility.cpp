@@ -1,4 +1,4 @@
-#include "../includes/ScannerAbility.h"
+#include "../../includes/Abilities/ScannerAbility.h"
 
 ScannerAbility::ScannerAbility(Board& opponent_board): board(opponent_board) {}
 
@@ -21,3 +21,5 @@ void ScannerAbility::use() {
         cli.message("Scanner: Nothing found\n");
     }
 }
+
+std::string ScannerAbility::get_name() {return "Scanner";}

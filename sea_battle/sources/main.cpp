@@ -1,7 +1,7 @@
 #include "../includes/GameSession.h"
 #include "../includes/GameConfig.h"
 #include <sstream>
-#include "../includes/Enemy.h"
+#include "../includes/Players/Enemy.h"
 
 
 int main() {

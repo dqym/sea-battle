@@ -7,7 +7,7 @@
 #include <map>
 #include <set>
 #include <algorithm>
-#include "Ship.h"
+#include "ShipObject/Ship.h"
 #include "Exceptions.h"
 
 class Board {

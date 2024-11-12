@@ -1,7 +1,7 @@
 CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o: \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/GameConfig.cpp \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/GameConfig.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameConfig.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/../includes/GameConfig.h \
  /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \

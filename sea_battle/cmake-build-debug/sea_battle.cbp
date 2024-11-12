@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sea_battle">
-				<Option output="/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/sea_battle" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/sea_battle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 sea_battle"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 sea_battle"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sea_battle/fast">
-				<Option output="/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/sea_battle" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/sea_battle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,130 +55,130 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 sea_battle/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 sea_battle/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/AbilitiesManager.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/Abilities/AbilitiesManager.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Ability.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/Abilities/Ability.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/AbstractPlayer.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/Abilities/DoubleDamageAbility.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Board.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/Abilities/ScannerAbility.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/DispatcherCLI.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/Abilities/ShellingAbility.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/DoubleDamageAbility.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/Board.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Enemy.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/DispatcherCLI.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Exceptions.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/Exceptions.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/GameConfig.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/GameConfig.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/GameSession.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/GameSession.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Player.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/Players/AbstractPlayer.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/ScannerAbility.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/Players/Enemy.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Segment.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/Players/Player.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/ShellingAbility.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/ShipObject/Segment.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Ship.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/ShipObject/Ship.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/ShipManager.h">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/includes/ShipObject/ShipManager.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/AbilitiesManager.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/Abilities/AbilitiesManager.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/AbstractPlayer.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/Abilities/DoubleDamageAbility.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Board.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/Abilities/ScannerAbility.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/DispatcherCLI.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/Abilities/ShellingAbility.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/DoubleDamageAbility.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/Board.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Enemy.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/DispatcherCLI.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Exceptions.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/Exceptions.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameConfig.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/GameConfig.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameSession.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/GameSession.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Player.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/Players/AbstractPlayer.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/ScannerAbility.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/Players/Enemy.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Segment.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/Players/Player.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/ShellingAbility.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/ShipObject/Segment.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Ship.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/ShipObject/Ship.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/ShipManager.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/ShipObject/ShipManager.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/main.cpp">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/main.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/CMakeLists.txt">
+		<Unit filename="/mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

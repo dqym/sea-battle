@@ -1,4 +1,4 @@
-#include "../includes/ShellingAbility.h"
+#include "../../includes/Abilities/ShellingAbility.h"
 
 ShellingAbility::ShellingAbility(Board& opponent_board): board(opponent_board) {}
 
@@ -19,3 +19,5 @@ void ShellingAbility::use() {
         }
     }
 }
+
+std::string ShellingAbility::get_name() {return "Shelling";}

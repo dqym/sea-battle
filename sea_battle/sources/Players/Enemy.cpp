@@ -1,4 +1,4 @@
-#include "../includes/Enemy.h"
+#include "../../includes/Players/Enemy.h"
 
 Enemy::Enemy(int field_size, int ships_count, const std::vector<int>& sizes)
     : AbstractPlayer(field_size, ships_count, sizes) {}

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/JetBrains/sea-battle/sea_battle
+CMAKE_SOURCE_DIR = /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles /mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/CMakeFiles /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,53 +129,101 @@ sea_battle/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/build
 .PHONY : sea_battle/fast
 
-sources/AbilitiesManager.o: sources/AbilitiesManager.cpp.o
-.PHONY : sources/AbilitiesManager.o
+sources/Abilities/AbilitiesManager.o: sources/Abilities/AbilitiesManager.cpp.o
+.PHONY : sources/Abilities/AbilitiesManager.o
 
 # target to build an object file
-sources/AbilitiesManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.o
-.PHONY : sources/AbilitiesManager.cpp.o
+sources/Abilities/AbilitiesManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.o
+.PHONY : sources/Abilities/AbilitiesManager.cpp.o
 
-sources/AbilitiesManager.i: sources/AbilitiesManager.cpp.i
-.PHONY : sources/AbilitiesManager.i
+sources/Abilities/AbilitiesManager.i: sources/Abilities/AbilitiesManager.cpp.i
+.PHONY : sources/Abilities/AbilitiesManager.i
 
 # target to preprocess a source file
-sources/AbilitiesManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.i
-.PHONY : sources/AbilitiesManager.cpp.i
+sources/Abilities/AbilitiesManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.i
+.PHONY : sources/Abilities/AbilitiesManager.cpp.i
 
-sources/AbilitiesManager.s: sources/AbilitiesManager.cpp.s
-.PHONY : sources/AbilitiesManager.s
+sources/Abilities/AbilitiesManager.s: sources/Abilities/AbilitiesManager.cpp.s
+.PHONY : sources/Abilities/AbilitiesManager.s
 
 # target to generate assembly for a file
-sources/AbilitiesManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbilitiesManager.cpp.s
-.PHONY : sources/AbilitiesManager.cpp.s
+sources/Abilities/AbilitiesManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.s
+.PHONY : sources/Abilities/AbilitiesManager.cpp.s
 
-sources/AbstractPlayer.o: sources/AbstractPlayer.cpp.o
-.PHONY : sources/AbstractPlayer.o
+sources/Abilities/DoubleDamageAbility.o: sources/Abilities/DoubleDamageAbility.cpp.o
+.PHONY : sources/Abilities/DoubleDamageAbility.o
 
 # target to build an object file
-sources/AbstractPlayer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.o
-.PHONY : sources/AbstractPlayer.cpp.o
+sources/Abilities/DoubleDamageAbility.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.o
+.PHONY : sources/Abilities/DoubleDamageAbility.cpp.o
 
-sources/AbstractPlayer.i: sources/AbstractPlayer.cpp.i
-.PHONY : sources/AbstractPlayer.i
+sources/Abilities/DoubleDamageAbility.i: sources/Abilities/DoubleDamageAbility.cpp.i
+.PHONY : sources/Abilities/DoubleDamageAbility.i
 
 # target to preprocess a source file
-sources/AbstractPlayer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.i
-.PHONY : sources/AbstractPlayer.cpp.i
+sources/Abilities/DoubleDamageAbility.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.i
+.PHONY : sources/Abilities/DoubleDamageAbility.cpp.i
 
-sources/AbstractPlayer.s: sources/AbstractPlayer.cpp.s
-.PHONY : sources/AbstractPlayer.s
+sources/Abilities/DoubleDamageAbility.s: sources/Abilities/DoubleDamageAbility.cpp.s
+.PHONY : sources/Abilities/DoubleDamageAbility.s
 
 # target to generate assembly for a file
-sources/AbstractPlayer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/AbstractPlayer.cpp.s
-.PHONY : sources/AbstractPlayer.cpp.s
+sources/Abilities/DoubleDamageAbility.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.s
+.PHONY : sources/Abilities/DoubleDamageAbility.cpp.s
+
+sources/Abilities/ScannerAbility.o: sources/Abilities/ScannerAbility.cpp.o
+.PHONY : sources/Abilities/ScannerAbility.o
+
+# target to build an object file
+sources/Abilities/ScannerAbility.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.o
+.PHONY : sources/Abilities/ScannerAbility.cpp.o
+
+sources/Abilities/ScannerAbility.i: sources/Abilities/ScannerAbility.cpp.i
+.PHONY : sources/Abilities/ScannerAbility.i
+
+# target to preprocess a source file
+sources/Abilities/ScannerAbility.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.i
+.PHONY : sources/Abilities/ScannerAbility.cpp.i
+
+sources/Abilities/ScannerAbility.s: sources/Abilities/ScannerAbility.cpp.s
+.PHONY : sources/Abilities/ScannerAbility.s
+
+# target to generate assembly for a file
+sources/Abilities/ScannerAbility.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.s
+.PHONY : sources/Abilities/ScannerAbility.cpp.s
+
+sources/Abilities/ShellingAbility.o: sources/Abilities/ShellingAbility.cpp.o
+.PHONY : sources/Abilities/ShellingAbility.o
+
+# target to build an object file
+sources/Abilities/ShellingAbility.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.o
+.PHONY : sources/Abilities/ShellingAbility.cpp.o
+
+sources/Abilities/ShellingAbility.i: sources/Abilities/ShellingAbility.cpp.i
+.PHONY : sources/Abilities/ShellingAbility.i
+
+# target to preprocess a source file
+sources/Abilities/ShellingAbility.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.i
+.PHONY : sources/Abilities/ShellingAbility.cpp.i
+
+sources/Abilities/ShellingAbility.s: sources/Abilities/ShellingAbility.cpp.s
+.PHONY : sources/Abilities/ShellingAbility.s
+
+# target to generate assembly for a file
+sources/Abilities/ShellingAbility.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.s
+.PHONY : sources/Abilities/ShellingAbility.cpp.s
 
 sources/Board.o: sources/Board.cpp.o
 .PHONY : sources/Board.o
@@ -224,54 +272,6 @@ sources/DispatcherCLI.s: sources/DispatcherCLI.cpp.s
 sources/DispatcherCLI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.s
 .PHONY : sources/DispatcherCLI.cpp.s
-
-sources/DoubleDamageAbility.o: sources/DoubleDamageAbility.cpp.o
-.PHONY : sources/DoubleDamageAbility.o
-
-# target to build an object file
-sources/DoubleDamageAbility.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.o
-.PHONY : sources/DoubleDamageAbility.cpp.o
-
-sources/DoubleDamageAbility.i: sources/DoubleDamageAbility.cpp.i
-.PHONY : sources/DoubleDamageAbility.i
-
-# target to preprocess a source file
-sources/DoubleDamageAbility.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.i
-.PHONY : sources/DoubleDamageAbility.cpp.i
-
-sources/DoubleDamageAbility.s: sources/DoubleDamageAbility.cpp.s
-.PHONY : sources/DoubleDamageAbility.s
-
-# target to generate assembly for a file
-sources/DoubleDamageAbility.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/DoubleDamageAbility.cpp.s
-.PHONY : sources/DoubleDamageAbility.cpp.s
-
-sources/Enemy.o: sources/Enemy.cpp.o
-.PHONY : sources/Enemy.o
-
-# target to build an object file
-sources/Enemy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Enemy.cpp.o
-.PHONY : sources/Enemy.cpp.o
-
-sources/Enemy.i: sources/Enemy.cpp.i
-.PHONY : sources/Enemy.i
-
-# target to preprocess a source file
-sources/Enemy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Enemy.cpp.i
-.PHONY : sources/Enemy.cpp.i
-
-sources/Enemy.s: sources/Enemy.cpp.s
-.PHONY : sources/Enemy.s
-
-# target to generate assembly for a file
-sources/Enemy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Enemy.cpp.s
-.PHONY : sources/Enemy.cpp.s
 
 sources/Exceptions.o: sources/Exceptions.cpp.o
 .PHONY : sources/Exceptions.o
@@ -345,149 +345,149 @@ sources/GameSession.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameSession.cpp.s
 .PHONY : sources/GameSession.cpp.s
 
-sources/Player.o: sources/Player.cpp.o
-.PHONY : sources/Player.o
+sources/Players/AbstractPlayer.o: sources/Players/AbstractPlayer.cpp.o
+.PHONY : sources/Players/AbstractPlayer.o
 
 # target to build an object file
-sources/Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Player.cpp.o
-.PHONY : sources/Player.cpp.o
+sources/Players/AbstractPlayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.o
+.PHONY : sources/Players/AbstractPlayer.cpp.o
 
-sources/Player.i: sources/Player.cpp.i
-.PHONY : sources/Player.i
+sources/Players/AbstractPlayer.i: sources/Players/AbstractPlayer.cpp.i
+.PHONY : sources/Players/AbstractPlayer.i
 
 # target to preprocess a source file
-sources/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Player.cpp.i
-.PHONY : sources/Player.cpp.i
+sources/Players/AbstractPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.i
+.PHONY : sources/Players/AbstractPlayer.cpp.i
 
-sources/Player.s: sources/Player.cpp.s
-.PHONY : sources/Player.s
+sources/Players/AbstractPlayer.s: sources/Players/AbstractPlayer.cpp.s
+.PHONY : sources/Players/AbstractPlayer.s
 
 # target to generate assembly for a file
-sources/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Player.cpp.s
-.PHONY : sources/Player.cpp.s
+sources/Players/AbstractPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.s
+.PHONY : sources/Players/AbstractPlayer.cpp.s
 
-sources/ScannerAbility.o: sources/ScannerAbility.cpp.o
-.PHONY : sources/ScannerAbility.o
+sources/Players/Enemy.o: sources/Players/Enemy.cpp.o
+.PHONY : sources/Players/Enemy.o
 
 # target to build an object file
-sources/ScannerAbility.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.o
-.PHONY : sources/ScannerAbility.cpp.o
+sources/Players/Enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.o
+.PHONY : sources/Players/Enemy.cpp.o
 
-sources/ScannerAbility.i: sources/ScannerAbility.cpp.i
-.PHONY : sources/ScannerAbility.i
+sources/Players/Enemy.i: sources/Players/Enemy.cpp.i
+.PHONY : sources/Players/Enemy.i
 
 # target to preprocess a source file
-sources/ScannerAbility.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.i
-.PHONY : sources/ScannerAbility.cpp.i
+sources/Players/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.i
+.PHONY : sources/Players/Enemy.cpp.i
 
-sources/ScannerAbility.s: sources/ScannerAbility.cpp.s
-.PHONY : sources/ScannerAbility.s
+sources/Players/Enemy.s: sources/Players/Enemy.cpp.s
+.PHONY : sources/Players/Enemy.s
 
 # target to generate assembly for a file
-sources/ScannerAbility.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ScannerAbility.cpp.s
-.PHONY : sources/ScannerAbility.cpp.s
+sources/Players/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.s
+.PHONY : sources/Players/Enemy.cpp.s
 
-sources/Segment.o: sources/Segment.cpp.o
-.PHONY : sources/Segment.o
+sources/Players/Player.o: sources/Players/Player.cpp.o
+.PHONY : sources/Players/Player.o
 
 # target to build an object file
-sources/Segment.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Segment.cpp.o
-.PHONY : sources/Segment.cpp.o
+sources/Players/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.o
+.PHONY : sources/Players/Player.cpp.o
 
-sources/Segment.i: sources/Segment.cpp.i
-.PHONY : sources/Segment.i
+sources/Players/Player.i: sources/Players/Player.cpp.i
+.PHONY : sources/Players/Player.i
 
 # target to preprocess a source file
-sources/Segment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Segment.cpp.i
-.PHONY : sources/Segment.cpp.i
+sources/Players/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.i
+.PHONY : sources/Players/Player.cpp.i
 
-sources/Segment.s: sources/Segment.cpp.s
-.PHONY : sources/Segment.s
+sources/Players/Player.s: sources/Players/Player.cpp.s
+.PHONY : sources/Players/Player.s
 
 # target to generate assembly for a file
-sources/Segment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Segment.cpp.s
-.PHONY : sources/Segment.cpp.s
+sources/Players/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.s
+.PHONY : sources/Players/Player.cpp.s
 
-sources/ShellingAbility.o: sources/ShellingAbility.cpp.o
-.PHONY : sources/ShellingAbility.o
+sources/ShipObject/Segment.o: sources/ShipObject/Segment.cpp.o
+.PHONY : sources/ShipObject/Segment.o
 
 # target to build an object file
-sources/ShellingAbility.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.o
-.PHONY : sources/ShellingAbility.cpp.o
+sources/ShipObject/Segment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipObject/Segment.cpp.o
+.PHONY : sources/ShipObject/Segment.cpp.o
 
-sources/ShellingAbility.i: sources/ShellingAbility.cpp.i
-.PHONY : sources/ShellingAbility.i
+sources/ShipObject/Segment.i: sources/ShipObject/Segment.cpp.i
+.PHONY : sources/ShipObject/Segment.i
 
 # target to preprocess a source file
-sources/ShellingAbility.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.i
-.PHONY : sources/ShellingAbility.cpp.i
+sources/ShipObject/Segment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipObject/Segment.cpp.i
+.PHONY : sources/ShipObject/Segment.cpp.i
 
-sources/ShellingAbility.s: sources/ShellingAbility.cpp.s
-.PHONY : sources/ShellingAbility.s
+sources/ShipObject/Segment.s: sources/ShipObject/Segment.cpp.s
+.PHONY : sources/ShipObject/Segment.s
 
 # target to generate assembly for a file
-sources/ShellingAbility.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShellingAbility.cpp.s
-.PHONY : sources/ShellingAbility.cpp.s
+sources/ShipObject/Segment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipObject/Segment.cpp.s
+.PHONY : sources/ShipObject/Segment.cpp.s
 
-sources/Ship.o: sources/Ship.cpp.o
-.PHONY : sources/Ship.o
+sources/ShipObject/Ship.o: sources/ShipObject/Ship.cpp.o
+.PHONY : sources/ShipObject/Ship.o
 
 # target to build an object file
-sources/Ship.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Ship.cpp.o
-.PHONY : sources/Ship.cpp.o
+sources/ShipObject/Ship.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipObject/Ship.cpp.o
+.PHONY : sources/ShipObject/Ship.cpp.o
 
-sources/Ship.i: sources/Ship.cpp.i
-.PHONY : sources/Ship.i
+sources/ShipObject/Ship.i: sources/ShipObject/Ship.cpp.i
+.PHONY : sources/ShipObject/Ship.i
 
 # target to preprocess a source file
-sources/Ship.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Ship.cpp.i
-.PHONY : sources/Ship.cpp.i
+sources/ShipObject/Ship.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipObject/Ship.cpp.i
+.PHONY : sources/ShipObject/Ship.cpp.i
 
-sources/Ship.s: sources/Ship.cpp.s
-.PHONY : sources/Ship.s
+sources/ShipObject/Ship.s: sources/ShipObject/Ship.cpp.s
+.PHONY : sources/ShipObject/Ship.s
 
 # target to generate assembly for a file
-sources/Ship.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Ship.cpp.s
-.PHONY : sources/Ship.cpp.s
+sources/ShipObject/Ship.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipObject/Ship.cpp.s
+.PHONY : sources/ShipObject/Ship.cpp.s
 
-sources/ShipManager.o: sources/ShipManager.cpp.o
-.PHONY : sources/ShipManager.o
+sources/ShipObject/ShipManager.o: sources/ShipObject/ShipManager.cpp.o
+.PHONY : sources/ShipObject/ShipManager.o
 
 # target to build an object file
-sources/ShipManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipManager.cpp.o
-.PHONY : sources/ShipManager.cpp.o
+sources/ShipObject/ShipManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipObject/ShipManager.cpp.o
+.PHONY : sources/ShipObject/ShipManager.cpp.o
 
-sources/ShipManager.i: sources/ShipManager.cpp.i
-.PHONY : sources/ShipManager.i
+sources/ShipObject/ShipManager.i: sources/ShipObject/ShipManager.cpp.i
+.PHONY : sources/ShipObject/ShipManager.i
 
 # target to preprocess a source file
-sources/ShipManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipManager.cpp.i
-.PHONY : sources/ShipManager.cpp.i
+sources/ShipObject/ShipManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipObject/ShipManager.cpp.i
+.PHONY : sources/ShipObject/ShipManager.cpp.i
 
-sources/ShipManager.s: sources/ShipManager.cpp.s
-.PHONY : sources/ShipManager.s
+sources/ShipObject/ShipManager.s: sources/ShipObject/ShipManager.cpp.s
+.PHONY : sources/ShipObject/ShipManager.s
 
 # target to generate assembly for a file
-sources/ShipManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipManager.cpp.s
-.PHONY : sources/ShipManager.cpp.s
+sources/ShipObject/ShipManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/ShipObject/ShipManager.cpp.s
+.PHONY : sources/ShipObject/ShipManager.cpp.s
 
 sources/main.o: sources/main.cpp.o
 .PHONY : sources/main.o
@@ -522,24 +522,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... sea_battle"
-	@echo "... sources/AbilitiesManager.o"
-	@echo "... sources/AbilitiesManager.i"
-	@echo "... sources/AbilitiesManager.s"
-	@echo "... sources/AbstractPlayer.o"
-	@echo "... sources/AbstractPlayer.i"
-	@echo "... sources/AbstractPlayer.s"
+	@echo "... sources/Abilities/AbilitiesManager.o"
+	@echo "... sources/Abilities/AbilitiesManager.i"
+	@echo "... sources/Abilities/AbilitiesManager.s"
+	@echo "... sources/Abilities/DoubleDamageAbility.o"
+	@echo "... sources/Abilities/DoubleDamageAbility.i"
+	@echo "... sources/Abilities/DoubleDamageAbility.s"
+	@echo "... sources/Abilities/ScannerAbility.o"
+	@echo "... sources/Abilities/ScannerAbility.i"
+	@echo "... sources/Abilities/ScannerAbility.s"
+	@echo "... sources/Abilities/ShellingAbility.o"
+	@echo "... sources/Abilities/ShellingAbility.i"
+	@echo "... sources/Abilities/ShellingAbility.s"
 	@echo "... sources/Board.o"
 	@echo "... sources/Board.i"
 	@echo "... sources/Board.s"
 	@echo "... sources/DispatcherCLI.o"
 	@echo "... sources/DispatcherCLI.i"
 	@echo "... sources/DispatcherCLI.s"
-	@echo "... sources/DoubleDamageAbility.o"
-	@echo "... sources/DoubleDamageAbility.i"
-	@echo "... sources/DoubleDamageAbility.s"
-	@echo "... sources/Enemy.o"
-	@echo "... sources/Enemy.i"
-	@echo "... sources/Enemy.s"
 	@echo "... sources/Exceptions.o"
 	@echo "... sources/Exceptions.i"
 	@echo "... sources/Exceptions.s"
@@ -549,24 +549,24 @@ help:
 	@echo "... sources/GameSession.o"
 	@echo "... sources/GameSession.i"
 	@echo "... sources/GameSession.s"
-	@echo "... sources/Player.o"
-	@echo "... sources/Player.i"
-	@echo "... sources/Player.s"
-	@echo "... sources/ScannerAbility.o"
-	@echo "... sources/ScannerAbility.i"
-	@echo "... sources/ScannerAbility.s"
-	@echo "... sources/Segment.o"
-	@echo "... sources/Segment.i"
-	@echo "... sources/Segment.s"
-	@echo "... sources/ShellingAbility.o"
-	@echo "... sources/ShellingAbility.i"
-	@echo "... sources/ShellingAbility.s"
-	@echo "... sources/Ship.o"
-	@echo "... sources/Ship.i"
-	@echo "... sources/Ship.s"
-	@echo "... sources/ShipManager.o"
-	@echo "... sources/ShipManager.i"
-	@echo "... sources/ShipManager.s"
+	@echo "... sources/Players/AbstractPlayer.o"
+	@echo "... sources/Players/AbstractPlayer.i"
+	@echo "... sources/Players/AbstractPlayer.s"
+	@echo "... sources/Players/Enemy.o"
+	@echo "... sources/Players/Enemy.i"
+	@echo "... sources/Players/Enemy.s"
+	@echo "... sources/Players/Player.o"
+	@echo "... sources/Players/Player.i"
+	@echo "... sources/Players/Player.s"
+	@echo "... sources/ShipObject/Segment.o"
+	@echo "... sources/ShipObject/Segment.i"
+	@echo "... sources/ShipObject/Segment.s"
+	@echo "... sources/ShipObject/Ship.o"
+	@echo "... sources/ShipObject/Ship.i"
+	@echo "... sources/ShipObject/Ship.s"
+	@echo "... sources/ShipObject/ShipManager.o"
+	@echo "... sources/ShipObject/ShipManager.i"
+	@echo "... sources/ShipObject/ShipManager.s"
 	@echo "... sources/main.o"
 	@echo "... sources/main.i"
 	@echo "... sources/main.s"

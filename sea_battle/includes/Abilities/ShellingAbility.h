@@ -7,6 +7,7 @@ class ShellingAbility: public Ability {
 public:
     ShellingAbility(Board& opponent_board);
     void use() override;
+    std::string get_name() override;
 private:
     Board& board;
 };

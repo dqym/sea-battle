@@ -1,4 +1,4 @@
-#include "../includes/Player.h"
+#include "../../includes/Players/Player.h"
 
 Player::Player(int field_size, int ships_count, const std::vector<int> &sizes)
     : AbstractPlayer(field_size, ships_count, sizes) {}

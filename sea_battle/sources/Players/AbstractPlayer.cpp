@@ -1,4 +1,4 @@
-#include "../includes/AbstractPlayer.h"
+#include "../../includes/Players/AbstractPlayer.h"
 
 AbstractPlayer::AbstractPlayer(int field_size, int ships_count, const std::vector<int>& sizes)
     : board(field_size), ship_manager(ships_count, sizes) {}

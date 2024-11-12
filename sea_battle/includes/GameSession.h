@@ -1,9 +1,9 @@
 #ifndef SEA_BATTLE_GAMESESSION_H
 #define SEA_BATTLE_GAMESESSION_H
 
-#include "Player.h"
-#include "Enemy.h"
-#include "AbilitiesManager.h"
+#include "Players/Player.h"
+#include "Players/Enemy.h"
+#include "Abilities/AbilitiesManager.h"
 
 class GameSession {
 public:

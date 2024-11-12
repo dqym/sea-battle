@@ -1,7 +1,7 @@
 CMakeFiles/sea_battle.dir/sources/Board.cpp.o: \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/Board.cpp \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/Board.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Board.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/../includes/Board.h \
  /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -186,6 +186,6 @@ CMakeFiles/sea_battle.dir/sources/Board.cpp.o: \
  /usr/include/c++/12/bits/ranges_util.h \
  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Ship.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Segment.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Exceptions.h
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/../includes/ShipObject/Ship.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/../includes/ShipObject/Segment.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/../includes/Exceptions.h

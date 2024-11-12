@@ -1,4 +1,4 @@
-#include "../includes/AbilitiesManager.h"
+#include "../../includes/Abilities/AbilitiesManager.h"
 
 AbilitiesManager::AbilitiesManager(AbstractPlayer& enemy_ref): enemy(enemy_ref) {add_ability();}
 
@@ -24,6 +24,7 @@ void AbilitiesManager::add_ability() {
 void AbilitiesManager::use_ability() {
     try {
         if (!abilities.empty()) {
+            cli.message("Now using: ", abilities.front()->get_name(), " ability.\n");
             abilities.front()->use();
             abilities.pop();
         } else {

@@ -1,7 +1,7 @@
 CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.o: \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/DispatcherCLI.cpp \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/DispatcherCLI.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/DispatcherCLI.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/../includes/DispatcherCLI.h \
  /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -154,7 +154,7 @@ CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.o: \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Board.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/../includes/Board.h \
  /usr/include/c++/12/iomanip /usr/include/c++/12/locale \
  /usr/include/c++/12/bits/locale_facets_nonio.h /usr/include/c++/12/ctime \
  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
@@ -187,6 +187,6 @@ CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.o: \
  /usr/include/c++/12/bits/ranges_util.h \
  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Ship.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Segment.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Exceptions.h
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/../includes/ShipObject/Ship.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/../includes/ShipObject/Segment.h \
+ /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/sources/../includes/Exceptions.h
