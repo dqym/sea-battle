@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle
+CMAKE_SOURCE_DIR = /mnt/d/JetBrains/sea-battle/sea_battle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/CMakeFiles /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles /mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/void/CLionProjects/sea-battle/sea_battle/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/JetBrains/sea-battle/sea_battle/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,6 +152,30 @@ sources/Abilities/AbilitiesManager.s: sources/Abilities/AbilitiesManager.cpp.s
 sources/Abilities/AbilitiesManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.s
 .PHONY : sources/Abilities/AbilitiesManager.cpp.s
+
+sources/Abilities/AbilityFactory.o: sources/Abilities/AbilityFactory.cpp.o
+.PHONY : sources/Abilities/AbilityFactory.o
+
+# target to build an object file
+sources/Abilities/AbilityFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.o
+.PHONY : sources/Abilities/AbilityFactory.cpp.o
+
+sources/Abilities/AbilityFactory.i: sources/Abilities/AbilityFactory.cpp.i
+.PHONY : sources/Abilities/AbilityFactory.i
+
+# target to preprocess a source file
+sources/Abilities/AbilityFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.i
+.PHONY : sources/Abilities/AbilityFactory.cpp.i
+
+sources/Abilities/AbilityFactory.s: sources/Abilities/AbilityFactory.cpp.s
+.PHONY : sources/Abilities/AbilityFactory.s
+
+# target to generate assembly for a file
+sources/Abilities/AbilityFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.s
+.PHONY : sources/Abilities/AbilityFactory.cpp.s
 
 sources/Abilities/DoubleDamageAbility.o: sources/Abilities/DoubleDamageAbility.cpp.o
 .PHONY : sources/Abilities/DoubleDamageAbility.o
@@ -320,6 +344,30 @@ sources/GameConfig.s: sources/GameConfig.cpp.s
 sources/GameConfig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.s
 .PHONY : sources/GameConfig.cpp.s
+
+sources/GameController.o: sources/GameController.cpp.o
+.PHONY : sources/GameController.o
+
+# target to build an object file
+sources/GameController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameController.cpp.o
+.PHONY : sources/GameController.cpp.o
+
+sources/GameController.i: sources/GameController.cpp.i
+.PHONY : sources/GameController.i
+
+# target to preprocess a source file
+sources/GameController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameController.cpp.i
+.PHONY : sources/GameController.cpp.i
+
+sources/GameController.s: sources/GameController.cpp.s
+.PHONY : sources/GameController.s
+
+# target to generate assembly for a file
+sources/GameController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameController.cpp.s
+.PHONY : sources/GameController.cpp.s
 
 sources/GameSession.o: sources/GameSession.cpp.o
 .PHONY : sources/GameSession.o
@@ -525,6 +573,9 @@ help:
 	@echo "... sources/Abilities/AbilitiesManager.o"
 	@echo "... sources/Abilities/AbilitiesManager.i"
 	@echo "... sources/Abilities/AbilitiesManager.s"
+	@echo "... sources/Abilities/AbilityFactory.o"
+	@echo "... sources/Abilities/AbilityFactory.i"
+	@echo "... sources/Abilities/AbilityFactory.s"
 	@echo "... sources/Abilities/DoubleDamageAbility.o"
 	@echo "... sources/Abilities/DoubleDamageAbility.i"
 	@echo "... sources/Abilities/DoubleDamageAbility.s"
@@ -546,6 +597,9 @@ help:
 	@echo "... sources/GameConfig.o"
 	@echo "... sources/GameConfig.i"
 	@echo "... sources/GameConfig.s"
+	@echo "... sources/GameController.o"
+	@echo "... sources/GameController.i"
+	@echo "... sources/GameController.s"
 	@echo "... sources/GameSession.o"
 	@echo "... sources/GameSession.i"
 	@echo "... sources/GameSession.s"

@@ -162,3 +162,30 @@ int Board::get_field_size() {
 const Board::Cell& Board::get_cell(int x, int y) {
     return field[x][y];
 }
+
+void Board::serialize(std::ostream& os) {
+    for (int i = 0; i < field.size(); ++i) {
+        for (int j = 0; j < field.size(); ++j) {
+            os << field[i][j].actual_display << " " << field[i][j].public_display << " ";
+            if (field[i][j].segment) {
+                os << field[i][j].segment->get_id() << "\n";
+            } else {
+                os << -1 << '\n';
+            }
+        }
+    }
+}
+
+void Board::deserialize(std::istream& is, ShipManager& manager) {
+    for (int i = 0; i < field.size(); ++i) {
+        for (int j = 0; j < field.size(); ++j) {
+            int temp_id;
+            is >> field[i][j].actual_display >> field[i][j].public_display >> temp_id;
+            if (temp_id >= 0) {
+                field[i][j].segment = manager.find_segment_by_id(temp_id);
+            } else {
+                field[i][j].segment = nullptr;
+            }
+        }
+    }
+}

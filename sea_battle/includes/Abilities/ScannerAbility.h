@@ -9,6 +9,7 @@ public:
     ScannerAbility(Board& opponent_board);
     void use() override;
     std::string get_name() override;
+    ~ScannerAbility() = default;
 private:
     DispatcherCLI cli;
     Board& board;

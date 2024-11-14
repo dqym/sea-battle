@@ -7,6 +7,7 @@
 #include <map>
 #include <set>
 #include <algorithm>
+#include "ShipObject/ShipManager.h"
 #include "ShipObject/Ship.h"
 #include "Exceptions.h"
 
@@ -28,6 +29,8 @@ public:
     bool shoot(std::pair<char, int>& coords, bool silent=false);
     int get_field_size();
     const Cell& get_cell(int x, int y);
+    void serialize(std::ostream& os);
+    void deserialize(std::istream& is, ShipManager& manager);
 private:
     std::map<char, int> letters_to_values {
             {'A', 1}, {'B', 2}, {'C', 3}, {'D', 4}, {'E', 5}, {'F', 6},

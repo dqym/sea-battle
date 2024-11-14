@@ -16,6 +16,8 @@ public:
     virtual Board& get_board();
     virtual ShipManager& get_ship_manager();
     virtual bool is_lose();
+    void serialize(std::ostream& os);
+    void deserialize(std::istream& is);
 protected:
     Board board;
     ShipManager ship_manager;

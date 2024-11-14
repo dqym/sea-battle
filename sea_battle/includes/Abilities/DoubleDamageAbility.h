@@ -9,6 +9,7 @@ public:
     DoubleDamageAbility(Board& opponent_board);
     void use() override;
     std::string get_name() override;
+    ~DoubleDamageAbility() = default;
 private:
     DispatcherCLI cli;
     Board& board;

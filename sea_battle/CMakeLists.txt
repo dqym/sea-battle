@@ -34,4 +34,8 @@ add_executable(sea_battle sources/main.cpp
         sources/Abilities/ScannerAbility.cpp
         includes/Abilities/ScannerAbility.h
         sources/Abilities/ShellingAbility.cpp
-        includes/Abilities/ShellingAbility.h)
+        includes/Abilities/ShellingAbility.h
+        sources/GameController.cpp
+        includes/GameController.h
+        sources/Abilities/AbilityFactory.cpp
+        includes/Abilities/AbilityFactory.h)

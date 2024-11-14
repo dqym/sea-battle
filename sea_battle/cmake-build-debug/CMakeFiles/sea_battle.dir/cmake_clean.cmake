@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.o"
   "CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.o.d"
+  "CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.o"
+  "CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.o"
   "CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.o"
@@ -15,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o"
   "CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o.d"
+  "CMakeFiles/sea_battle.dir/sources/GameController.cpp.o"
+  "CMakeFiles/sea_battle.dir/sources/GameController.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o"
   "CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.o"

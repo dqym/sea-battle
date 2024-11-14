@@ -12,9 +12,24 @@ void GameSession::start() {
     }
 
     std::cout << "\n";
+    int i = 2;
     bool player_turn = true;
     while (!player.is_lose() and !enemy.is_lose()) {
         if (player_turn) {
+
+
+            i--;
+            if (i == 0) {
+                std::cout << "Saved\n";
+                std::ofstream os("game_save.txt");
+                serialize(os);
+            }
+            if (i == -2) {
+                std::cout << "Loaded\n";
+                std::ifstream is("game_save.txt");
+                deserialize(is);
+            }
+
 //            abilities_manager.use_ability();
             cli.message("Your turn -> ");
             execute_shot(player, enemy);
@@ -40,4 +55,16 @@ void GameSession::start() {
 
 bool GameSession::execute_shot(AbstractPlayer& shooter, AbstractPlayer& target) {
     return shooter.make_shot(target);
+}
+
+void GameSession::serialize(std::ostream& os) {
+    player.serialize(os);
+    enemy.serialize(os);
+    abilities_manager.serialize(os);
+}
+
+void GameSession::deserialize(std::istream& is) {
+    player.deserialize(is);
+    enemy.deserialize(is);
+    abilities_manager.deserialize(is, enemy.get_board());
 }

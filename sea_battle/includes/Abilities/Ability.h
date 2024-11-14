@@ -5,6 +5,7 @@
 #include "../ShipObject/ShipManager.h"
 #include <optional>
 #include <random>
+#include <memory>
 
 class Ability {
 public:
