@@ -15,7 +15,7 @@ void GameSession::run_game_loop() {
     while (!player.is_lose()) {
         if (player_turn) {
             cli.message("Your turn -> ");
-//            use_ability();
+            use_ability();
             execute_shot(player, enemy);
             if (enemy.update()) {
                 abilities_manager.add_ability();

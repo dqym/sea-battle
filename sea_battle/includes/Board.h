@@ -26,7 +26,7 @@ public:
     Board& operator=(Board&& other) noexcept ;
     bool place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, char orientation);
     bool have_ship(std::pair<char, int> coords);
-    bool shoot(std::pair<char, int>& coords, bool silent=false);
+    bool shoot(std::pair<char, int>& coords, bool silent=false, int damage=1);
     int get_field_size();
     const Cell& get_cell(int x, int y);
     void serialize(std::ostream& os);

@@ -20,10 +20,28 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e893ddd-ab74-4f5d-b53c-2c477a23b2f3" name="Changes" comment="когда-нибудь это закончится">
+    <list default="true" id="5e893ddd-ab74-4f5d-b53c-2c477a23b2f3" name="Changes" comment="new enemy when player lose">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Board.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Board.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/game_save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/game_save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/sea_battle" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/sea_battle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/includes/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/includes/Board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/sources/Abilities/AbilitiesManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/Abilities/AbilitiesManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/sources/Abilities/DoubleDamageAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/Abilities/DoubleDamageAbility.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/sources/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/Board.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/sources/GameControllers/GameSession.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/GameControllers/GameSession.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/sources/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731642096260</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="new enemy when player lose">
+      <option name="closed" value="true" />
+      <created>1731643104698</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1731643104698</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +355,18 @@
     <MESSAGE value="lb2 all fix" />
     <MESSAGE value="lb3 savva sosal?" />
     <MESSAGE value="когда-нибудь это закончится" />
-    <option name="LAST_COMMIT_MESSAGE" value="когда-нибудь это закончится" />
+    <MESSAGE value="new enemy when player lose" />
+    <option name="LAST_COMMIT_MESSAGE" value="new enemy when player lose" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sea_battle/sources/Abilities/AbilityFactory.cpp</url>
+          <line>2</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

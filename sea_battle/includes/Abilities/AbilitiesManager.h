@@ -21,7 +21,7 @@ public:
     void serialize(std::ostream& os);
     void deserialize(std::istream& is, Board& board);
 private:
-    std::queue<std::unique_ptr<Ability>> abilities;
+    std::deque<std::unique_ptr<Ability>> abilities;
     AbstractPlayer& enemy;
     DispatcherCLI cli;
     AbilityFactory factory;

@@ -51,6 +51,9 @@ bool Board::have_ship(std::pair<char, int> coords) {
     try {
         int column = letters_to_values[coords.first] - 1;
         int row = coords.second - 1;
+        if (row >= field.size() or column >= field.size()) {
+            throw std::out_of_range("Out of range");
+        }
         if (field[row][column].segment) {
             return true;
         }
@@ -60,7 +63,7 @@ bool Board::have_ship(std::pair<char, int> coords) {
     }
 }
 
-bool Board::shoot(std::pair<char, int>& coords, bool silent) {
+bool Board::shoot(std::pair<char, int>& coords, bool silent, int damage) {
     int row = coords.second - 1;
     int col = letters_to_values[coords.first] - 1;
     Cell* cell_ptr = nullptr;
@@ -77,7 +80,9 @@ bool Board::shoot(std::pair<char, int>& coords, bool silent) {
     //actual_display -- для отрисовки союзного поля
     //public_display -- для отрисовки вражеского поля
     if (cell.segment) {
-        cell.segment->hit();
+        for (int i = 0; i < damage; ++i) {
+            cell.segment->hit();
+        }
         if (!silent) {
             if (cell.segment->is_destroyed()) {
                 cell.actual_display = 'X';

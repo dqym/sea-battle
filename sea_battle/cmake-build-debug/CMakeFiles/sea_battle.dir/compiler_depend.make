@@ -5089,7 +5089,6 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: /mnt/d/JetBrains/sea-battle/sea_ba
   /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
   /usr/include/c++/12/bits/fstream.tcc \
-  /mnt/d/JetBrains/sea-battle/sea_battle/includes/GameControllers/GameSetup.h \
   /mnt/d/JetBrains/sea-battle/sea_battle/includes/GameControllers/GameState.h \
   /mnt/d/JetBrains/sea-battle/sea_battle/includes/GameControllers/GameSession.h
 
