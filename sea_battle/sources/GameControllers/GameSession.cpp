@@ -12,7 +12,7 @@ GameSession::GameSession(GameSetup& gameSetup)
 
 void GameSession::run_game_loop() {
     bool player_turn = true;
-    while (!player.is_lose() and !enemy.is_lose()) {
+    while (!player.is_lose()) {
         if (player_turn) {
             cli.message("Your turn -> ");
 //            use_ability();
@@ -25,16 +25,18 @@ void GameSession::run_game_loop() {
             execute_shot(enemy, player);
             player.update();
         }
+
         field_renderer.display(player.get_board(), enemy.get_board());
+
+        if (enemy.is_lose()) {
+            std::cout << "\033[1;32m You win! Next round... \033[0m\n";
+            enemy = Enemy(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes());
+            enemy.place_ships();
+        }
+
         player_turn = !player_turn;
     }
-    if (player.is_lose()) {
-        std::cout << "\033[1;31m Enemy win! \033[0m\n";
-        return;
-    } else {
-        std::cout << "\033[1;32m You win! \033[0m\n";
-        return;
-    }
+    std::cout << "\033[1;31m Enemy win! \033[0m\n";
 }
 
 void GameSession::place_ships() {
