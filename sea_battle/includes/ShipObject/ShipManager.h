@@ -7,6 +7,7 @@
 
 class ShipManager {
 public:
+    ShipManager();
     ShipManager(int& count, const std::vector<int>& sizes);
     std::vector<Ship>& get_ships();
     Segment* find_segment_by_id(int id);

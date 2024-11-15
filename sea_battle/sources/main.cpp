@@ -1,13 +1,24 @@
-#include "../includes/GameSession.h"
-#include "../includes/GameConfig.h"
-#include <sstream>
-#include "../includes/Players/Enemy.h"
-
+#include "../includes/GameControllers/GameSession.h"
+#include "../includes/GameControllers/GameState.h"
 
 int main() {
-    GameConfig config;
-    config.read_data();
-    GameSession session(config.get_field_size(), config.get_ships_count(), config.get_sizes());
-    session.start();
+//    GameSetup config;
+//    config.read_start_data();
+//
+//    GameSession session(config);
+//    session.place_ships();
+//
+//    GameState state(session);
+//    state.save("game_save.txt");
+//    session.run_game_loop();
+//    state.load("game_save.txt");
+//    session.run_game_loop();
+
+    GameSetup setup;
+    GameSession session;
+    GameState state(session);
+    state.load("game_save.txt");
+    session.run_game_loop();
+
     return 0;
 }

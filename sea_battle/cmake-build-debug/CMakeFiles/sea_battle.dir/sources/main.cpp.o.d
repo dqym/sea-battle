@@ -1,10 +1,10 @@
 CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/main.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameSession.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/Player.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/AbstractPlayer.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/../ShipObject/ShipManager.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/GameSession.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/Player.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/AbstractPlayer.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/../ShipObject/ShipManager.h \
  /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -161,7 +161,7 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/../ShipObject/Ship.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/../ShipObject/Ship.h \
  /usr/include/c++/12/map /usr/include/c++/12/bits/stl_tree.h \
  /usr/include/c++/12/ext/aligned_buffer.h \
  /usr/include/c++/12/bits/node_handle.h \
@@ -179,9 +179,9 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /usr/include/c++/12/bits/ranges_util.h \
  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/../ShipObject/Segment.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/../DispatcherCLI.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/../Board.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/../ShipObject/Segment.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/../DispatcherCLI.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/../Board.h \
  /usr/include/c++/12/iomanip /usr/include/c++/12/locale \
  /usr/include/c++/12/bits/locale_facets_nonio.h /usr/include/c++/12/ctime \
  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
@@ -193,11 +193,11 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /usr/include/c++/12/bits/sstream.tcc /usr/include/c++/12/set \
  /usr/include/c++/12/bits/stl_set.h \
  /usr/include/c++/12/bits/stl_multiset.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/../ShipObject/ShipManager.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/../ShipObject/Ship.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/../Exceptions.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/../Board.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/Enemy.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/../ShipObject/ShipManager.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/../ShipObject/Ship.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/../Exceptions.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/../Board.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Players/Enemy.h \
  /usr/include/c++/12/random /usr/include/c++/12/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -226,7 +226,7 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /usr/include/c++/12/bits/random.tcc /usr/include/c++/12/numeric \
  /usr/include/c++/12/bits/stl_numeric.h /usr/include/c++/12/bit \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/AbilitiesManager.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/AbilitiesManager.h \
  /usr/include/c++/12/queue /usr/include/c++/12/deque \
  /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
  /usr/include/c++/12/bits/stl_queue.h /usr/include/c++/12/memory \
@@ -264,21 +264,25 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /usr/include/c++/12/bits/ranges_uninitialized.h \
  /usr/include/c++/12/bits/uses_allocator_args.h \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/Ability.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/../Board.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/../ShipObject/ShipManager.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/Ability.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../Board.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../ShipObject/ShipManager.h \
  /usr/include/c++/12/optional \
  /usr/include/c++/12/bits/enable_special_members.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/AbilityFactory.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/ScannerAbility.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/../DispatcherCLI.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/ShellingAbility.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/DoubleDamageAbility.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/../Players/AbstractPlayer.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Abilities/../Exceptions.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/AbilityFactory.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/ScannerAbility.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../DispatcherCLI.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/ShellingAbility.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/DoubleDamageAbility.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../Players/AbstractPlayer.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../Exceptions.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../FieldRenderer.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Board.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/GameSetup.h \
  /usr/include/c++/12/fstream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
  /usr/include/c++/12/bits/fstream.tcc \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameConfig.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/Players/Enemy.h
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/GameSetup.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/GameState.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/GameSession.h

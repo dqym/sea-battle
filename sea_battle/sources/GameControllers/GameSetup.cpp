@@ -1,6 +1,6 @@
-#include "../includes/GameConfig.h"
+#include "../../includes/GameControllers/GameSetup.h"
 
-void GameConfig::read_data() {
+void GameSetup::read_start_data() {
     std::cout << "Enter field size: ";
     bool field_size_is_correct = false;
     while(!field_size_is_correct){
@@ -23,14 +23,30 @@ void GameConfig::read_data() {
     }
 }
 
-int GameConfig::get_ships_count() const {
+int GameSetup::get_ships_count() {
     return ships_count;
 }
 
-const std::vector<int>& GameConfig::get_sizes() const {
+const std::vector<int>& GameSetup::get_sizes() {
     return sizes;
 }
 
-int GameConfig::get_field_size() const {
+int GameSetup::get_field_size() {
     return field_size;
+}
+
+void GameSetup::serialize(std::ostream& os) {
+    os << field_size << " " << ships_count << " ";
+    for (auto& size : sizes) {
+        os << size << " ";
+    }
+    os << "\n";
+}
+
+void GameSetup::deserialize(std::istream& is){
+    is >> field_size >> ships_count;
+    sizes.resize(ships_count);
+    for (int i = 0; i < ships_count; ++i) {
+        is >> sizes[i];
+    }
 }

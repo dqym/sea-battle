@@ -22,16 +22,12 @@ void AbilitiesManager::add_ability() {
 }
 
 void AbilitiesManager::use_ability() {
-    try {
-        if (!abilities.empty()) {
-            cli.message("Now using: ", abilities.front()->get_name(), " ability.\n");
-            abilities.front()->use();
-            abilities.pop();
-        } else {
-            throw AbilityUnavailableException();
-        }
-    } catch (GameException& exception) {
-        cli.message(exception.what());
+    if (!abilities.empty()) {
+        cli.message("Now using: ", abilities.front()->get_name(), " ability.\n");
+        abilities.front()->use();
+        abilities.pop();
+    } else {
+        throw AbilityUnavailableException();
     }
 }
 

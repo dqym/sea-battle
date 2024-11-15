@@ -321,77 +321,101 @@ sources/Exceptions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.s
 .PHONY : sources/Exceptions.cpp.s
 
-sources/GameConfig.o: sources/GameConfig.cpp.o
-.PHONY : sources/GameConfig.o
+sources/FieldRenderer.o: sources/FieldRenderer.cpp.o
+.PHONY : sources/FieldRenderer.o
 
 # target to build an object file
-sources/GameConfig.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o
-.PHONY : sources/GameConfig.cpp.o
+sources/FieldRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.o
+.PHONY : sources/FieldRenderer.cpp.o
 
-sources/GameConfig.i: sources/GameConfig.cpp.i
-.PHONY : sources/GameConfig.i
+sources/FieldRenderer.i: sources/FieldRenderer.cpp.i
+.PHONY : sources/FieldRenderer.i
 
 # target to preprocess a source file
-sources/GameConfig.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.i
-.PHONY : sources/GameConfig.cpp.i
+sources/FieldRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.i
+.PHONY : sources/FieldRenderer.cpp.i
 
-sources/GameConfig.s: sources/GameConfig.cpp.s
-.PHONY : sources/GameConfig.s
+sources/FieldRenderer.s: sources/FieldRenderer.cpp.s
+.PHONY : sources/FieldRenderer.s
 
 # target to generate assembly for a file
-sources/GameConfig.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.s
-.PHONY : sources/GameConfig.cpp.s
+sources/FieldRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.s
+.PHONY : sources/FieldRenderer.cpp.s
 
-sources/GameController.o: sources/GameController.cpp.o
-.PHONY : sources/GameController.o
+sources/GameControllers/GameSession.o: sources/GameControllers/GameSession.cpp.o
+.PHONY : sources/GameControllers/GameSession.o
 
 # target to build an object file
-sources/GameController.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameController.cpp.o
-.PHONY : sources/GameController.cpp.o
+sources/GameControllers/GameSession.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.o
+.PHONY : sources/GameControllers/GameSession.cpp.o
 
-sources/GameController.i: sources/GameController.cpp.i
-.PHONY : sources/GameController.i
+sources/GameControllers/GameSession.i: sources/GameControllers/GameSession.cpp.i
+.PHONY : sources/GameControllers/GameSession.i
 
 # target to preprocess a source file
-sources/GameController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameController.cpp.i
-.PHONY : sources/GameController.cpp.i
+sources/GameControllers/GameSession.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.i
+.PHONY : sources/GameControllers/GameSession.cpp.i
 
-sources/GameController.s: sources/GameController.cpp.s
-.PHONY : sources/GameController.s
+sources/GameControllers/GameSession.s: sources/GameControllers/GameSession.cpp.s
+.PHONY : sources/GameControllers/GameSession.s
 
 # target to generate assembly for a file
-sources/GameController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameController.cpp.s
-.PHONY : sources/GameController.cpp.s
+sources/GameControllers/GameSession.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.s
+.PHONY : sources/GameControllers/GameSession.cpp.s
 
-sources/GameSession.o: sources/GameSession.cpp.o
-.PHONY : sources/GameSession.o
+sources/GameControllers/GameSetup.o: sources/GameControllers/GameSetup.cpp.o
+.PHONY : sources/GameControllers/GameSetup.o
 
 # target to build an object file
-sources/GameSession.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o
-.PHONY : sources/GameSession.cpp.o
+sources/GameControllers/GameSetup.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.o
+.PHONY : sources/GameControllers/GameSetup.cpp.o
 
-sources/GameSession.i: sources/GameSession.cpp.i
-.PHONY : sources/GameSession.i
+sources/GameControllers/GameSetup.i: sources/GameControllers/GameSetup.cpp.i
+.PHONY : sources/GameControllers/GameSetup.i
 
 # target to preprocess a source file
-sources/GameSession.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameSession.cpp.i
-.PHONY : sources/GameSession.cpp.i
+sources/GameControllers/GameSetup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.i
+.PHONY : sources/GameControllers/GameSetup.cpp.i
 
-sources/GameSession.s: sources/GameSession.cpp.s
-.PHONY : sources/GameSession.s
+sources/GameControllers/GameSetup.s: sources/GameControllers/GameSetup.cpp.s
+.PHONY : sources/GameControllers/GameSetup.s
 
 # target to generate assembly for a file
-sources/GameSession.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameSession.cpp.s
-.PHONY : sources/GameSession.cpp.s
+sources/GameControllers/GameSetup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.s
+.PHONY : sources/GameControllers/GameSetup.cpp.s
+
+sources/GameControllers/GameState.o: sources/GameControllers/GameState.cpp.o
+.PHONY : sources/GameControllers/GameState.o
+
+# target to build an object file
+sources/GameControllers/GameState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.o
+.PHONY : sources/GameControllers/GameState.cpp.o
+
+sources/GameControllers/GameState.i: sources/GameControllers/GameState.cpp.i
+.PHONY : sources/GameControllers/GameState.i
+
+# target to preprocess a source file
+sources/GameControllers/GameState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.i
+.PHONY : sources/GameControllers/GameState.cpp.i
+
+sources/GameControllers/GameState.s: sources/GameControllers/GameState.cpp.s
+.PHONY : sources/GameControllers/GameState.s
+
+# target to generate assembly for a file
+sources/GameControllers/GameState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.s
+.PHONY : sources/GameControllers/GameState.cpp.s
 
 sources/Players/AbstractPlayer.o: sources/Players/AbstractPlayer.cpp.o
 .PHONY : sources/Players/AbstractPlayer.o
@@ -594,15 +618,18 @@ help:
 	@echo "... sources/Exceptions.o"
 	@echo "... sources/Exceptions.i"
 	@echo "... sources/Exceptions.s"
-	@echo "... sources/GameConfig.o"
-	@echo "... sources/GameConfig.i"
-	@echo "... sources/GameConfig.s"
-	@echo "... sources/GameController.o"
-	@echo "... sources/GameController.i"
-	@echo "... sources/GameController.s"
-	@echo "... sources/GameSession.o"
-	@echo "... sources/GameSession.i"
-	@echo "... sources/GameSession.s"
+	@echo "... sources/FieldRenderer.o"
+	@echo "... sources/FieldRenderer.i"
+	@echo "... sources/FieldRenderer.s"
+	@echo "... sources/GameControllers/GameSession.o"
+	@echo "... sources/GameControllers/GameSession.i"
+	@echo "... sources/GameControllers/GameSession.s"
+	@echo "... sources/GameControllers/GameSetup.o"
+	@echo "... sources/GameControllers/GameSetup.i"
+	@echo "... sources/GameControllers/GameSetup.s"
+	@echo "... sources/GameControllers/GameState.o"
+	@echo "... sources/GameControllers/GameState.i"
+	@echo "... sources/GameControllers/GameState.s"
 	@echo "... sources/Players/AbstractPlayer.o"
 	@echo "... sources/Players/AbstractPlayer.i"
 	@echo "... sources/Players/AbstractPlayer.s"

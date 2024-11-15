@@ -109,13 +109,16 @@
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Exceptions.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/GameConfig.h">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/FieldRenderer.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/GameController.h">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/GameControllers/GameSession.h">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/GameSession.h">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/GameControllers/GameSetup.h">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/GameControllers/GameState.h">
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/includes/Players/AbstractPlayer.h">
@@ -160,13 +163,16 @@
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Exceptions.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameConfig.cpp">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/FieldRenderer.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameController.cpp">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameSession.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameSession.cpp">
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameSetup.cpp">
+			<Option target="sea_battle"/>
+		</Unit>
+		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameState.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Players/AbstractPlayer.cpp">

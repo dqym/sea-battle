@@ -164,6 +164,7 @@ const Board::Cell& Board::get_cell(int x, int y) {
 }
 
 void Board::serialize(std::ostream& os) {
+    os << field.size() << "\n";
     for (int i = 0; i < field.size(); ++i) {
         for (int j = 0; j < field.size(); ++j) {
             os << field[i][j].actual_display << " " << field[i][j].public_display << " ";
@@ -177,8 +178,12 @@ void Board::serialize(std::ostream& os) {
 }
 
 void Board::deserialize(std::istream& is, ShipManager& manager) {
-    for (int i = 0; i < field.size(); ++i) {
-        for (int j = 0; j < field.size(); ++j) {
+    int temp_size;
+    is >> temp_size;
+    field.resize(temp_size);
+    for (int i = 0; i < temp_size; ++i) {
+        field[i].resize(temp_size);
+        for (int j = 0; j < temp_size; ++j) {
             int temp_id;
             is >> field[i][j].actual_display >> field[i][j].public_display >> temp_id;
             if (temp_id >= 0) {

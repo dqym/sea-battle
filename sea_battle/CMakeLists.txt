@@ -19,10 +19,10 @@ add_executable(sea_battle sources/main.cpp
         includes/Players/AbstractPlayer.h
         sources/Players/Player.cpp
         includes/Players/Player.h
-        sources/GameSession.cpp
-        includes/GameSession.h
-        sources/GameConfig.cpp
-        includes/GameConfig.h
+        sources/GameControllers/GameSession.cpp
+        includes/GameControllers/GameSession.h
+        sources/GameControllers/GameSetup.cpp
+        includes/GameControllers/GameSetup.h
         includes/Abilities/Ability.h
         sources/Players/AbstractPlayer.cpp
         sources/Abilities/AbilitiesManager.cpp
@@ -35,7 +35,9 @@ add_executable(sea_battle sources/main.cpp
         includes/Abilities/ScannerAbility.h
         sources/Abilities/ShellingAbility.cpp
         includes/Abilities/ShellingAbility.h
-        sources/GameController.cpp
-        includes/GameController.h
+        sources/GameControllers/GameState.cpp
+        includes/GameControllers/GameState.h
         sources/Abilities/AbilityFactory.cpp
-        includes/Abilities/AbilityFactory.h)
+        includes/Abilities/AbilityFactory.h
+        sources/FieldRenderer.cpp
+        includes/FieldRenderer.h)
