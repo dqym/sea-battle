@@ -1,6 +1,6 @@
 digraph UML_Class_diagram {
     graph [
-    label="UML Class Diagram for Selected Sea Battle Game Classes"
+    label="UML Class Diagram for GameSession and GameState"
     labelloc="t"
     fontname="Helvetica,Arial,sans-serif"
     rankdir=UD
@@ -13,37 +13,25 @@ digraph UML_Class_diagram {
     ]
     edge [fontname="Helvetica,Arial,sans-serif"]
 
-    Ability [label="{Ability | + use(): void | + get_name(): std::string}"]
-    DoubleDamage [label="{DoubleDamage | + use(): void}"]
-    Scanner [label="{Scanner | + use(): void}"]
-    Bombardment [label="{Bombardment | + use(): void}"]
+    GameSetup [label="{GameSetup | + read_start_data(): void}"]
+    AbstractPlayer [label="{AbstractPlayer | ...}"]
+    FieldRenderer [label="{FieldRenderer | ...}"]
+    DispatcherCLI [label="{DispatcherCLI | ...}"]
+    Player [label="{Player | ...}"]
+    Enemy [label="{Enemy | ...}"]
+    AbilitiesManager [label="{AbilitiesManager | + use_ability(): bool}"]
 
-    AbilitiesManager [label="{AbilitiesManager | - abilities: queue\<Ability\> | + add_ability(): void | + use_ability(): void}"]
+    GameSession [label="{GameSession | - setup: GameSetup | - field_renderer: FieldRenderer | - cli: DispatcherCLI | - player: Player | - enemy: Enemy | - abilities_manager: AbilitiesManager | + run_game_loop(): void | + place_ships(): void | + execute_shot(shooter: AbstractPlayer, target: AbstractPlayer): bool | + use_ability(): bool | + serialize(os: ostream): void | + deserialize(is: istream): void}"]
 
-    GameException [label="{GameException | + what(): const char*}"]
-    AbilityUnavailableException [label="{AbilityUnavailableException | + what(): const char*}"]
-    ShipPlacementException [label="{ShipPlacementException | + what(): const char*}"]
-    OutOfBoundsException [label="{OutOfBoundsException | + what(): const char*}"]
-    WrongShipCoordinatesException [label="{WrongShipCoordinatesException | + what(): const char*}"]
+    GameState [label="{GameState | - session: GameSession ref | + save(filename: const char*): void | + load(filename: const char*): void} | + operator\<\<(os: ostream, state: GameState): ostream& | + operator\>\>(is: istream, state: GameState): istream&}"]
 
-    GameSession [label="{GameSession | - abilities_manager | + start(): void}"]
-
-    {rank = sink; Board; }
-
-    Ability -> DoubleDamage [label="inheritance" arrowhead=onormal style=dashed]
-    Ability -> Scanner [label="inheritance" arrowhead=onormal style=dashed]
-    Ability -> Bombardment [label="inheritance" arrowhead=onormal style=dashed]
-
-    AbilitiesManager -> Ability [label="composition" arrowhead=diamond]
-
-    GameException -> AbilityUnavailableException [label="inheritance" arrowhead=onormal style=dashed]
-    GameException -> ShipPlacementException [label="inheritance" arrowhead=onormal style=dashed]
-    GameException -> OutOfBoundsException [label="inheritance" arrowhead=onormal style=dashed]
-    GameException -> WrongShipCoordinatesException [label="inheritance" arrowhead=onormal style=dashed]
-
+    GameSession -> GameSetup [label="association" arrowhead=open]
+    GameSession -> FieldRenderer [label="association" arrowhead=open]
+    GameSession -> DispatcherCLI [label="association" arrowhead=open]
+    GameSession -> Player [label="association" arrowhead=open]
+    GameSession -> Enemy [label="association" arrowhead=open]
     GameSession -> AbilitiesManager [label="association" arrowhead=open]
-    AbilitiesManager -> AbilityUnavailableException [label="throws" dir=back arrowtail=normal]
-    Board -> ShipPlacementException [label="throws" dir=back arrowtail=normal]
-    Board -> OutOfBoundsException [label="throws" dir=back arrowtail=normal]
-    Board -> WrongShipCoordinatesException [label="throws" dir=back arrowtail=normal]
+    GameSession -> AbstractPlayer [label="dependency" arrowhead=open style=dashed]
+
+    GameState -> GameSession [label="association" arrowhead=open]
 }

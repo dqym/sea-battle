@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.o"
   "CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.o.d"
-  "CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.o"
-  "CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.o"
   "CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.o.d"
   "CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.o"

@@ -32,6 +32,8 @@ void GameSession::run_game_loop() {
             std::cout << "\033[1;32m You win! Next round... \033[0m\n";
             enemy = Enemy(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes());
             enemy.place_ships();
+            player_turn = true;
+            continue;
         }
 
         player_turn = !player_turn;
