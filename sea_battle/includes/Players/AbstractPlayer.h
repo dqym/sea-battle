@@ -13,12 +13,15 @@ public:
     virtual bool place_ships() = 0;
     virtual bool make_shot(AbstractPlayer& opponent) = 0;
     virtual bool update();
+    virtual int get_damage();
+    virtual void set_damage(int dmg);
     virtual Board& get_board();
     virtual ShipManager& get_ship_manager();
     virtual bool is_lose();
     void serialize(std::ostream& os);
     void deserialize(std::istream& is);
 protected:
+    int damage;
     Board board;
     ShipManager ship_manager;
 };

@@ -15,13 +15,14 @@
 
 class AbilitiesManager {
 public:
-    AbilitiesManager(AbstractPlayer& enemy_ref);
+    AbilitiesManager(AbstractPlayer& player_ref, AbstractPlayer& enemy_ref);
     void add_ability();
     void use_ability();
     void serialize(std::ostream& os);
-    void deserialize(std::istream& is, Board& board);
+    void deserialize(std::istream& is);
 private:
     std::deque<std::unique_ptr<Ability>> abilities;
+    AbstractPlayer& player;
     AbstractPlayer& enemy;
     DispatcherCLI cli;
     AbilityFactory factory;

@@ -267,6 +267,7 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/Ability.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../Board.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../ShipObject/ShipManager.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../Players/AbstractPlayer.h \
  /usr/include/c++/12/optional \
  /usr/include/c++/12/bits/enable_special_members.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/AbilityFactory.h \
@@ -274,7 +275,12 @@ CMakeFiles/sea_battle.dir/sources/main.cpp.o: \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../DispatcherCLI.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/ShellingAbility.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/DoubleDamageAbility.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../Players/AbstractPlayer.h \
+ /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
+ /usr/include/c++/12/bits/hashtable_policy.h \
+ /usr/include/c++/12/bits/unordered_map.h /usr/include/c++/12/functional \
+ /usr/include/c++/12/bits/std_function.h /usr/include/c++/12/array \
+ /usr/include/c++/12/bits/move_only_function.h \
+ /usr/include/c++/12/bits/mofunc_impl.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Abilities/../Exceptions.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../FieldRenderer.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/../includes/GameControllers/../Board.h \

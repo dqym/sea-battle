@@ -1,22 +1,36 @@
 #include "../../includes/Abilities/AbilitiesManager.h"
 
-AbilitiesManager::AbilitiesManager(AbstractPlayer& enemy_ref): enemy(enemy_ref) {add_ability();}
+AbilitiesManager::AbilitiesManager(AbstractPlayer& player_ref, AbstractPlayer& enemy_ref)
+    : player(player_ref), enemy(enemy_ref) {
+    factory.register_ability<DoubleDamageAbility>("Double-damage", [](void* object) {
+        return std::make_unique<DoubleDamageAbility>(*static_cast<AbstractPlayer*>(object));
+    });
+
+    factory.register_ability<ScannerAbility>("Scanner", [](void* object) {
+        return std::make_unique<ScannerAbility>(*static_cast<Board*>(object));
+    });
+
+    factory.register_ability<ShellingAbility>("Shelling", [](void* object) {
+        return std::make_unique<ShellingAbility>(*static_cast<Board*>(object));
+    });
+    add_ability();
+}
 
 void AbilitiesManager::add_ability() {
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::uniform_int_distribution<> range(1, 1);
+    std::uniform_int_distribution<> range(0, 2);
     int result = range(gen);
 
     switch (result) {
         case 0:
-            abilities.push_front(factory.get_ability("Double damage", enemy.get_board()));
+            abilities.push_front(factory.create_ability("Double-damage", &player));
             break;
         case 1:
-            abilities.push_front(factory.get_ability("Scanner", enemy.get_board()));
+            abilities.push_front(factory.create_ability("Scanner", &enemy.get_board()));
             break;
         case 2:
-            abilities.push_front(factory.get_ability("Shelling", enemy.get_board()));
+            abilities.push_front(factory.create_ability("Shelling", &enemy.get_board()));
             break;
     }
 }
@@ -38,13 +52,17 @@ void AbilitiesManager::serialize(std::ostream& os) {
     }
 }
 
-void AbilitiesManager::deserialize(std::istream& is, Board& board) {
+void AbilitiesManager::deserialize(std::istream& is) {
     int abilities_count;
     is >> abilities_count;
     abilities = std::deque<std::unique_ptr<Ability>>{};
     for (int i = 0; i < abilities_count; ++i) {
         std::string name;
         is >> name;
-        abilities.push_front(factory.get_ability(name, board));
+        if (name == "Double-damage"){
+            abilities.push_front(factory.create_ability(name, &player));
+        } else {
+            abilities.push_front(factory.create_ability(name, &enemy.get_board()));
+        }
     }
 }

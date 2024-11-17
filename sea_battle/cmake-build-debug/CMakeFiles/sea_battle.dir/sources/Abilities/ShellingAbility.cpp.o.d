@@ -194,6 +194,11 @@ CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.o: \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../ShipObject/Ship.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Exceptions.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../ShipObject/ShipManager.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/AbstractPlayer.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../ShipObject/ShipManager.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../DispatcherCLI.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../Board.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../Board.h \
  /usr/include/c++/12/optional \
  /usr/include/c++/12/bits/enable_special_members.h \
  /usr/include/c++/12/random /usr/include/c++/12/cmath /usr/include/math.h \

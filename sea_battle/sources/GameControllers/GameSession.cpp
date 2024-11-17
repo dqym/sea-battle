@@ -2,20 +2,20 @@
 
 GameSession::GameSession()
     : player(0, 0, {}),
-    enemy(0, 0, {}), abilities_manager(enemy) {}
+    enemy(0, 0, {}), abilities_manager(player, enemy) {}
 
 GameSession::GameSession(GameSetup& gameSetup)
     : setup(gameSetup),
     player(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes()),
     enemy(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes()),
-    abilities_manager(enemy) {}
+    abilities_manager(player, enemy) {}
 
 void GameSession::run_game_loop() {
     bool player_turn = true;
     while (!player.is_lose()) {
         if (player_turn) {
             cli.message("Your turn -> ");
-            use_ability();
+            use_ability();                      //TODO будет выбор действия
             execute_shot(player, enemy);
             if (enemy.update()) {
                 abilities_manager.add_ability();
@@ -51,7 +51,9 @@ void GameSession::place_ships() {
 }
 
 bool GameSession::execute_shot(AbstractPlayer& shooter, AbstractPlayer& target) {
-    return shooter.make_shot(target);
+    bool res = shooter.make_shot(target);
+    shooter.set_damage(1);
+    return res;
 }
 
 bool GameSession::use_ability() {
@@ -75,5 +77,5 @@ void GameSession::deserialize(std::istream& is) {
     setup.deserialize(is);
     player.deserialize(is);
     enemy.deserialize(is);
-    abilities_manager.deserialize(is, enemy.get_board());
+    abilities_manager.deserialize(is);
 }

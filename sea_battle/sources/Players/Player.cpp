@@ -40,5 +40,5 @@ bool Player::place_ships() {
 
 bool Player::make_shot(AbstractPlayer& opponent) {
     std::pair<char, int> coordinate = cli.read_coordinate();
-    return opponent.get_board().shoot(coordinate);
+    return opponent.get_board().shoot(coordinate, false, damage);
 }

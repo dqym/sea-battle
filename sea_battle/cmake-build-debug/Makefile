@@ -153,30 +153,6 @@ sources/Abilities/AbilitiesManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.s
 .PHONY : sources/Abilities/AbilitiesManager.cpp.s
 
-sources/Abilities/AbilityFactory.o: sources/Abilities/AbilityFactory.cpp.o
-.PHONY : sources/Abilities/AbilityFactory.o
-
-# target to build an object file
-sources/Abilities/AbilityFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.o
-.PHONY : sources/Abilities/AbilityFactory.cpp.o
-
-sources/Abilities/AbilityFactory.i: sources/Abilities/AbilityFactory.cpp.i
-.PHONY : sources/Abilities/AbilityFactory.i
-
-# target to preprocess a source file
-sources/Abilities/AbilityFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.i
-.PHONY : sources/Abilities/AbilityFactory.cpp.i
-
-sources/Abilities/AbilityFactory.s: sources/Abilities/AbilityFactory.cpp.s
-.PHONY : sources/Abilities/AbilityFactory.s
-
-# target to generate assembly for a file
-sources/Abilities/AbilityFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sea_battle.dir/build.make CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.s
-.PHONY : sources/Abilities/AbilityFactory.cpp.s
-
 sources/Abilities/DoubleDamageAbility.o: sources/Abilities/DoubleDamageAbility.cpp.o
 .PHONY : sources/Abilities/DoubleDamageAbility.o
 
@@ -597,9 +573,6 @@ help:
 	@echo "... sources/Abilities/AbilitiesManager.o"
 	@echo "... sources/Abilities/AbilitiesManager.i"
 	@echo "... sources/Abilities/AbilitiesManager.s"
-	@echo "... sources/Abilities/AbilityFactory.o"
-	@echo "... sources/Abilities/AbilityFactory.i"
-	@echo "... sources/Abilities/AbilityFactory.s"
 	@echo "... sources/Abilities/DoubleDamageAbility.o"
 	@echo "... sources/Abilities/DoubleDamageAbility.i"
 	@echo "... sources/Abilities/DoubleDamageAbility.s"

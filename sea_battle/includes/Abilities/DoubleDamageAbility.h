@@ -6,13 +6,13 @@
 
 class DoubleDamageAbility: public Ability {
 public:
-    DoubleDamageAbility(Board& opponent_board);
+    DoubleDamageAbility(AbstractPlayer& player_ref);
     void use() override;
     std::string get_name() override;
     ~DoubleDamageAbility() = default;
 private:
     DispatcherCLI cli;
-    Board& board;
+    AbstractPlayer& player;
 };
 
 

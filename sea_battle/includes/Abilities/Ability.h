@@ -3,6 +3,7 @@
 
 #include "../Board.h"
 #include "../ShipObject/ShipManager.h"
+#include "../Players/AbstractPlayer.h"
 #include <optional>
 #include <random>
 #include <memory>

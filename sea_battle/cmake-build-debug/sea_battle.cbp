@@ -142,9 +142,6 @@
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/AbilitiesManager.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/AbilityFactory.cpp">
-			<Option target="sea_battle"/>
-		</Unit>
 		<Unit filename="/mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/DoubleDamageAbility.cpp">
 			<Option target="sea_battle"/>
 		</Unit>

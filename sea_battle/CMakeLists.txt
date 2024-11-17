@@ -37,7 +37,6 @@ add_executable(sea_battle sources/main.cpp
         includes/Abilities/ShellingAbility.h
         sources/GameControllers/GameState.cpp
         includes/GameControllers/GameState.h
-        sources/Abilities/AbilityFactory.cpp
         includes/Abilities/AbilityFactory.h
         sources/FieldRenderer.cpp
         includes/FieldRenderer.h)

@@ -48,6 +48,6 @@ bool Enemy::make_shot(AbstractPlayer& opponent) {
     int digit = digit_range(gen);
 
     std::pair coordinate(letter, digit);
-    return opponent.get_board().shoot(coordinate);
+    return opponent.get_board().shoot(coordinate, false, damage);
 }
 

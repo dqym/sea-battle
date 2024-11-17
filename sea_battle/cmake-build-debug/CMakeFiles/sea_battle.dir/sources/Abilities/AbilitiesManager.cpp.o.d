@@ -262,16 +262,22 @@ CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.o: \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../ShipObject/Ship.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Exceptions.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../ShipObject/ShipManager.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/AbstractPlayer.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../ShipObject/ShipManager.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../DispatcherCLI.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../Board.h \
+ /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../Board.h \
  /usr/include/c++/12/optional \
  /usr/include/c++/12/bits/enable_special_members.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/AbilityFactory.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/ScannerAbility.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../DispatcherCLI.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Board.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/ShellingAbility.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/DoubleDamageAbility.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/AbstractPlayer.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../ShipObject/ShipManager.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../DispatcherCLI.h \
- /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Players/../Board.h \
+ /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
+ /usr/include/c++/12/bits/hashtable_policy.h \
+ /usr/include/c++/12/bits/unordered_map.h /usr/include/c++/12/functional \
+ /usr/include/c++/12/bits/std_function.h /usr/include/c++/12/array \
+ /usr/include/c++/12/bits/move_only_function.h \
+ /usr/include/c++/12/bits/mofunc_impl.h \
  /mnt/d/JetBrains/sea-battle/sea_battle/sources/Abilities/../../includes/Abilities/../Exceptions.h
