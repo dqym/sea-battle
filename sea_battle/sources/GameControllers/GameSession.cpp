@@ -8,36 +8,32 @@ GameSession::GameSession(GameSetup& gameSetup)
     : setup(gameSetup),
     player(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes()),
     enemy(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes()),
-    abilities_manager(player, enemy) {}
+    abilities_manager(player, enemy), player_turn(true) {}
 
-void GameSession::run_game_loop() {
-    bool player_turn = true;
-    while (!player.is_lose()) {
-        if (player_turn) {
-            cli.message("Your turn -> ");
-            use_ability();                      //TODO будет выбор действия
-            execute_shot(player, enemy);
-            if (enemy.update()) {
-                abilities_manager.add_ability();
-            }
-        } else {
-            std::cout << "Enemy turn -> ";
-            execute_shot(enemy, player);
-            player.update();
+void GameSession::run_game_step() {
+    if (player_turn) {
+        cli.message("Your turn -> ");
+        use_ability();
+        execute_shot(player, enemy);
+        if (enemy.update()) {
+            abilities_manager.add_ability();
         }
+    } else {
+        std::cout << "Enemy turn -> ";
+        execute_shot(enemy, player);
+        player.update();
+    }
 
-        field_renderer.display(player.get_board(), enemy.get_board());
+    field_renderer.display(player.get_board(), enemy.get_board());
 
-        if (enemy.is_lose()) {
-            std::cout << "\033[1;32m You win! Next round... \033[0m\n";
-            enemy = Enemy(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes());
-            enemy.place_ships();
-            player_turn = true;
-            continue;
-        }
+    if (enemy.is_lose()) {
+        std::cout << "\033[1;32m You win! Next round... \033[0m\n";
+        enemy = Enemy(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes());
+        enemy.place_ships();
+        player_turn = true;
+    }
 
         player_turn = !player_turn;
-    }
     std::cout << "\033[1;31m Enemy win! \033[0m\n";
 }
 
@@ -66,6 +62,14 @@ bool GameSession::use_ability() {
         cli.message(exception.what());
         return false;
     }
+}
+
+void GameSession::make_player_turn(std::pair<char, int> coordinates) {
+    execute_shot(player, enemy);
+}
+
+void GameSession::make_enemy_turn() {
+    execute_shot(enemy, player);
 }
 
 void GameSession::serialize(std::ostream& os) {

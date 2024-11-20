@@ -13,13 +13,16 @@ class GameSession {
 public:
     GameSession();
     GameSession(GameSetup& gameSetup);
-    void run_game_loop();
+    void run_game_step();
     void place_ships();
-    bool execute_shot(AbstractPlayer& shooter, AbstractPlayer& target);
     bool use_ability();
+    void make_player_turn(std::pair<char, int> coordinates);
+    void make_enemy_turn();
     void serialize(std::ostream& os);
     void deserialize(std::istream& is);
 private:
+    bool execute_shot(AbstractPlayer& shooter, AbstractPlayer& target);
+    bool player_turn;
     GameSetup setup;
     FieldRenderer field_renderer;
     DispatcherCLI cli;

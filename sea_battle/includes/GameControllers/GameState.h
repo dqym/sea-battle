@@ -10,8 +10,8 @@ class GameState {
 public:
     GameState(GameSession& gameSession);
 
-    void save(const char* filename);
-    void load(const char* filename);
+    bool save(const char* filename);
+    bool load(const char* filename);
 
     friend std::ostream& operator<<(std::ostream& os, const GameState& state);
     friend std::istream& operator>>(std::istream& is, GameState& state);

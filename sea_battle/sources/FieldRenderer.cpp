@@ -29,7 +29,7 @@ void FieldRenderer::display(Board& player_board, Board& enemy_board) {
 void FieldRenderer::print_separating_row(int size) {
     std::cout << "    ";
     for (int j = 0; j < size; ++j) {
-        std::cout << "+ — ";
+        std::cout << "+ - ";
     }
     std::cout << "+";
 }
