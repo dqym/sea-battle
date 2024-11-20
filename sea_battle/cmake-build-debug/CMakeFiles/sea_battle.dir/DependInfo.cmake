@@ -17,7 +17,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/JetBrains/sea-battle/sea_battle/sources/DispatcherCLI.cpp" "CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.obj.d"
   "D:/JetBrains/sea-battle/sea_battle/sources/Exceptions.cpp" "CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj.d"
   "D:/JetBrains/sea-battle/sea_battle/sources/FieldRenderer.cpp" "CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj.d"
-  "D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameControl.cpp" "CMakeFiles/sea_battle.dir/sources/GameControllers/GameControl.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/GameControllers/GameControl.cpp.obj.d"
   "D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameSession.cpp" "CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj.d"
   "D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameSetup.cpp" "CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.obj.d"
   "D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameState.cpp" "CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.obj.d"

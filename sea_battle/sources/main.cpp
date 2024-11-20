@@ -13,7 +13,9 @@ int main() {
 
     GameControl<CLIHandler> control(session, cli);
 
-    control.run();
+    while (true) {
+        control.run();
+    }
 
 
 

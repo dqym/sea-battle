@@ -41,7 +41,7 @@ bool Enemy::place_ships() {
     return true;
 }
 
-bool Enemy::make_shot(AbstractPlayer& opponent) {
+bool Enemy::make_shot(AbstractPlayer& opponent, std::optional<std::pair<char, int>> coords) {
     std::random_device rd;
     std::mt19937 gen(rd());
     char letter = (char)letter_range(gen);

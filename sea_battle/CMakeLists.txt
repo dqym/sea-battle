@@ -43,5 +43,4 @@ add_executable(sea_battle sources/main.cpp
         sources/CLIHandler.cpp
         includes/CLIHandler.h
         includes/CommandHandler.h
-        sources/GameControllers/GameControl.cpp
         includes/GameControllers/GameControl.h)

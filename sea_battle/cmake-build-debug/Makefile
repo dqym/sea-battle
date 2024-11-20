@@ -344,30 +344,6 @@ sources/FieldRenderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.s
 .PHONY : sources/FieldRenderer.cpp.s
 
-sources/GameControllers/GameControl.obj: sources/GameControllers/GameControl.cpp.obj
-.PHONY : sources/GameControllers/GameControl.obj
-
-# target to build an object file
-sources/GameControllers/GameControl.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameControl.cpp.obj
-.PHONY : sources/GameControllers/GameControl.cpp.obj
-
-sources/GameControllers/GameControl.i: sources/GameControllers/GameControl.cpp.i
-.PHONY : sources/GameControllers/GameControl.i
-
-# target to preprocess a source file
-sources/GameControllers/GameControl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameControl.cpp.i
-.PHONY : sources/GameControllers/GameControl.cpp.i
-
-sources/GameControllers/GameControl.s: sources/GameControllers/GameControl.cpp.s
-.PHONY : sources/GameControllers/GameControl.s
-
-# target to generate assembly for a file
-sources/GameControllers/GameControl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/GameControllers/GameControl.cpp.s
-.PHONY : sources/GameControllers/GameControl.cpp.s
-
 sources/GameControllers/GameSession.obj: sources/GameControllers/GameSession.cpp.obj
 .PHONY : sources/GameControllers/GameSession.obj
 
@@ -644,9 +620,6 @@ help:
 	@echo ... sources/FieldRenderer.obj
 	@echo ... sources/FieldRenderer.i
 	@echo ... sources/FieldRenderer.s
-	@echo ... sources/GameControllers/GameControl.obj
-	@echo ... sources/GameControllers/GameControl.i
-	@echo ... sources/GameControllers/GameControl.s
 	@echo ... sources/GameControllers/GameSession.obj
 	@echo ... sources/GameControllers/GameSession.i
 	@echo ... sources/GameControllers/GameSession.s

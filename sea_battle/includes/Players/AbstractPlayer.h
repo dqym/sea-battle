@@ -11,7 +11,7 @@ class AbstractPlayer {
 public:
     AbstractPlayer(int field_size, int ships_count, const std::vector<int>& sizes);
     virtual bool place_ships() = 0;
-    virtual bool make_shot(AbstractPlayer& opponent) = 0;
+    virtual bool make_shot(AbstractPlayer& opponent, std::optional<std::pair<char, int>> coords = std::nullopt) = 0;
     virtual bool update();
     virtual int get_damage();
     virtual void set_damage(int dmg);

@@ -175,9 +175,6 @@
 		<Unit filename="D:/JetBrains/sea-battle/sea_battle/sources/FieldRenderer.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameControl.cpp">
-			<Option target="sea_battle"/>
-		</Unit>
 		<Unit filename="D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameSession.cpp">
 			<Option target="sea_battle"/>
 		</Unit>

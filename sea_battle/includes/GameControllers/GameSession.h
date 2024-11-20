@@ -11,17 +11,15 @@
 
 class GameSession {
 public:
+    enum class step_result {GameOver, PlayerAlive};
     GameSession();
     GameSession(GameSetup& gameSetup);
-    void run_game_step();
+    GameSession::step_result run_game_step(std::pair<char, int> coordinates);
     void place_ships();
     bool use_ability();
-    void make_player_turn(std::pair<char, int> coordinates);
-    void make_enemy_turn();
     void serialize(std::ostream& os);
     void deserialize(std::istream& is);
 private:
-    bool execute_shot(AbstractPlayer& shooter, AbstractPlayer& target);
     bool player_turn;
     GameSetup setup;
     FieldRenderer field_renderer;

@@ -21,82 +21,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e893ddd-ab74-4f5d-b53c-2c477a23b2f3" name="Changes" comment="lb3 little fix final">
-      <change afterPath="$PROJECT_DIR$/sea_battle/includes/CLIHandler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sea_battle/includes/CommandHandler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sea_battle/includes/GameControllers/GameControl.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sea_battle/sources/CLIHandler.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sea_battle/sources/GameControllers/GameControl.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/.cmake/api/v1/reply/cache-v2-7cc7db9fca52ca9dc2b5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-3aed45540b208026fa5c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-8c1a1143be9f7a51a2eb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/GameController.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/GameController.cpp.o.d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.internal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/compiler_depend.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/AbilityFactory.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Board.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Board.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/GameConfig.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/GameController.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/GameController.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/GameSession.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/ShipObject/Segment.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/ShipObject/Segment.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/ShipObject/Ship.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/ShipObject/Ship.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/ShipObject/ShipManager.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/ShipObject/ShipManager.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/CMakeFiles/sea_battle.dir/sources/main.cpp.o.d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/game_save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/game_save.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/sea_battle" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/sea_battle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/cmake-build-debug/sea_battle.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/cmake-build-debug/sea_battle.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/includes/GameControllers/GameControl.h" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/includes/GameControllers/GameControl.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/includes/GameControllers/GameSession.h" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/includes/GameControllers/GameSession.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/includes/GameControllers/GameState.h" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/includes/GameControllers/GameState.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/sources/FieldRenderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/FieldRenderer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/includes/Players/AbstractPlayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/includes/Players/AbstractPlayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/includes/Players/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/includes/Players/Enemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/includes/Players/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/includes/Players/Player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/sources/GameControllers/GameControl.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sea_battle/sources/GameControllers/GameSession.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/GameControllers/GameSession.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/sources/GameControllers/GameState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/GameControllers/GameState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sea_battle/sources/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/sources/Players/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/Players/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea_battle/sources/Players/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sea_battle/sources/Players/Player.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +97,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CPPToolchains",
+    "settings.editor.selected.configurable": "terminal",
     "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
   }

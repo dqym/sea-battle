@@ -17,8 +17,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj.d"
   "CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj"
   "CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj.d"
-  "CMakeFiles/sea_battle.dir/sources/GameControllers/GameControl.cpp.obj"
-  "CMakeFiles/sea_battle.dir/sources/GameControllers/GameControl.cpp.obj.d"
   "CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj"
   "CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj.d"
   "CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.obj"
