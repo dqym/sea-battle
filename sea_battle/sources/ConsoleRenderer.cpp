@@ -1,6 +1,6 @@
-#include "../includes/FieldRenderer.h"
+#include "../includes/ConsoleRenderer.h"
 
-void FieldRenderer::display(Board& player_board, Board& enemy_board) {
+void ConsoleRenderer::display(Board& player_board, Board& enemy_board) {
     int size = player_board.get_field_size();
 
     int rw_counter = 1;
@@ -26,7 +26,7 @@ void FieldRenderer::display(Board& player_board, Board& enemy_board) {
 
 }
 
-void FieldRenderer::print_separating_row(int size) {
+void ConsoleRenderer::print_separating_row(int size) {
     std::cout << "    ";
     for (int j = 0; j < size; ++j) {
         std::cout << "+ - ";
@@ -34,7 +34,7 @@ void FieldRenderer::print_separating_row(int size) {
     std::cout << "+";
 }
 
-void FieldRenderer::print_data_row(Board& board, int rw_counter, bool is_enemy) {
+void ConsoleRenderer::print_data_row(Board& board, int rw_counter, bool is_enemy) {
     std::cout << std::setw(2) << rw_counter << ". ";
 
     for (int j = 0; j < board.get_field_size(); ++j) {
@@ -67,7 +67,7 @@ void FieldRenderer::print_data_row(Board& board, int rw_counter, bool is_enemy) 
     std::cout << "|";
 }
 
-void FieldRenderer::print_letters_row(int size) {
+void ConsoleRenderer::print_letters_row(int size) {
     char letters[] {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
                     'L','M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
                     'V', 'W', 'X','Y', 'Z'};

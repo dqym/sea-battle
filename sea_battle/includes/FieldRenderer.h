@@ -3,13 +3,15 @@
 
 #include "Board.h"
 
+template<class Renderer>
 class FieldRenderer {
 public:
-    void display(Board& player_board, Board& enemy_board);
+    FieldRenderer(): renderer() {}
+    void display(Board& player_board, Board& enemy_board) {
+        renderer.display(player_board, enemy_board);
+    }
 private:
-    void print_separating_row(int size);
-    void print_data_row(Board& board, int rw_counter, bool is_enemy);
-    void print_letters_row(int size);
+    Renderer renderer;
 };
 
 

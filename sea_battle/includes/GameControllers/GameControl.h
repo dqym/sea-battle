@@ -10,35 +10,35 @@
 template<class T>
 class GameControl {
 public:
-    GameControl(GameSession& gameSession, T& cmd)
-        : session(gameSession), cmd_handler(cmd),
+    GameControl(GameSession& gameSession)
+        : session(gameSession), cmd_handler(),
         state(gameSession), current_command(CommandHandler::command::Unknown) {}
 
     void run() {
         while (true) {
-            std::cout << "\rCurrent action: ...> ";
+            display_line("...");
             current_command = cmd_handler.read_command();
             switch (current_command) {
                 case CommandHandler::command::CallSave:
                     if (state.save("game_save.txt")) {
-                        std::cout << "\r\033[KCurrent action: Saving> \033[32m Game saved successfully \033[0m" << std::flush;
+                        display_line("Saving", "\033[32m Game saved successfully \033[0m\n");
                     } else {
-                        std::cout << "\r\033[KCurrent action: Saving> \033[31m Failed to save game \033[0m" << std::flush;
+                        display_line("Saving", "\033[31m Failed to save game \033[0m\n");
                     }
                     break;
                 case CommandHandler::command::CallLoad:
                     if (state.load("game_save.txt")) {
-                        std::cout << "\r\033[KCurrent action: Loading> \033[32m Game loaded successfully \033[0m" << std::flush;
+                        display_line("Loading", "\033[32m Game loaded successfully \033[0m\n");
                     } else {
-                        std::cout << "\r\033[KCurrent action: Loading> \033[31m Failed to load game \033[0m" << std::flush;
+                        display_line("Loading", "\033[31m Failed to load game \033[0m\n");
                     }
                     break;
                 case CommandHandler::command::CallAbility:
-                    std::cout << "\r\033[KCurrent action: Use Ability> " << std::flush;
+                    display_line("Use Ability");
                     session.use_ability();
                     break;
                 case CommandHandler::command::CallGameStep: {
-                    std::cout << "\r\033[KCurrent action: Shoot> " << std::flush;
+                    display_line("Shoot");
                     std::pair<char, int> coordinates = cmd_handler.read_coordinate();
                     GameSession::step_result step_result = session.run_game_step(coordinates);
                     if (step_result == GameSession::step_result::GameOver) {
@@ -53,10 +53,17 @@ public:
     }
 
 private:
+    void display_line(const std::string& cur_act, const std::optional<std::string>& status = std::nullopt) {
+        std::cout << "\r\033[KCurrent action: " << cur_act << "> ";
+        if (status.has_value()) {
+            std::cout << status.value();
+        }
+        std::cout << std::flush;
+    }
     CommandHandler::command current_command;
-    T& cmd_handler;
-    GameSession& session;
+    T cmd_handler;
     GameState state;
+    GameSession& session;
 };
 
 

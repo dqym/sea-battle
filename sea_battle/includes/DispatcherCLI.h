@@ -6,8 +6,6 @@
 
 class DispatcherCLI {
 public:
-    std::pair<char, int> read_coordinate();
-
     template<class... Args>
     void message(Args... text){
         (std::cout << ... << text);

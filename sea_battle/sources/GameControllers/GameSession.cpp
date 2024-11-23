@@ -8,11 +8,13 @@ GameSession::GameSession(GameSetup& gameSetup)
     : setup(gameSetup),
     player(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes()),
     enemy(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes()),
-    abilities_manager(player, enemy), player_turn(true) {}
+    abilities_manager(player, enemy) {}
 
 GameSession::step_result GameSession::run_game_step(std::pair<char, int> coordinates) {
+    std::cout << "\033[2J\033[H" << std::flush;
     cli.message("Your turn -> ");
     player.make_shot(enemy, coordinates);
+    player.set_damage(1);
     if (enemy.update()) {
         abilities_manager.add_ability();
     }

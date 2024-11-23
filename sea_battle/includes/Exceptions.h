@@ -30,6 +30,15 @@ public:
     WrongShipCoordinatesException();
 };
 
+class NotEnoughBindsException : public GameException {
+public:
+    NotEnoughBindsException();
+};
+
+class MultipleBindException : public GameException {
+public:
+    MultipleBindException();
+};
 
 
 #endif

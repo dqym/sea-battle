@@ -4,6 +4,7 @@
 #include "../Players/Player.h"
 #include "../Players/Enemy.h"
 #include "../Abilities/AbilitiesManager.h"
+#include "../ConsoleRenderer.h"
 #include "../FieldRenderer.h"
 #include "GameSetup.h"
 #include <fstream>
@@ -20,9 +21,8 @@ public:
     void serialize(std::ostream& os);
     void deserialize(std::istream& is);
 private:
-    bool player_turn;
     GameSetup setup;
-    FieldRenderer field_renderer;
+    FieldRenderer<ConsoleRenderer> field_renderer;
     DispatcherCLI cli;
     Player player;
     Enemy enemy;

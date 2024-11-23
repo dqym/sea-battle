@@ -109,6 +109,9 @@
 		<Unit filename="D:/JetBrains/sea-battle/sea_battle/includes/CommandHandler.h">
 			<Option target="sea_battle"/>
 		</Unit>
+		<Unit filename="D:/JetBrains/sea-battle/sea_battle/includes/ConsoleRenderer.h">
+			<Option target="sea_battle"/>
+		</Unit>
 		<Unit filename="D:/JetBrains/sea-battle/sea_battle/includes/DispatcherCLI.h">
 			<Option target="sea_battle"/>
 		</Unit>
@@ -166,13 +169,10 @@
 		<Unit filename="D:/JetBrains/sea-battle/sea_battle/sources/CLIHandler.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
-		<Unit filename="D:/JetBrains/sea-battle/sea_battle/sources/DispatcherCLI.cpp">
+		<Unit filename="D:/JetBrains/sea-battle/sea_battle/sources/ConsoleRenderer.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="D:/JetBrains/sea-battle/sea_battle/sources/Exceptions.cpp">
-			<Option target="sea_battle"/>
-		</Unit>
-		<Unit filename="D:/JetBrains/sea-battle/sea_battle/sources/FieldRenderer.cpp">
 			<Option target="sea_battle"/>
 		</Unit>
 		<Unit filename="D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameSession.cpp">

@@ -3,15 +3,13 @@
 #include "../includes/CLIHandler.h"
 
 int main() {
-    CLIHandler cli;
-
     GameSetup config;
     config.read_start_data();
 
     GameSession session(config);
     session.place_ships();
 
-    GameControl<CLIHandler> control(session, cli);
+    GameControl<CLIHandler> control(session);
 
     while (true) {
         control.run();

@@ -138,24 +138,10 @@ CMakeFiles/sea_battle.dir/sources/ShipObject/Segment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/ShipObject/Segment.cpp.s"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\JetBrains\sea-battle\sea_battle\sources\ShipObject\Segment.cpp -o CMakeFiles\sea_battle.dir\sources\ShipObject\Segment.cpp.s
 
-CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
-CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/DispatcherCLI.cpp
-CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.obj"
-	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\DispatcherCLI.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\DispatcherCLI.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\DispatcherCLI.cpp
-
-CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.i"
-	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\JetBrains\sea-battle\sea_battle\sources\DispatcherCLI.cpp > CMakeFiles\sea_battle.dir\sources\DispatcherCLI.cpp.i
-
-CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.s"
-	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\JetBrains\sea-battle\sea_battle\sources\DispatcherCLI.cpp -o CMakeFiles\sea_battle.dir\sources\DispatcherCLI.cpp.s
-
 CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/Players/Enemy.cpp
 CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\Players\Enemy.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\Players\Enemy.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\Players\Enemy.cpp
 
 CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.i: cmake_force
@@ -169,7 +155,7 @@ CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/Players/Player.cpp
 CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\Players\Player.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\Players\Player.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\Players\Player.cpp
 
 CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.i: cmake_force
@@ -183,7 +169,7 @@ CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameSession.cpp
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\GameControllers\GameSession.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\GameControllers\GameSession.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\GameControllers\GameSession.cpp
 
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.i: cmake_force
@@ -197,7 +183,7 @@ CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameSetup.cpp
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\GameControllers\GameSetup.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\GameControllers\GameSetup.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\GameControllers\GameSetup.cpp
 
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.i: cmake_force
@@ -211,7 +197,7 @@ CMakeFiles/sea_battle.dir/sources/GameControllers/GameSetup.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/Players/AbstractPlayer.cpp
 CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\Players\AbstractPlayer.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\Players\AbstractPlayer.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\Players\AbstractPlayer.cpp
 
 CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.i: cmake_force
@@ -225,7 +211,7 @@ CMakeFiles/sea_battle.dir/sources/Players/AbstractPlayer.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/Abilities/AbilitiesManager.cpp
 CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\Abilities\AbilitiesManager.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\Abilities\AbilitiesManager.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\Abilities\AbilitiesManager.cpp
 
 CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.i: cmake_force
@@ -239,7 +225,7 @@ CMakeFiles/sea_battle.dir/sources/Abilities/AbilitiesManager.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/Exceptions.cpp
 CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\Exceptions.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\Exceptions.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\Exceptions.cpp
 
 CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.i: cmake_force
@@ -253,7 +239,7 @@ CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/Abilities/DoubleDamageAbility.cpp
 CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\Abilities\DoubleDamageAbility.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\Abilities\DoubleDamageAbility.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\Abilities\DoubleDamageAbility.cpp
 
 CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.i: cmake_force
@@ -267,7 +253,7 @@ CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.cpp.s: cmake_for
 CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/Abilities/ScannerAbility.cpp
 CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\Abilities\ScannerAbility.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\Abilities\ScannerAbility.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\Abilities\ScannerAbility.cpp
 
 CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.i: cmake_force
@@ -281,7 +267,7 @@ CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/Abilities/ShellingAbility.cpp
 CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\Abilities\ShellingAbility.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\Abilities\ShellingAbility.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\Abilities\ShellingAbility.cpp
 
 CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.i: cmake_force
@@ -295,7 +281,7 @@ CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.s: cmake_force
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameState.cpp
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\GameControllers\GameState.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\GameControllers\GameState.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\GameControllers\GameState.cpp
 
 CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.i: cmake_force
@@ -306,24 +292,24 @@ CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.s"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\JetBrains\sea-battle\sea_battle\sources\GameControllers\GameState.cpp -o CMakeFiles\sea_battle.dir\sources\GameControllers\GameState.cpp.s
 
-CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
-CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/FieldRenderer.cpp
-CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj"
-	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\FieldRenderer.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\FieldRenderer.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\FieldRenderer.cpp
+CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
+CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/ConsoleRenderer.cpp
+CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj"
+	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\ConsoleRenderer.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\ConsoleRenderer.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\ConsoleRenderer.cpp
 
-CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.i"
-	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\JetBrains\sea-battle\sea_battle\sources\FieldRenderer.cpp > CMakeFiles\sea_battle.dir\sources\FieldRenderer.cpp.i
+CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.i"
+	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\JetBrains\sea-battle\sea_battle\sources\ConsoleRenderer.cpp > CMakeFiles\sea_battle.dir\sources\ConsoleRenderer.cpp.i
 
-CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.s"
-	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\JetBrains\sea-battle\sea_battle\sources\FieldRenderer.cpp -o CMakeFiles\sea_battle.dir\sources\FieldRenderer.cpp.s
+CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.s"
+	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\JetBrains\sea-battle\sea_battle\sources\ConsoleRenderer.cpp -o CMakeFiles\sea_battle.dir\sources\ConsoleRenderer.cpp.s
 
 CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj: CMakeFiles/sea_battle.dir/flags.make
 CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj: D:/JetBrains/sea-battle/sea_battle/sources/CLIHandler.cpp
 CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj: CMakeFiles/sea_battle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj"
 	"D:\JetBrains\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj -MF CMakeFiles\sea_battle.dir\sources\CLIHandler.cpp.obj.d -o CMakeFiles\sea_battle.dir\sources\CLIHandler.cpp.obj -c D:\JetBrains\sea-battle\sea_battle\sources\CLIHandler.cpp
 
 CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.i: cmake_force
@@ -341,7 +327,6 @@ sea_battle_OBJECTS = \
 "CMakeFiles/sea_battle.dir/sources/ShipObject/Ship.cpp.obj" \
 "CMakeFiles/sea_battle.dir/sources/ShipObject/ShipManager.cpp.obj" \
 "CMakeFiles/sea_battle.dir/sources/ShipObject/Segment.cpp.obj" \
-"CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.obj" \
 "CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.obj" \
 "CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.obj" \
 "CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj" \
@@ -353,7 +338,7 @@ sea_battle_OBJECTS = \
 "CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.obj" \
 "CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.obj" \
 "CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.obj" \
-"CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj" \
+"CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj" \
 "CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj"
 
 # External object files for target sea_battle
@@ -364,7 +349,6 @@ sea_battle.exe: CMakeFiles/sea_battle.dir/sources/Board.cpp.obj
 sea_battle.exe: CMakeFiles/sea_battle.dir/sources/ShipObject/Ship.cpp.obj
 sea_battle.exe: CMakeFiles/sea_battle.dir/sources/ShipObject/ShipManager.cpp.obj
 sea_battle.exe: CMakeFiles/sea_battle.dir/sources/ShipObject/Segment.cpp.obj
-sea_battle.exe: CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.obj
 sea_battle.exe: CMakeFiles/sea_battle.dir/sources/Players/Enemy.cpp.obj
 sea_battle.exe: CMakeFiles/sea_battle.dir/sources/Players/Player.cpp.obj
 sea_battle.exe: CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj
@@ -376,13 +360,13 @@ sea_battle.exe: CMakeFiles/sea_battle.dir/sources/Abilities/DoubleDamageAbility.
 sea_battle.exe: CMakeFiles/sea_battle.dir/sources/Abilities/ScannerAbility.cpp.obj
 sea_battle.exe: CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.obj
 sea_battle.exe: CMakeFiles/sea_battle.dir/sources/GameControllers/GameState.cpp.obj
-sea_battle.exe: CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj
+sea_battle.exe: CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj
 sea_battle.exe: CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj
 sea_battle.exe: CMakeFiles/sea_battle.dir/build.make
 sea_battle.exe: CMakeFiles/sea_battle.dir/linkLibs.rsp
 sea_battle.exe: CMakeFiles/sea_battle.dir/objects1.rsp
 sea_battle.exe: CMakeFiles/sea_battle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable sea_battle.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\JetBrains\sea-battle\sea_battle\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable sea_battle.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\sea_battle.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

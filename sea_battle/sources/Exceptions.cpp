@@ -13,3 +13,9 @@ OutOfBoundsAttackException::OutOfBoundsAttackException()
 
 WrongShipCoordinatesException::WrongShipCoordinatesException()
     : GameException("Attempted to place a ship with incorrect coordinates.\n") {}
+
+NotEnoughBindsException::NotEnoughBindsException()
+    : GameException("Not all commands have assigned keys.\n") {}
+
+MultipleBindException::MultipleBindException()
+    : GameException("Detection of multiple key bindings in the configuration file.\n") {}

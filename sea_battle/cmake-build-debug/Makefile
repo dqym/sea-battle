@@ -272,29 +272,29 @@ sources/CLIHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.s
 .PHONY : sources/CLIHandler.cpp.s
 
-sources/DispatcherCLI.obj: sources/DispatcherCLI.cpp.obj
-.PHONY : sources/DispatcherCLI.obj
+sources/ConsoleRenderer.obj: sources/ConsoleRenderer.cpp.obj
+.PHONY : sources/ConsoleRenderer.obj
 
 # target to build an object file
-sources/DispatcherCLI.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.obj
-.PHONY : sources/DispatcherCLI.cpp.obj
+sources/ConsoleRenderer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj
+.PHONY : sources/ConsoleRenderer.cpp.obj
 
-sources/DispatcherCLI.i: sources/DispatcherCLI.cpp.i
-.PHONY : sources/DispatcherCLI.i
+sources/ConsoleRenderer.i: sources/ConsoleRenderer.cpp.i
+.PHONY : sources/ConsoleRenderer.i
 
 # target to preprocess a source file
-sources/DispatcherCLI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.i
-.PHONY : sources/DispatcherCLI.cpp.i
+sources/ConsoleRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.i
+.PHONY : sources/ConsoleRenderer.cpp.i
 
-sources/DispatcherCLI.s: sources/DispatcherCLI.cpp.s
-.PHONY : sources/DispatcherCLI.s
+sources/ConsoleRenderer.s: sources/ConsoleRenderer.cpp.s
+.PHONY : sources/ConsoleRenderer.s
 
 # target to generate assembly for a file
-sources/DispatcherCLI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/DispatcherCLI.cpp.s
-.PHONY : sources/DispatcherCLI.cpp.s
+sources/ConsoleRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.s
+.PHONY : sources/ConsoleRenderer.cpp.s
 
 sources/Exceptions.obj: sources/Exceptions.cpp.obj
 .PHONY : sources/Exceptions.obj
@@ -319,30 +319,6 @@ sources/Exceptions.s: sources/Exceptions.cpp.s
 sources/Exceptions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.s
 .PHONY : sources/Exceptions.cpp.s
-
-sources/FieldRenderer.obj: sources/FieldRenderer.cpp.obj
-.PHONY : sources/FieldRenderer.obj
-
-# target to build an object file
-sources/FieldRenderer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.obj
-.PHONY : sources/FieldRenderer.cpp.obj
-
-sources/FieldRenderer.i: sources/FieldRenderer.cpp.i
-.PHONY : sources/FieldRenderer.i
-
-# target to preprocess a source file
-sources/FieldRenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.i
-.PHONY : sources/FieldRenderer.cpp.i
-
-sources/FieldRenderer.s: sources/FieldRenderer.cpp.s
-.PHONY : sources/FieldRenderer.s
-
-# target to generate assembly for a file
-sources/FieldRenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/FieldRenderer.cpp.s
-.PHONY : sources/FieldRenderer.cpp.s
 
 sources/GameControllers/GameSession.obj: sources/GameControllers/GameSession.cpp.obj
 .PHONY : sources/GameControllers/GameSession.obj
@@ -611,15 +587,12 @@ help:
 	@echo ... sources/CLIHandler.obj
 	@echo ... sources/CLIHandler.i
 	@echo ... sources/CLIHandler.s
-	@echo ... sources/DispatcherCLI.obj
-	@echo ... sources/DispatcherCLI.i
-	@echo ... sources/DispatcherCLI.s
+	@echo ... sources/ConsoleRenderer.obj
+	@echo ... sources/ConsoleRenderer.i
+	@echo ... sources/ConsoleRenderer.s
 	@echo ... sources/Exceptions.obj
 	@echo ... sources/Exceptions.i
 	@echo ... sources/Exceptions.s
-	@echo ... sources/FieldRenderer.obj
-	@echo ... sources/FieldRenderer.i
-	@echo ... sources/FieldRenderer.s
 	@echo ... sources/GameControllers/GameSession.obj
 	@echo ... sources/GameControllers/GameSession.i
 	@echo ... sources/GameControllers/GameSession.s

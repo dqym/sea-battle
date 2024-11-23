@@ -3,7 +3,10 @@
 ScannerAbility::ScannerAbility(Board& opponent_board): board(opponent_board) {}
 
 void ScannerAbility::use() {
-    std::pair<char, int> coordinate = cli.read_coordinate();
+    char letter;
+    int digit;
+    std::cin >> letter >> digit;
+    std::pair<char, int> coordinate{toupper(letter), digit};
     std::vector<std::pair<int, int>> directions = {
             {0, 0}, {1, 0},
             { 0, 1}, { 1, 1},
