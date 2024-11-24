@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sea_battle.dir/sources/Board.cpp.obj.d"
   "CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj"
   "CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj.d"
+  "CMakeFiles/sea_battle.dir/sources/ConsoleIO.cpp.obj"
+  "CMakeFiles/sea_battle.dir/sources/ConsoleIO.cpp.obj.d"
   "CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj"
   "CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj.d"
   "CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj"

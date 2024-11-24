@@ -12,7 +12,6 @@ add_executable(sea_battle sources/main.cpp
         includes/ShipObject/ShipManager.h
         sources/ShipObject/Segment.cpp
         includes/ShipObject/Segment.h
-        includes/DispatcherCLI.h
         sources/Players/Enemy.cpp
         includes/Players/Enemy.h
         includes/Players/AbstractPlayer.h
@@ -43,4 +42,6 @@ add_executable(sea_battle sources/main.cpp
         includes/CLIHandler.h
         includes/CommandHandler.h
         includes/GameControllers/GameControl.h
-        includes/FieldRenderer.h)
+        includes/FieldRenderer.h
+        sources/ConsoleIO.cpp
+        includes/ConsoleIO.h)

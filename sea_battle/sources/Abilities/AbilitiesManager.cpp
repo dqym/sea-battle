@@ -37,7 +37,7 @@ void AbilitiesManager::add_ability() {
 
 void AbilitiesManager::use_ability() {
     if (!abilities.empty()) {
-        cli.message("Now using: ", abilities.front()->get_name(), " ability.\n");
+        console.print("Now using: ", abilities.front()->get_name(), " ability.\n");
         abilities.front()->use();
         abilities.pop_front();
     } else {

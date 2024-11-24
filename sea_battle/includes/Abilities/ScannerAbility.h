@@ -2,7 +2,8 @@
 #define SEA_BATTLE_SCANNERABILITY_H
 
 #include "Ability.h"
-#include "../DispatcherCLI.h"
+#include "../ConsoleIO.h"
+#include "../CLIHandler.h"
 
 class ScannerAbility: public Ability {
 public:
@@ -11,7 +12,7 @@ public:
     std::string get_name() override;
     ~ScannerAbility() = default;
 private:
-    DispatcherCLI cli;
+    ConsoleIO console;
     Board& board;
 };
 

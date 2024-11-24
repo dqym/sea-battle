@@ -1,6 +1,7 @@
 #ifndef SEA_BATTLE_GAMESETUP_H
 #define SEA_BATTLE_GAMESETUP_H
 
+#include "../ConsoleIO.h"
 #include <iostream>
 #include <vector>
 
@@ -16,6 +17,7 @@ private:
     int field_size;
     int ships_count;
     std::vector<int> sizes;
+    ConsoleIO console;
 };
 
 

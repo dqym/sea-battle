@@ -11,7 +11,7 @@
 #include "ShellingAbility.h"
 #include "../Players/AbstractPlayer.h"
 #include "../Exceptions.h"
-#include "../DispatcherCLI.h"
+#include "../ConsoleIO.h"
 
 class AbilitiesManager {
 public:
@@ -24,7 +24,7 @@ private:
     std::deque<std::unique_ptr<Ability>> abilities;
     AbstractPlayer& player;
     AbstractPlayer& enemy;
-    DispatcherCLI cli;
+    ConsoleIO console;
     AbilityFactory factory;
 };
 

@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 #include "Ship.h"
+#include "../ConsoleIO.h"
 
 class ShipManager {
 public:
@@ -18,6 +19,7 @@ public:
 private:
     int destroyed_ships;
     std::vector<Ship> ships;
+    ConsoleIO console;
 };
 
 

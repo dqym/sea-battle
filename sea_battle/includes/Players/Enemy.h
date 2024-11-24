@@ -10,7 +10,6 @@ public:
     bool place_ships() override;
     bool make_shot(AbstractPlayer& opponent, std::optional<std::pair<char, int>> coords) override;
 private:
-    DispatcherCLI cli;
     std::uniform_int_distribution<> orient_range;
     std::uniform_int_distribution<> letter_range;
     std::uniform_int_distribution<> digit_range;

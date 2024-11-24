@@ -12,7 +12,9 @@ class GameControl {
 public:
     GameControl(GameSession& gameSession)
         : session(gameSession), cmd_handler(),
-        state(gameSession), current_command(CommandHandler::command::Unknown) {}
+        state(gameSession), current_command(CommandHandler::command::Unknown) {
+        cmd_handler.reload_binds();
+    }
 
     void run() {
         while (true) {
@@ -42,6 +44,7 @@ public:
                     std::pair<char, int> coordinates = cmd_handler.read_coordinate();
                     GameSession::step_result step_result = session.run_game_step(coordinates);
                     if (step_result == GameSession::step_result::GameOver) {
+                        console.print_error(" Game over. A new game starts...\n");
                         return;
                     }
                     break;
@@ -54,15 +57,12 @@ public:
 
 private:
     void display_line(const std::string& cur_act, const std::optional<std::string>& status = std::nullopt) {
-        std::cout << "\r\033[KCurrent action: " << cur_act << "> ";
-        if (status.has_value()) {
-            std::cout << status.value();
-        }
-        std::cout << std::flush;
+        console.print("\r\033[KCurrent action: ", cur_act, "> ", status.value_or(""));
     }
     CommandHandler::command current_command;
     T cmd_handler;
     GameState state;
+    ConsoleIO console;
     GameSession& session;
 };
 

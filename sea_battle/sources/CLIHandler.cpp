@@ -1,11 +1,9 @@
 #include "../includes/CLIHandler.h"
 
-CLIHandler::CLIHandler() {reload_binds();}
-
 CommandHandler::command CLIHandler::read_command() {
     while (true) {
-        if (_kbhit()) {
-            char key = toupper((char)_getch());
+        if (console.char_available()) {
+            char key = console.get_char();
             try {
                 return binds.at(key);
             } catch (std::out_of_range& e) {
@@ -16,20 +14,15 @@ CommandHandler::command CLIHandler::read_command() {
 }
 
 std::pair<char, int> CLIHandler::read_coordinate() {
-    char letter;
-    int digit;
-    std::cin >> letter >> digit;
-    letter = toupper(letter);
-
-    std::pair coordinate(letter, digit);
-    return coordinate;
+    return console.get_coordinate();
 }
 
 void CLIHandler::reload_binds() {
+    std::string filename = "cfg.txt";
     while (true) {
-        std::ifstream is("cfg.txt");
+        std::ifstream is(filename);
         if (!is.is_open()) {
-            std::cerr << "\033[31mFailed to open configuration file 'cfg.txt'.\033[0m" << std::endl;
+            console.print_error("Failed to open configuration file '", filename, "'.");
             return;
         }
         std::map<char, CommandHandler::command> new_binds;
@@ -73,15 +66,14 @@ void CLIHandler::reload_binds() {
 
             binds = std::move(new_binds);
             is.close();
-            std::cout << "\033[32mConfiguration successfully loaded.\033[0m" << std::endl;
+            console.print_success("Configuration successfully loaded.\n");
             return;
 
         } catch (const GameException &e) {
-            std::cerr << "\033[31mError loading configuration: " << e.what() << "\033[0m" << std::endl;
-            std::cout << "\033[33mPlease fix the configuration file and press any key to reload...\033[0m" << std::endl;
+            console.print_error("Error loading configuration: ", e.what());
+            console.print_warning("Please fix the configuration file and press any key to reload...");
             while (true) {
-                if (_kbhit()) {
-                    _getch();
+                if (console.char_available()) {
                     is.close();
                     break;
                 }

@@ -23,7 +23,7 @@ public:
 private:
     GameSetup setup;
     FieldRenderer<ConsoleRenderer> field_renderer;
-    DispatcherCLI cli;
+    ConsoleIO console;
     Player player;
     Enemy enemy;
     AbilitiesManager abilities_manager;

@@ -11,30 +11,29 @@ GameSession::GameSession(GameSetup& gameSetup)
     abilities_manager(player, enemy) {}
 
 GameSession::step_result GameSession::run_game_step(std::pair<char, int> coordinates) {
-    std::cout << "\033[2J\033[H" << std::flush;
-    cli.message("Your turn -> ");
+    console.print("\033[2J\033[H");
+    console.print("Your turn -> ");
     player.make_shot(enemy, coordinates);
     player.set_damage(1);
     if (enemy.update()) {
         abilities_manager.add_ability();
     }
-
-    std::cout << "Enemy turn -> ";
-    enemy.make_shot(player, std::nullopt);
-    player.update();
-
-    field_renderer.display(player.get_board(), enemy.get_board());
-
     if (enemy.is_lose()) {
-        std::cout << "\033[1;32m You win! Next round... \033[0m\n";
+        console.print_success(" You win! Next round...\n");
         enemy = Enemy(setup.get_field_size(), setup.get_ships_count(), setup.get_sizes());
         enemy.place_ships();
     }
 
+    console.print("Enemy turn -> ");
+    enemy.make_shot(player, std::nullopt);
+    player.update();
     if (player.is_lose()) {
-        std::cout << "\033[1;31m Enemy win! \033[0m\n";
+        console.print_error(" Enemy win!\n");
         return GameSession::step_result::GameOver;
     }
+
+    field_renderer.display(player.get_board(), enemy.get_board());
+
     return GameSession::step_result::PlayerAlive;
 }
 
@@ -42,11 +41,10 @@ void GameSession::place_ships() {
     field_renderer.display(player.get_board(), enemy.get_board());
     player.place_ships();
     if (!enemy.place_ships()) {
-        std::cout << "The enemy was unable to position the ships!\nTry entering other data.\n";
-        return;  //сомнительно но окей
+        console.print_error("The enemy was unable to position the ships!\nTry entering other data.\n");
+        return;
     }
-
-    std::cout << "\n";
+    console.print("\n");
 }
 
 bool GameSession::use_ability() {
@@ -54,7 +52,7 @@ bool GameSession::use_ability() {
         abilities_manager.use_ability();
         return true;
     } catch (GameException& exception) {
-        cli.message(exception.what());
+        console.print(exception.what());
         return false;
     }
 }

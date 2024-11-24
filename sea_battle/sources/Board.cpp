@@ -35,7 +35,7 @@ bool Board::place_ship(Ship& ship, std::vector<std::pair<char, int>>& coords, ch
     try {
         validate_positions(ship, coords);
     } catch (GameException& exception) {
-        std::cout << exception.what();
+        console.print_error(exception.what());
         return false;
     }
     for (int i = 0; i < coords.size(); ++i) {
@@ -71,7 +71,7 @@ bool Board::shoot(std::pair<char, int>& coords, bool silent, int damage) {
         cell_ptr = &(field.at(row).at(col));
     } catch (std::out_of_range &e) {
         if (!silent) {
-            std::cout << OutOfBoundsAttackException().what();
+            console.print_error(OutOfBoundsAttackException().what());
         }
         return false;
     }
@@ -87,18 +87,18 @@ bool Board::shoot(std::pair<char, int>& coords, bool silent, int damage) {
             if (cell.segment->is_destroyed()) {
                 cell.actual_display = 'X';
                 cell.public_display = cell.actual_display;
-                std::cout << coords.first << coords.second << ": Segment destroyed.\n";
+                console.print(coords.first, coords.second, ": Segment destroyed.\n");
             } else {
                 cell.actual_display = '!';
                 cell.public_display = cell.actual_display;
-                std::cout << coords.first << coords.second << ": Target hit.\n";
+                console.print(coords.first, coords.second, ": Target hit.\n");
             }
         }
     } else {
         if (!silent) {
             cell.actual_display = '*';
             cell.public_display = cell.actual_display;
-            std::cout << coords.first << coords.second << ": Miss.\n";
+            console.print(coords.first, coords.second, ": Miss.\n");
         }
         return false;
     }

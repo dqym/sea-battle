@@ -29,7 +29,7 @@ bool ShipManager::check_ships() {
             temp_destroyed_ships_counter++;
             if (temp_destroyed_ships_counter > destroyed_ships) {
                 destroyed_ships = temp_destroyed_ships_counter;
-                std::cout << "Ship destroyed.\n";
+                console.print("Ship destroyed.\n");
                 return true;
             }
         }

@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/JetBrains/sea-battle/sea_battle/sources/Abilities/ShellingAbility.cpp" "CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/Abilities/ShellingAbility.cpp.obj.d"
   "D:/JetBrains/sea-battle/sea_battle/sources/Board.cpp" "CMakeFiles/sea_battle.dir/sources/Board.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/Board.cpp.obj.d"
   "D:/JetBrains/sea-battle/sea_battle/sources/CLIHandler.cpp" "CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.obj.d"
+  "D:/JetBrains/sea-battle/sea_battle/sources/ConsoleIO.cpp" "CMakeFiles/sea_battle.dir/sources/ConsoleIO.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/ConsoleIO.cpp.obj.d"
   "D:/JetBrains/sea-battle/sea_battle/sources/ConsoleRenderer.cpp" "CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/ConsoleRenderer.cpp.obj.d"
   "D:/JetBrains/sea-battle/sea_battle/sources/Exceptions.cpp" "CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/Exceptions.cpp.obj.d"
   "D:/JetBrains/sea-battle/sea_battle/sources/GameControllers/GameSession.cpp" "CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj" "gcc" "CMakeFiles/sea_battle.dir/sources/GameControllers/GameSession.cpp.obj.d"

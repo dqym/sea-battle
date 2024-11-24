@@ -10,10 +10,11 @@ bool Player::place_ships() {
         bool placed = false;
         while (!placed) {
             std::vector<std::pair<char, int>> coords;
-            cli.message("Enter orientation and coordinates for a ship of length ", ship.get_length(), ": ");
 
-            std::string input;
-            std::getline(std::cin >> std::ws, input);
+            console.print("Enter orientation and coordinates for a ship of length ",
+                          ship.get_length(), ": ");
+            std::string input = console.get_line();
+
             std::stringstream ss(input);
             char orientation;
             ss >> orientation;
@@ -21,15 +22,33 @@ bool Player::place_ships() {
             for (int i = 0; i < ship.get_length(); ++i) {
                 std::pair<char, int> position;
                 std::string coord;
+
                 ss >> coord;
+                if (coord.empty() || coord.size() < 2) {
+                    console.print_error("Invalid input format.\n");
+                    coords.clear();
+                    continue;
+                }
 
                 position.first = toupper(coord[0]);
-                position.second = std::stoi(coord.substr(1));
+                try {
+                    position.second = std::stoi(coord.substr(1));
+                } catch (std::exception& e) {
+                    console.print_error("Invalid coordinate.\n");
+                    coords.clear();
+                    continue;
+                }
 
                 coords.push_back(position);
             }
+
+            if (coords.size() != ship.get_length()) {
+                console.print_warning("Invalid number of coordinates.\n");
+                continue;
+            }
+
             if (!board.place_ship(ship, coords, toupper(orientation))) {
-                std::cout << "Cannot place here.\n";
+                console.print_warning("Cannot place here. Try again.\n");
             } else {
                 placed = true;
             }

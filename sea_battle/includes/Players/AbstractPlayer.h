@@ -2,7 +2,7 @@
 #define SEA_BATTLE_ABSTRACTPLAYER_H
 
 #include "../ShipObject/ShipManager.h"
-#include "../DispatcherCLI.h"
+#include "../ConsoleIO.h"
 #include "../Board.h"
 #include "../ShipObject/ShipManager.h"
 

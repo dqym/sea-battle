@@ -9,7 +9,7 @@ public:
     bool place_ships() override;
     bool make_shot(AbstractPlayer& opponent, std::optional<std::pair<char, int>> coords) override;
 private:
-    DispatcherCLI cli;
+    ConsoleIO console;
 };
 
 

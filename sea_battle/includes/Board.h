@@ -10,6 +10,7 @@
 #include "ShipObject/ShipManager.h"
 #include "ShipObject/Ship.h"
 #include "Exceptions.h"
+#include "ConsoleIO.h"
 
 class Board {
 public:
@@ -41,6 +42,7 @@ private:
     };
     std::vector<std::vector<Cell>> field;
     void validate_positions(Ship& ship, std::vector<std::pair<char, int>>& coords);
+    ConsoleIO console;
 };
 
 #endif

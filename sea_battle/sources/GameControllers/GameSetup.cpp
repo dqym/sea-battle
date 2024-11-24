@@ -1,21 +1,22 @@
 #include "../../includes/GameControllers/GameSetup.h"
 
 void GameSetup::read_start_data() {
-    std::cout << "Enter field size: ";
+    console.print("Enter field size: ");
     bool field_size_is_correct = false;
     while(!field_size_is_correct){
         std::cin >> field_size;
         if (field_size > 26 or field_size < 1) {
-            std::cout << "Field sizes should be in the range [1, 26]!\nTry again: ";
+            console.print_error("Field sizes should be in the range [1, 26]!\n");
+            console.print("Try again: ");
         } else {
             field_size_is_correct = true;
         }
     }
 
-    std::cout << "Enter ships count: ";
-    std::cin >> ships_count;
+    console.print("Enter ships count: ");
+    ships_count = std::stoi(console.get_line());
 
-    std::cout << "Enter the size of each ship separated by a space: ";
+    console.print("Enter the size of each ship separated by a space: ");
     for (int i = 0; i < ships_count; ++i) {
         int size;
         std::cin >> size;

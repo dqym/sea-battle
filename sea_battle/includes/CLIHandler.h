@@ -2,6 +2,7 @@
 #define SEA_BATTLE_CLIHANDLER_H
 
 #include "CommandHandler.h"
+#include "ConsoleIO.h"
 #include "Exceptions.h"
 #include <iostream>
 #include <fstream>
@@ -12,7 +13,6 @@
 
 class CLIHandler: public CommandHandler{
 public:
-    CLIHandler();
     CommandHandler::command read_command() override;
     std::pair<char, int> read_coordinate() override;
     void reload_binds();
@@ -31,6 +31,7 @@ private:
         {"LOAD_KEY", CommandHandler::command::CallLoad},
         {"EXIT_KEY", CommandHandler::command::CallExit}
     };
+    ConsoleIO console;
 };
 
 

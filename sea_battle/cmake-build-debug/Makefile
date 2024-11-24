@@ -272,6 +272,30 @@ sources/CLIHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/CLIHandler.cpp.s
 .PHONY : sources/CLIHandler.cpp.s
 
+sources/ConsoleIO.obj: sources/ConsoleIO.cpp.obj
+.PHONY : sources/ConsoleIO.obj
+
+# target to build an object file
+sources/ConsoleIO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/ConsoleIO.cpp.obj
+.PHONY : sources/ConsoleIO.cpp.obj
+
+sources/ConsoleIO.i: sources/ConsoleIO.cpp.i
+.PHONY : sources/ConsoleIO.i
+
+# target to preprocess a source file
+sources/ConsoleIO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/ConsoleIO.cpp.i
+.PHONY : sources/ConsoleIO.cpp.i
+
+sources/ConsoleIO.s: sources/ConsoleIO.cpp.s
+.PHONY : sources/ConsoleIO.s
+
+# target to generate assembly for a file
+sources/ConsoleIO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_battle.dir\build.make CMakeFiles/sea_battle.dir/sources/ConsoleIO.cpp.s
+.PHONY : sources/ConsoleIO.cpp.s
+
 sources/ConsoleRenderer.obj: sources/ConsoleRenderer.cpp.obj
 .PHONY : sources/ConsoleRenderer.obj
 
@@ -587,6 +611,9 @@ help:
 	@echo ... sources/CLIHandler.obj
 	@echo ... sources/CLIHandler.i
 	@echo ... sources/CLIHandler.s
+	@echo ... sources/ConsoleIO.obj
+	@echo ... sources/ConsoleIO.i
+	@echo ... sources/ConsoleIO.s
 	@echo ... sources/ConsoleRenderer.obj
 	@echo ... sources/ConsoleRenderer.i
 	@echo ... sources/ConsoleRenderer.s
