@@ -20,12 +20,12 @@ std::pair<char, int> ConsoleIO::get_coordinate() {
         std::cin >> input;
 
         if (input.length() < 2 || input.length() > 3) {
-            print_error("Некорректный ввод. Ожидается формат: буква + число (например, A1).\n");
+            print_error("Invalid input. Expected format: letter + number (for example, A1).\n");
         }
 
         char letter = toupper(input[0]);
         if (letter < 'A' || letter > 'Z') {
-            print_error("Некорректная буква. Используйте буквы от A до Z.\n");
+            print_error("Invalid letter. Use letters A to Z.\n");
         }
 
         std::string digit_str = input.substr(1);
@@ -33,11 +33,11 @@ std::pair<char, int> ConsoleIO::get_coordinate() {
         try {
             digit = std::stoi(digit_str);
         } catch (const std::exception &) {
-            print_error("Некорректное число. Используйте цифры от 1 до 26.\n");
+            print_error("Incorrect number. Use numbers from 1 to 26.\n");
         }
 
         if (digit < 1 || digit > 26) {
-            print_error("Число должно быть от 1 до 26.\n");
+            print_error("The number must be from 1 to 26.\n");
         }
 
         return std::make_pair(letter, digit);

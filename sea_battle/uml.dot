@@ -1,9 +1,9 @@
 digraph UML_Class_diagram {
     graph [
-    label="UML Class Diagram for GameSession and GameState"
+    label="UML Class Diagram for Game Control System"
     labelloc="t"
     fontname="Helvetica,Arial,sans-serif"
-    rankdir=UD
+    rankdir=TB
     ]
     node [
     fontname="Helvetica,Arial,sans-serif"
@@ -13,25 +13,24 @@ digraph UML_Class_diagram {
     ]
     edge [fontname="Helvetica,Arial,sans-serif"]
 
-    GameSetup [label="{GameSetup | + read_start_data(): void}"]
-    AbstractPlayer [label="{AbstractPlayer | ...}"]
-    FieldRenderer [label="{FieldRenderer | ...}"]
-    DispatcherCLI [label="{DispatcherCLI | ...}"]
-    Player [label="{Player | ...}"]
-    Enemy [label="{Enemy | ...}"]
-    AbilitiesManager [label="{AbilitiesManager | + use_ability(): bool}"]
+    GameControl [label="{GameControl\<T\> | - session: GameSession ref | - cmd_handler: T | - state: GameState | - current_command: CommandHandler::command | + run(): void}"]
+    CLIHandler [label="{CLIHandler | - binds: map<char, CommandHandler::command> | - requested_keys: map<string, CommandHandler::command> | + read_command(): CommandHandler::command | + read_coordinate(): pair<char, int> | + reload_binds(): void}"]
+    CommandHandler [label="{CommandHandler | + read_command(): CommandHandler::command | + read_coordinate(): pair<char, int>}"]
+    ConsoleIO [label="{ConsoleIO | + print(text: Args...): void | + print_error(text: Args...): void | + print_success(text: Args...): void | + print_warning(text: Args...): void | + get_char(): char | + char_available(): bool | + get_line(): string | + get_coordinate(): pair<char, int>}"]
+    FieldRenderer [label="{FieldRenderer\<Renderer\> | - renderer: Renderer | + display(player_board: Board, enemy_board: Board): void}"]
+    ConsoleRenderer [label="{ConsoleRenderer | + display(player_board: Board, enemy_board: Board): void | - print_separating_row(size: int): void | - print_data_row(board: Board, rw_counter: int, is_enemy: bool): void | - print_letters_row(size: int): void}"]
+    GameSession [label="{GameSession | + run_game_step(coordinates: pair<char, int>): step_result | + use_ability(): void}"]
+    GameState [label="{GameState | - session: GameSession ref | + save(filename: const char*): bool | + load(filename: const char*): bool}"]
 
-    GameSession [label="{GameSession | - setup: GameSetup | - field_renderer: FieldRenderer | - cli: DispatcherCLI | - player: Player | - enemy: Enemy | - abilities_manager: AbilitiesManager | + run_game_loop(): void | + place_ships(): void | + execute_shot(shooter: AbstractPlayer, target: AbstractPlayer): bool | + use_ability(): bool | + serialize(os: ostream): void | + deserialize(is: istream): void}"]
-
-    GameState [label="{GameState | - session: GameSession ref | + save(filename: const char*): void | + load(filename: const char*): void} | + operator\<\<(os: ostream, state: GameState): ostream& | + operator\>\>(is: istream, state: GameState): istream&}"]
-
-    GameSession -> GameSetup [label="association" arrowhead=open]
+    GameControl -> GameSession [label="association" arrowhead=open]
+    GameControl -> CommandHandler [label="dependency" arrowhead=open style=dashed]
+    GameControl -> GameState [label="association" arrowhead=open]
+    GameControl -> ConsoleIO [label="association" arrowhead=open]
+    CLIHandler -> CommandHandler [label="inheritance" arrowhead=empty]
+    CLIHandler -> ConsoleIO [label="association" arrowhead=open]
+    FieldRenderer -> ConsoleRenderer [label="template instantiation" arrowhead=open style=dashed]
+    FieldRenderer -> Renderer [label="template parameter" arrowhead=open style=dashed]
+    ConsoleRenderer -> ConsoleIO [label="association" arrowhead=open]
     GameSession -> FieldRenderer [label="association" arrowhead=open]
-    GameSession -> DispatcherCLI [label="association" arrowhead=open]
-    GameSession -> Player [label="association" arrowhead=open]
-    GameSession -> Enemy [label="association" arrowhead=open]
-    GameSession -> AbilitiesManager [label="association" arrowhead=open]
-    GameSession -> AbstractPlayer [label="dependency" arrowhead=open style=dashed]
-
     GameState -> GameSession [label="association" arrowhead=open]
 }
